@@ -5,102 +5,131 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Inside Edge 台本管理</title>
 <style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f0f2f5; color: #333; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f0f2f5; color: #333; }
 
-  /* ヘッダー */
-  header { background: #06C755; color: white; padding: 14px 16px; position: sticky; top: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; }
-  header h1 { font-size: 17px; font-weight: bold; }
-  header .badge { background: rgba(255,255,255,0.25); border-radius: 12px; padding: 3px 10px; font-size: 13px; }
+header { background: #06C755; color: white; padding: 14px 16px; position: sticky; top: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; }
+header h1 { font-size: 17px; font-weight: bold; }
+.header-right { display: flex; gap: 8px; align-items: center; }
+.badge { background: rgba(255,255,255,0.25); border-radius: 12px; padding: 3px 10px; font-size: 13px; }
+.icon-btn { background: rgba(255,255,255,0.2); border: none; color: white; border-radius: 8px; padding: 5px 10px; font-size: 18px; cursor: pointer; }
 
-  /* タブ */
-  .tabs { display: flex; background: white; border-bottom: 1px solid #ddd; position: sticky; top: 49px; z-index: 99; }
-  .tab { flex: 1; text-align: center; padding: 12px 0; font-size: 14px; cursor: pointer; color: #888; border-bottom: 2px solid transparent; transition: .2s; }
-  .tab.active { color: #06C755; border-bottom-color: #06C755; font-weight: bold; }
+.tabs { display: flex; background: white; border-bottom: 1px solid #ddd; position: sticky; top: 49px; z-index: 99; }
+.tab { flex: 1; text-align: center; padding: 11px 0; font-size: 13px; cursor: pointer; color: #888; border-bottom: 2px solid transparent; }
+.tab.active { color: #06C755; border-bottom-color: #06C755; font-weight: bold; }
 
-  /* フィルター */
-  .filter-bar { padding: 10px 12px; background: white; display: flex; gap: 8px; flex-wrap: wrap; border-bottom: 1px solid #eee; }
-  .filter-btn { padding: 5px 12px; border-radius: 20px; border: 1px solid #ddd; background: white; font-size: 13px; cursor: pointer; transition: .2s; }
-  .filter-btn.active { background: #06C755; color: white; border-color: #06C755; }
+.filter-bar { padding: 8px 10px; background: white; display: flex; gap: 6px; flex-wrap: wrap; border-bottom: 1px solid #eee; overflow-x: auto; }
+.filter-btn { padding: 4px 11px; border-radius: 20px; border: 1px solid #ddd; background: white; font-size: 12px; cursor: pointer; white-space: nowrap; }
+.filter-btn.active { background: #06C755; color: white; border-color: #06C755; }
 
-  /* 台本カード */
-  .scripts-list { padding: 10px; display: flex; flex-direction: column; gap: 10px; }
-  .script-card { background: white; border-radius: 12px; padding: 14px; box-shadow: 0 1px 4px rgba(0,0,0,.08); cursor: pointer; transition: .15s; }
-  .script-card:hover { box-shadow: 0 3px 10px rgba(0,0,0,.12); }
-  .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
-  .card-title { font-size: 15px; font-weight: bold; line-height: 1.4; flex: 1; }
-  .score-circle { width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: bold; color: white; flex-shrink: 0; }
-  .card-meta { margin-top: 8px; display: flex; gap: 8px; flex-wrap: wrap; }
-  .tag { font-size: 12px; padding: 3px 8px; border-radius: 10px; background: #f0f0f0; color: #555; }
-  .tag.genre-スカッと系 { background: #ffe0e0; color: #c00; }
-  .tag.genre-感動系 { background: #e0ecff; color: #0055cc; }
-  .tag.genre-笑い系 { background: #fff3cd; color: #a07000; }
-  .tag.genre-どんでん返し系 { background: #f3e5f5; color: #6a1b9a; }
-  .tag.genre-怖い系 { background: #e0e0e0; color: #333; }
-  .tag.genre-問いかけ系 { background: #e8f5e9; color: #2e7d32; }
-  .status-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; margin-right: 4px; }
-  .status-pending { background: #aaa; }
-  .status-approved { background: #06C755; }
-  .status-done { background: #2196F3; }
+.scripts-list { padding: 10px; display: flex; flex-direction: column; gap: 10px; }
+.script-card { background: white; border-radius: 12px; padding: 14px; box-shadow: 0 1px 4px rgba(0,0,0,.08); cursor: pointer; }
+.card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+.card-title { font-size: 15px; font-weight: bold; line-height: 1.4; flex: 1; }
+.score-circle { width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: bold; color: white; flex-shrink: 0; }
+.card-meta { margin-top: 8px; display: flex; gap: 6px; flex-wrap: wrap; }
+.tag { font-size: 12px; padding: 3px 8px; border-radius: 10px; background: #f0f0f0; color: #555; }
+.tag.genre-スカッと系 { background: #ffe0e0; color: #c00; }
+.tag.genre-感動系 { background: #e0ecff; color: #0055cc; }
+.tag.genre-笑い系 { background: #fff3cd; color: #a07000; }
+.tag.genre-どんでん返し系 { background: #f3e5f5; color: #6a1b9a; }
+.tag.genre-怖い系 { background: #e0e0e0; color: #333; }
+.tag.genre-問いかけ系 { background: #e8f5e9; color: #2e7d32; }
+.status-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; margin-right: 4px; }
+.status-pending { background: #aaa; }
+.status-approved { background: #06C755; }
+.status-done { background: #2196F3; }
 
-  /* 詳細モーダル */
-  .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.5); z-index: 200; overflow-y: auto; }
-  .modal-overlay.open { display: block; }
-  .modal { background: white; max-width: 640px; margin: 20px auto; border-radius: 16px; overflow: hidden; }
-  .modal-header { background: #06C755; color: white; padding: 14px 16px; display: flex; justify-content: space-between; align-items: center; }
-  .modal-header h2 { font-size: 15px; line-height: 1.4; flex: 1; margin-right: 10px; }
-  .close-btn { background: none; border: none; color: white; font-size: 22px; cursor: pointer; line-height: 1; }
-  .modal-body { padding: 16px; }
+.modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.5); z-index: 200; overflow-y: auto; }
+.modal-overlay.open { display: block; }
+.modal { background: white; max-width: 680px; margin: 16px auto; border-radius: 16px; overflow: hidden; }
+.modal-header { background: #06C755; color: white; padding: 12px 14px; display: flex; gap: 8px; align-items: center; }
+.modal-header h2 { font-size: 14px; line-height: 1.4; flex: 1; }
+.close-btn { background: none; border: none; color: white; font-size: 22px; cursor: pointer; }
 
-  /* LINEプレビュー */
-  .line-preview { background: #B0CFE0; border-radius: 10px; padding: 10px; max-height: 340px; overflow-y: auto; display: flex; flex-direction: column; gap: 6px; }
-  .msg-telop { text-align: center; background: rgba(0,0,0,.25); color: white; font-size: 12px; border-radius: 6px; padding: 4px 10px; margin: 2px auto; max-width: 90%; }
-  .msg-row { display: flex; align-items: flex-end; gap: 6px; }
-  .msg-row.self { justify-content: flex-end; }
-  .bubble { max-width: 70%; padding: 8px 11px; border-radius: 14px; font-size: 14px; line-height: 1.5; word-break: break-all; }
-  .bubble.self { background: #95EC69; border-bottom-right-radius: 4px; }
-  .bubble.other { background: white; border-bottom-left-radius: 4px; }
+.modal-tabs { display: flex; border-bottom: 1px solid #eee; background: #fafafa; }
+.modal-tab { flex: 1; text-align: center; padding: 10px 0; font-size: 13px; cursor: pointer; color: #888; border-bottom: 2px solid transparent; }
+.modal-tab.active { color: #06C755; border-bottom-color: #06C755; font-weight: bold; }
 
-  /* 採点フォーム */
-  .score-section { margin-top: 16px; }
-  .score-section h3 { font-size: 14px; font-weight: bold; color: #555; margin-bottom: 10px; border-bottom: 1px solid #eee; padding-bottom: 6px; }
-  .score-item { margin-bottom: 12px; }
-  .score-label { display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 4px; }
-  .score-label span:last-child { color: #06C755; font-weight: bold; }
-  input[type=range] { width: 100%; accent-color: #06C755; }
-  .score-total { text-align: center; margin-top: 14px; font-size: 28px; font-weight: bold; color: #06C755; }
-  .score-total small { font-size: 14px; color: #888; }
+.modal-body { padding: 14px; }
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
 
-  /* 編集エリア */
-  .edit-section { margin-top: 16px; }
-  .edit-section h3 { font-size: 14px; font-weight: bold; color: #555; margin-bottom: 10px; border-bottom: 1px solid #eee; padding-bottom: 6px; }
-  textarea { width: 100%; border: 1px solid #ddd; border-radius: 8px; padding: 10px; font-size: 14px; resize: vertical; min-height: 120px; font-family: inherit; }
-  .save-btn { background: #06C755; color: white; border: none; border-radius: 8px; padding: 11px 0; width: 100%; font-size: 15px; cursor: pointer; margin-top: 10px; font-weight: bold; }
-  .save-btn:hover { background: #05b34b; }
+.line-preview { background: #B0CFE0; border-radius: 10px; padding: 10px; max-height: 380px; overflow-y: auto; display: flex; flex-direction: column; gap: 6px; }
+.msg-telop { text-align: center; background: rgba(0,0,0,.25); color: white; font-size: 12px; border-radius: 6px; padding: 4px 10px; margin: 2px auto; max-width: 90%; }
+.msg-row { display: flex; align-items: flex-end; gap: 6px; }
+.msg-row.self { justify-content: flex-end; }
+.bubble { max-width: 72%; padding: 8px 11px; border-radius: 14px; font-size: 14px; line-height: 1.5; word-break: break-all; }
+.bubble.self { background: #95EC69; border-bottom-right-radius: 4px; }
+.bubble.other { background: white; border-bottom-left-radius: 4px; }
 
-  /* ノート */
-  .notes-input { width: 100%; border: 1px solid #ddd; border-radius: 8px; padding: 8px; font-size: 13px; font-family: inherit; margin-top: 6px; }
+.edit-list { display: flex; flex-direction: column; gap: 6px; max-height: 400px; overflow-y: auto; padding: 2px; }
+.edit-msg-row { display: flex; gap: 6px; align-items: flex-start; background: #f9f9f9; border: 1px solid #eee; border-radius: 8px; padding: 8px; }
+.edit-msg-row.selected { border-color: #06C755; background: #f0fff5; }
+.msg-select-cb { margin-top: 4px; width: 16px; height: 16px; cursor: pointer; accent-color: #06C755; flex-shrink: 0; }
+.msg-sender-tag { font-size: 11px; padding: 2px 6px; border-radius: 6px; flex-shrink: 0; margin-top: 2px; }
+.sender-self { background: #95EC69; color: #333; }
+.sender-other { background: #fff; border: 1px solid #ddd; color: #333; }
+.sender-telop { background: #555; color: #fff; }
+.edit-msg-input { flex: 1; border: none; background: transparent; font-size: 14px; font-family: inherit; resize: none; line-height: 1.5; min-height: 36px; }
+.edit-msg-input:focus { outline: none; }
+.del-btn { background: none; border: none; color: #ccc; font-size: 18px; cursor: pointer; flex-shrink: 0; padding: 0 2px; }
+.del-btn:hover { color: #e53935; }
 
-  /* 空状態 */
-  .empty { text-align: center; padding: 60px 20px; color: #aaa; }
-  .empty p { margin-top: 8px; font-size: 14px; }
+.edit-actions { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+.add-msg-btn { flex: 1; padding: 9px; border: 1px dashed #06C755; background: white; color: #06C755; border-radius: 8px; font-size: 13px; cursor: pointer; }
+.regen-partial-btn { flex: 1; padding: 9px; background: #e8f5e9; color: #2e7d32; border: none; border-radius: 8px; font-size: 13px; cursor: pointer; font-weight: bold; }
+.regen-partial-btn:disabled { background: #eee; color: #aaa; cursor: not-allowed; }
+.regen-all-btn { width: 100%; padding: 11px; background: #fff8e1; color: #a07000; border: 1px solid #ffd54f; border-radius: 8px; font-size: 14px; cursor: pointer; font-weight: bold; margin-top: 6px; }
+
+.score-item { margin-bottom: 12px; }
+.score-label { display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 4px; }
+.score-label span:last-child { color: #06C755; font-weight: bold; }
+input[type=range] { width: 100%; accent-color: #06C755; }
+.score-total { text-align: center; margin-top: 14px; font-size: 30px; font-weight: bold; color: #06C755; }
+.score-total small { font-size: 14px; color: #888; }
+
+select { width: 100%; padding: 9px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; }
+textarea { width: 100%; border: 1px solid #ddd; border-radius: 8px; padding: 10px; font-size: 14px; resize: vertical; min-height: 80px; font-family: inherit; }
+label { font-size: 13px; color: #666; display: block; margin-bottom: 5px; }
+.section { margin-top: 16px; }
+.section h3 { font-size: 13px; font-weight: bold; color: #555; margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+.save-btn { background: #06C755; color: white; border: none; border-radius: 8px; padding: 12px 0; width: 100%; font-size: 15px; cursor: pointer; margin-top: 14px; font-weight: bold; }
+.save-btn:hover { background: #05b34b; }
+.saving { opacity: .6; cursor: not-allowed; }
+
+.settings-modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.5); z-index: 300; }
+.settings-modal.open { display: flex; align-items: center; justify-content: center; padding: 20px; }
+.settings-box { background: white; border-radius: 16px; padding: 20px; width: 100%; max-width: 400px; }
+.settings-box h2 { font-size: 16px; font-weight: bold; margin-bottom: 16px; }
+.settings-box input { width: 100%; border: 1px solid #ddd; border-radius: 8px; padding: 10px; font-size: 14px; margin-bottom: 10px; font-family: monospace; }
+
+.loading { text-align: center; padding: 40px 20px; color: #888; font-size: 14px; }
+.spinner { display: inline-block; width: 28px; height: 28px; border: 3px solid #eee; border-top-color: #06C755; border-radius: 50%; animation: spin .7s linear infinite; margin-bottom: 10px; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.empty { text-align: center; padding: 60px 20px; color: #aaa; font-size: 14px; }
+.gen-status { background: #f0fff5; border-radius: 8px; padding: 12px; text-align: center; color: #2e7d32; font-size: 14px; margin-top: 10px; display: none; }
+.gen-status.error { background: #fff0f0; color: #c00; }
 </style>
 </head>
 <body>
 
 <header>
   <h1>📱 Inside Edge 台本管理</h1>
-  <span class="badge" id="total-badge">0本</span>
+  <div class="header-right">
+    <span class="badge" id="total-badge">0本</span>
+    <button class="icon-btn" id="settings-btn">⚙️</button>
+  </div>
 </header>
 
 <div class="tabs">
-  <div class="tab active" data-tab="list">一覧</div>
+  <div class="tab active" data-tab="list">全て</div>
   <div class="tab" data-tab="pending">未採点</div>
   <div class="tab" data-tab="approved">承認済</div>
   <div class="tab" data-tab="done">動画化済</div>
 </div>
 
-<div class="filter-bar" id="filter-bar">
+<div class="filter-bar">
   <button class="filter-btn active" data-genre="all">全て</button>
   <button class="filter-btn" data-genre="スカッと系">スカッと</button>
   <button class="filter-btn" data-genre="感動系">感動</button>
@@ -110,218 +139,437 @@
   <button class="filter-btn" data-genre="問いかけ系">問いかけ</button>
 </div>
 
-<div class="scripts-list" id="scripts-list"></div>
+<div class="scripts-list" id="scripts-list">
+  <div class="loading"><div class="spinner"></div><br>読み込み中...</div>
+</div>
 
-<!-- 詳細モーダル -->
+<!-- 台本詳細モーダル -->
 <div class="modal-overlay" id="modal-overlay">
   <div class="modal">
     <div class="modal-header">
       <h2 id="modal-title"></h2>
       <button class="close-btn" id="close-modal">×</button>
     </div>
+    <div class="modal-tabs">
+      <div class="modal-tab active" data-mtab="preview">👁 プレビュー</div>
+      <div class="modal-tab" data-mtab="edit">✏️ 編集</div>
+      <div class="modal-tab" data-mtab="score">🎯 採点</div>
+    </div>
     <div class="modal-body">
-      <!-- LINEプレビュー -->
-      <div class="line-preview" id="line-preview"></div>
+
+      <!-- プレビュー -->
+      <div class="tab-panel active" id="panel-preview">
+        <div class="line-preview" id="line-preview"></div>
+        <div class="section">
+          <h3>📌 ステータス</h3>
+          <select id="status-select-p">
+            <option value="pending">⬜ 未採点</option>
+            <option value="approved">✅ 承認済</option>
+            <option value="done">🎬 動画化済</option>
+          </select>
+        </div>
+        <div class="section">
+          <h3>📝 メモ</h3>
+          <textarea id="notes-input-p" placeholder="気になった点・修正案など"></textarea>
+        </div>
+        <button class="save-btn" id="save-btn-p">GitHubに保存</button>
+      </div>
+
+      <!-- 編集 -->
+      <div class="tab-panel" id="panel-edit">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <span style="font-size:12px;color:#888;">チェックして部分再生成 / 直接編集も可</span>
+          <span id="selected-count" style="font-size:12px;color:#06C755;font-weight:bold;"></span>
+        </div>
+        <div class="edit-list" id="edit-list"></div>
+        <div class="edit-actions">
+          <button class="add-msg-btn" id="add-self-btn">＋ 自分</button>
+          <button class="add-msg-btn" id="add-other-btn">＋ 相手</button>
+          <button class="add-msg-btn" id="add-telop-btn">＋ telop</button>
+          <button class="regen-partial-btn" id="regen-partial-btn" disabled>選択箇所を再生成</button>
+        </div>
+        <button class="regen-all-btn" id="regen-all-btn">🔄 台本まるごと再生成</button>
+        <div id="gen-status" class="gen-status"></div>
+        <button class="save-btn" id="save-btn-e">GitHubに保存</button>
+      </div>
 
       <!-- 採点 -->
-      <div class="score-section">
-        <h3>🎯 採点</h3>
+      <div class="tab-panel" id="panel-score">
         <div id="score-items"></div>
         <div class="score-total"><span id="score-total-val">0</span><small>/100点</small></div>
+        <button class="save-btn" id="save-btn-s">GitHubに保存</button>
       </div>
 
-      <!-- メモ -->
-      <div class="edit-section">
-        <h3>📝 メモ</h3>
-        <textarea class="notes-input" id="notes-input" placeholder="気になった点・修正案など"></textarea>
-      </div>
-
-      <!-- ステータス変更 -->
-      <div class="edit-section">
-        <h3>📌 ステータス</h3>
-        <select id="status-select" style="width:100%;padding:9px;border:1px solid #ddd;border-radius:8px;font-size:14px;">
-          <option value="pending">⬜ 未採点</option>
-          <option value="approved">✅ 承認済</option>
-          <option value="done">🎬 動画化済</option>
-        </select>
-      </div>
-
-      <button class="save-btn" id="save-btn">保存する</button>
     </div>
   </div>
 </div>
 
+<!-- 設定モーダル -->
+<div class="settings-modal" id="settings-modal">
+  <div class="settings-box">
+    <h2>⚙️ 設定</h2>
+    <label>Anthropic API Key（再生成に使用）</label>
+    <input type="password" id="anthropic-key-input" placeholder="sk-ant-...">
+    <label>GitHub Token（保存に使用）</label>
+    <input type="password" id="github-token-input" placeholder="ghp_ または gho_...">
+    <button style="background:#06C755;color:white;border:none;border-radius:8px;padding:10px 0;width:100%;font-size:14px;cursor:pointer;font-weight:bold;" id="settings-save-btn">保存</button>
+    <button style="width:100%;margin-top:8px;padding:10px;border:none;background:#eee;border-radius:8px;cursor:pointer;" id="settings-close-btn">キャンセル</button>
+  </div>
+</div>
+
 <script>
-const REPO = 'insideedgeworking-cyber/inside-edge-scripts';
+const REPO   = 'insideedgeworking-cyber/inside-edge-scripts';
 const BRANCH = 'main';
-const API = `https://api.github.com/repos/${REPO}/contents/scripts/`;
+const API_BASE = `https://api.github.com/repos/${REPO}/contents/scripts/`;
 
 let scripts = [];
 let currentScript = null;
-let currentFilter = { tab: 'list', genre: 'all' };
+let currentTab = 'list';
+let currentGenre = 'all';
 
-const scoreKeys = [
-  { key: 'title',        label: 'タイトル',     max: 20 },
-  { key: 'opening',      label: '冒頭telop',    max: 15 },
-  { key: 'info_density', label: '情報密度',     max: 15 },
-  { key: 'twist',        label: '中盤の転換',   max: 20 },
-  { key: 'ending',       label: 'オチ',         max: 15 },
-  { key: 'genre_bonus',  label: 'ジャンル加点', max: 15 },
-];
-
-// スコアに応じた色
-function scoreColor(score) {
-  if (score >= 80) return '#06C755';
-  if (score >= 60) return '#FFA000';
-  if (score >= 40) return '#FF7043';
-  return '#9E9E9E';
+function getSettings() {
+  return {
+    anthropicKey: localStorage.getItem('anthropic_key') || '',
+    githubToken:  localStorage.getItem('github_token')  || ''
+  };
 }
 
-// GitHubからJSONファイル一覧を取得
+const scoreKeys = [
+  { key:'title',        label:'タイトル',    max:20 },
+  { key:'opening',      label:'冒頭telop',   max:15 },
+  { key:'info_density', label:'情報密度',    max:15 },
+  { key:'twist',        label:'中盤の転換',  max:20 },
+  { key:'ending',       label:'オチ',        max:15 },
+  { key:'genre_bonus',  label:'ジャンル加点',max:15 },
+];
+const genreRule = {
+  'スカッと系':'溜め→爽快感の落差が大きい',
+  '感動系':'感情の動き・共感ポイントがある',
+  '笑い系':'キャラのズレ・パターン確立→破壊がある',
+  'どんでん返し系':'予想を裏切る反転の鮮やかさ',
+  '怖い系':'不気味さ・ゾクっとする瞬間がある',
+  '問いかけ系':'コメントを誘う問いの強さ',
+};
+
+function scoreColor(s){ return s>=80?'#06C755':s>=60?'#FFA000':s>=40?'#FF7043':'#9E9E9E'; }
+
+// ── 読み込み ──
 async function loadScripts() {
+  document.getElementById('scripts-list').innerHTML = '<div class="loading"><div class="spinner"></div><br>読み込み中...</div>';
   try {
-    const res = await fetch(`${API}?ref=${BRANCH}&t=${Date.now()}`);
+    const res   = await fetch(`${API_BASE}?ref=${BRANCH}&t=${Date.now()}`);
     const files = await res.json();
-    const jsonFiles = files.filter(f => f.name.endsWith('.json') && f.name !== 'schema.json' && f.name !== 'placeholder.json');
-    const loaded = await Promise.all(jsonFiles.map(async f => {
+    const jsons = files.filter(f => f.name.startsWith('script_') && f.name.endsWith('.json'));
+    scripts = await Promise.all(jsons.map(async f => {
       const r = await fetch(f.download_url + '?t=' + Date.now());
-      return await r.json();
+      return r.json();
     }));
-    scripts = loaded.sort((a, b) => b.created_at.localeCompare(a.created_at));
+    scripts.sort((a,b) => b.created_at.localeCompare(a.created_at));
     document.getElementById('total-badge').textContent = `${scripts.length}本`;
     renderList();
   } catch(e) {
-    document.getElementById('scripts-list').innerHTML = '<div class="empty"><div>⚠️</div><p>読み込みエラー</p></div>';
+    document.getElementById('scripts-list').innerHTML = '<div class="empty">⚠️ 読み込みエラー</div>';
   }
 }
 
 function renderList() {
-  const container = document.getElementById('scripts-list');
-  let filtered = scripts;
-
-  if (currentFilter.tab === 'pending')  filtered = filtered.filter(s => s.video_status === 'pending');
-  if (currentFilter.tab === 'approved') filtered = filtered.filter(s => s.video_status === 'approved');
-  if (currentFilter.tab === 'done')     filtered = filtered.filter(s => s.video_status === 'done');
-  if (currentFilter.genre !== 'all')    filtered = filtered.filter(s => s.genre === currentFilter.genre);
-
-  if (filtered.length === 0) {
-    container.innerHTML = '<div class="empty"><div>📭</div><p>台本がありません</p></div>';
-    return;
-  }
-
-  container.innerHTML = filtered.map(s => {
-    const total = s.scores ? s.scores.total || 0 : 0;
-    const color = scoreColor(total);
-    const statusClass = `status-${s.video_status || 'pending'}`;
-    const statusLabel = { pending: '未採点', approved: '承認済', done: '動画化済' }[s.video_status] || '未採点';
-    return `
-    <div class="script-card" onclick="openModal('${s.id}')">
+  const c = document.getElementById('scripts-list');
+  let list = scripts;
+  if (currentTab==='pending')  list = list.filter(s=>s.video_status==='pending');
+  if (currentTab==='approved') list = list.filter(s=>s.video_status==='approved');
+  if (currentTab==='done')     list = list.filter(s=>s.video_status==='done');
+  if (currentGenre!=='all')    list = list.filter(s=>s.genre===currentGenre);
+  if (!list.length){ c.innerHTML='<div class="empty">📭 台本がありません</div>'; return; }
+  const statusLabel = {pending:'未採点',approved:'承認済',done:'動画化済'};
+  c.innerHTML = list.map(s => {
+    const total = s.scores?.total||0;
+    return `<div class="script-card" onclick="openModal('${s.id}')">
       <div class="card-top">
         <div class="card-title">${s.title}</div>
-        <div class="score-circle" style="background:${color}">${total}</div>
+        <div class="score-circle" style="background:${scoreColor(total)}">${total}</div>
       </div>
       <div class="card-meta">
         <span class="tag genre-${s.genre}">${s.genre}</span>
-        <span class="tag"><span class="status-dot ${statusClass}"></span>${statusLabel}</span>
-        <span class="tag">💬 ${s.message_count || 0}件</span>
+        <span class="tag"><span class="status-dot status-${s.video_status||'pending'}"></span>${statusLabel[s.video_status]||'未採点'}</span>
+        <span class="tag">💬 ${s.message_count||0}件</span>
         <span class="tag">📅 ${s.created_at}</span>
       </div>
     </div>`;
   }).join('');
 }
 
+// ── モーダル ──
 function openModal(id) {
-  currentScript = scripts.find(s => s.id === id);
+  currentScript = JSON.parse(JSON.stringify(scripts.find(s=>s.id===id)));
   if (!currentScript) return;
-
   document.getElementById('modal-title').textContent = currentScript.title;
-  document.getElementById('status-select').value = currentScript.video_status || 'pending';
-  document.getElementById('notes-input').value = currentScript.notes || '';
-
-  // LINEプレビュー
-  const preview = document.getElementById('line-preview');
-  preview.innerHTML = (currentScript.messages || []).map(m => {
-    if (m.type === 'telop') return `<div class="msg-telop">${m.text}</div>`;
-    const side = m.sender === 'self' ? 'self' : 'other';
-    return `<div class="msg-row ${side}"><div class="bubble ${side}">${m.text}</div></div>`;
-  }).join('');
-
-  // 採点スライダー
-  const scoreItems = document.getElementById('score-items');
-  scoreItems.innerHTML = scoreKeys.map(sk => {
-    const val = currentScript.scores ? (currentScript.scores[sk.key] || 0) : 0;
-    return `
-    <div class="score-item">
-      <div class="score-label"><span>${sk.label}（0〜${sk.max}）</span><span id="lbl-${sk.key}">${val}</span></div>
-      <input type="range" min="0" max="${sk.max}" value="${val}" data-key="${sk.key}" oninput="updateScore(this)">
-    </div>`;
-  }).join('');
-
-  updateTotalScore();
+  document.getElementById('gen-status').style.display = 'none';
+  switchModalTab('preview');
   document.getElementById('modal-overlay').classList.add('open');
 }
 
-function updateScore(el) {
-  const key = el.dataset.key;
-  document.getElementById(`lbl-${key}`).textContent = el.value;
-  updateTotalScore();
+function switchModalTab(tab) {
+  document.querySelectorAll('.modal-tab').forEach(t => t.classList.toggle('active', t.dataset.mtab===tab));
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.getElementById(`panel-${tab}`).classList.add('active');
+  if (tab==='preview') renderPreview();
+  if (tab==='edit')    renderEditList();
+  if (tab==='score')   renderScore();
 }
 
-function updateTotalScore() {
-  const total = scoreKeys.reduce((sum, sk) => {
-    const el = document.querySelector(`input[data-key="${sk.key}"]`);
-    return sum + (el ? parseInt(el.value) : 0);
-  }, 0);
-  document.getElementById('score-total-val').textContent = total;
+// ── プレビュー ──
+function renderPreview() {
+  document.getElementById('status-select-p').value = currentScript.video_status||'pending';
+  document.getElementById('notes-input-p').value   = currentScript.notes||'';
+  document.getElementById('line-preview').innerHTML =
+    (currentScript.messages||[]).map(m => {
+      if (m.type==='telop') return `<div class="msg-telop">${m.text}</div>`;
+      const s = m.sender==='self'?'self':'other';
+      return `<div class="msg-row ${s}"><div class="bubble ${s}">${m.text}</div></div>`;
+    }).join('');
 }
 
-document.getElementById('save-btn').addEventListener('click', () => {
-  if (!currentScript) return;
-  const scores = { total: 0 };
-  scoreKeys.forEach(sk => {
-    const el = document.querySelector(`input[data-key="${sk.key}"]`);
-    scores[sk.key] = el ? parseInt(el.value) : 0;
-    scores.total += scores[sk.key];
+// ── 編集 ──
+function renderEditList() {
+  document.getElementById('edit-list').innerHTML = (currentScript.messages||[]).map((m,i) => {
+    const sc = m.type==='telop'?'sender-telop':m.sender==='self'?'sender-self':'sender-other';
+    const sl = m.type==='telop'?'telop':m.sender==='self'?'自分':'相手';
+    return `<div class="edit-msg-row" id="emr-${i}">
+      <input type="checkbox" class="msg-select-cb" data-idx="${i}" onchange="updateSelCount()">
+      <span class="msg-sender-tag ${sc}">${sl}</span>
+      <textarea class="edit-msg-input" data-idx="${i}" rows="2" oninput="syncMsg(this)">${m.text}</textarea>
+      <button class="del-btn" onclick="delMsg(${i})">✕</button>
+    </div>`;
+  }).join('');
+  updateSelCount();
+}
+
+function syncMsg(el) {
+  currentScript.messages[parseInt(el.dataset.idx)].text = el.value;
+}
+function delMsg(i) {
+  currentScript.messages.splice(i,1);
+  currentScript.message_count = currentScript.messages.length;
+  renderEditList();
+}
+function updateSelCount() {
+  const checked = document.querySelectorAll('.msg-select-cb:checked');
+  document.getElementById('selected-count').textContent = checked.length ? `${checked.length}件選択中` : '';
+  document.getElementById('regen-partial-btn').disabled = checked.length===0;
+  document.querySelectorAll('.msg-select-cb').forEach(cb => {
+    document.getElementById(`emr-${cb.dataset.idx}`)?.classList.toggle('selected', cb.checked);
   });
-  currentScript.scores = scores;
-  currentScript.video_status = document.getElementById('status-select').value;
-  currentScript.notes = document.getElementById('notes-input').value;
+}
+function addMsg(type) {
+  if (type==='telop') currentScript.messages.push({type:'telop',text:''});
+  else currentScript.messages.push({sender:type,text:''});
+  currentScript.message_count = currentScript.messages.length;
+  renderEditList();
+  const l = document.getElementById('edit-list');
+  l.scrollTop = l.scrollHeight;
+}
+document.getElementById('add-self-btn').addEventListener('click',  ()=>addMsg('self'));
+document.getElementById('add-other-btn').addEventListener('click', ()=>addMsg('other'));
+document.getElementById('add-telop-btn').addEventListener('click', ()=>addMsg('telop'));
 
-  // ローカル反映
-  const idx = scripts.findIndex(s => s.id === currentScript.id);
-  if (idx >= 0) scripts[idx] = currentScript;
-  renderList();
-  document.getElementById('modal-overlay').classList.remove('open');
-  alert(`保存しました（スコア: ${scores.total}点）\n※GitHubへの反映はgenerate.pyから行ってください`);
+// ── 採点 ──
+function renderScore() {
+  const rule = genreRule[currentScript.genre]||'';
+  document.getElementById('score-items').innerHTML = scoreKeys.map(sk => {
+    const val = currentScript.scores?.[sk.key]||0;
+    const lbl = sk.key==='genre_bonus' ? `${sk.label}（${rule}）` : sk.label;
+    return `<div class="score-item">
+      <div class="score-label"><span>${lbl}（0〜${sk.max}）</span><span id="lbl-${sk.key}">${val}</span></div>
+      <input type="range" min="0" max="${sk.max}" value="${val}" data-key="${sk.key}" oninput="onScore(this)">
+    </div>`;
+  }).join('');
+  calcTotal();
+}
+function onScore(el){ document.getElementById(`lbl-${el.dataset.key}`).textContent=el.value; calcTotal(); }
+function calcTotal(){
+  const t = scoreKeys.reduce((s,sk)=>{ const el=document.querySelector(`input[data-key="${sk.key}"]`); return s+(el?parseInt(el.value):0); },0);
+  document.getElementById('score-total-val').textContent=t;
+}
+
+// ── Claude API ──
+async function callClaude(prompt) {
+  const { anthropicKey } = getSettings();
+  if (!anthropicKey) throw new Error('Anthropic APIキーが未設定です（⚙️ 設定から入力）');
+  const res = await fetch('https://api.anthropic.com/v1/messages',{
+    method:'POST',
+    headers:{
+      'Content-Type':'application/json',
+      'x-api-key': anthropicKey,
+      'anthropic-version':'2023-06-01',
+      'anthropic-dangerous-direct-browser-access':'true'
+    },
+    body: JSON.stringify({
+      model:'claude-haiku-4-5-20251001',
+      max_tokens:2000,
+      messages:[{role:'user',content:prompt}]
+    })
+  });
+  if (!res.ok) throw new Error(`API Error ${res.status}`);
+  const data = await res.json();
+  const text = data.content[0].text;
+  return JSON.parse(text.match(/\[[\s\S]*\]/)[0]);
+}
+
+function showGenStatus(msg, isError=false) {
+  const el = document.getElementById('gen-status');
+  el.textContent = msg;
+  el.className = 'gen-status' + (isError?' error':'');
+  el.style.display = 'block';
+}
+
+// まるごと再生成
+document.getElementById('regen-all-btn').addEventListener('click', async function(){
+  if (!confirm('台本をまるごと再生成します。現在の内容は上書きされます。よいですか？')) return;
+  this.disabled = true;
+  showGenStatus('🤖 再生成中...');
+  try {
+    const msgs = await callClaude(
+      `以下の設定でLINEドラマ台本を作成してください。
+ジャンル: ${currentScript.genre}
+タイトル: ${currentScript.title}
+状況: ${currentScript.setup}
+
+ルール:
+- メッセージ数40〜45件
+- 1メッセージ16文字以内の口語
+- 冒頭は必ずtelopで状況説明
+- 中盤に予想外の展開を1箇所
+- 具体的な数字・場所・期間を6件以上含める
+- ジャンル「${currentScript.genre}」に沿った展開
+
+JSON配列のみ返してください（説明不要）:
+[{"type":"telop","text":"..."},{"sender":"self","text":"..."},{"sender":"other","text":"..."}]`
+    );
+    currentScript.messages = msgs;
+    currentScript.message_count = msgs.length;
+    currentScript.char_count = msgs.reduce((s,m)=>s+(m.text?.length||0),0);
+    renderEditList();
+    showGenStatus('✅ 再生成完了！内容を確認して保存してください');
+  } catch(e) { showGenStatus('❌ '+e.message, true); }
+  this.disabled = false;
 });
 
-document.getElementById('close-modal').addEventListener('click', () => {
-  document.getElementById('modal-overlay').classList.remove('open');
-});
-document.getElementById('modal-overlay').addEventListener('click', e => {
-  if (e.target === document.getElementById('modal-overlay'))
-    document.getElementById('modal-overlay').classList.remove('open');
+// 部分再生成
+document.getElementById('regen-partial-btn').addEventListener('click', async function(){
+  const sel = Array.from(document.querySelectorAll('.msg-select-cb:checked')).map(cb=>parseInt(cb.dataset.idx));
+  if (!sel.length) return;
+  this.disabled = true;
+  showGenStatus('🤖 選択箇所を再生成中...');
+  try {
+    const context = currentScript.messages.map((m,i)=>{
+      const mark = sel.includes(i)?'【再生成】':'';
+      const label = m.type==='telop'?'telop':m.sender==='self'?'自分':'相手';
+      return `${mark}[${label}] ${m.text}`;
+    }).join('\n');
+    const newMsgs = await callClaude(
+      `LINEドラマ台本の【再生成】マーク部分を自然な流れで書き直してください。
+
+ジャンル: ${currentScript.genre}
+全体の流れ:
+${context}
+
+ルール:
+- 【再生成】部分のみ返す
+- 前後と自然につながるように
+- 1メッセージ16文字以内
+
+JSON配列のみ返してください:
+[{"sender":"self"または"other","text":"..."}]`
+    );
+    const updated = [...currentScript.messages];
+    [...sel].sort((a,b)=>b-a).forEach(i=>updated.splice(i,1));
+    updated.splice(Math.min(...sel), 0, ...newMsgs);
+    currentScript.messages = updated;
+    currentScript.message_count = updated.length;
+    renderEditList();
+    showGenStatus('✅ 部分再生成完了！内容を確認して保存してください');
+  } catch(e) { showGenStatus('❌ '+e.message, true); }
+  this.disabled = false;
 });
 
-// タブ
-document.querySelectorAll('.tab').forEach(t => {
-  t.addEventListener('click', () => {
-    document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
-    t.classList.add('active');
-    currentFilter.tab = t.dataset.tab;
+// ── GitHub保存 ──
+async function saveToGitHub() {
+  const { githubToken } = getSettings();
+  if (!githubToken) { alert('設定画面でGitHub Tokenを入力してください'); return false; }
+
+  // 採点スコアを収集
+  const scoreEls = document.querySelectorAll('input[data-key]');
+  if (scoreEls.length) {
+    const scores = {total:0};
+    scoreKeys.forEach(sk => {
+      const el = document.querySelector(`input[data-key="${sk.key}"]`);
+      scores[sk.key] = el ? parseInt(el.value) : (currentScript.scores?.[sk.key]||0);
+      scores.total += scores[sk.key];
+    });
+    currentScript.scores = scores;
+  }
+  // ステータス・メモ
+  const st = document.getElementById('status-select-p');
+  const nt = document.getElementById('notes-input-p');
+  if (st) currentScript.video_status = st.value;
+  if (nt) currentScript.notes = nt.value;
+
+  const num = currentScript.id.replace('script_','');
+  const fileName = `script_${num}.json`;
+  const content = btoa(unescape(encodeURIComponent(JSON.stringify(currentScript, null, 2))));
+
+  let sha = '';
+  try {
+    const r = await fetch(`${API_BASE}${fileName}`, {headers:{Authorization:`token ${githubToken}`}});
+    if (r.ok) { const d=await r.json(); sha=d.sha; }
+  } catch(e){}
+
+  const body = {message:`update: ${currentScript.title}`, content, branch:BRANCH};
+  if (sha) body.sha = sha;
+
+  const res = await fetch(`${API_BASE}${fileName}`, {
+    method:'PUT',
+    headers:{Authorization:`token ${githubToken}`,'Content-Type':'application/json'},
+    body: JSON.stringify(body)
+  });
+  if (res.ok) {
+    const idx = scripts.findIndex(s=>s.id===currentScript.id);
+    if (idx>=0) scripts[idx] = JSON.parse(JSON.stringify(currentScript));
     renderList();
+    return true;
+  }
+  return false;
+}
+
+['save-btn-p','save-btn-e','save-btn-s'].forEach(id => {
+  document.getElementById(id).addEventListener('click', async function(){
+    this.textContent='保存中...'; this.classList.add('saving');
+    const ok = await saveToGitHub();
+    alert(ok ? '✅ GitHubに保存しました' : '❌ 保存に失敗しました');
+    this.textContent='GitHubに保存'; this.classList.remove('saving');
   });
 });
 
-// ジャンルフィルター
-document.querySelectorAll('.filter-btn').forEach(b => {
-  b.addEventListener('click', () => {
-    document.querySelectorAll('.filter-btn').forEach(x => x.classList.remove('active'));
-    b.classList.add('active');
-    currentFilter.genre = b.dataset.genre;
-    renderList();
-  });
+// ── イベント ──
+document.querySelectorAll('.modal-tab').forEach(t => t.addEventListener('click', ()=>switchModalTab(t.dataset.mtab)));
+document.getElementById('close-modal').addEventListener('click', ()=>document.getElementById('modal-overlay').classList.remove('open'));
+document.getElementById('modal-overlay').addEventListener('click', e=>{ if(e.target===document.getElementById('modal-overlay')) document.getElementById('modal-overlay').classList.remove('open'); });
+document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', ()=>{ document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active')); t.classList.add('active'); currentTab=t.dataset.tab; renderList(); }));
+document.querySelectorAll('.filter-btn').forEach(b => b.addEventListener('click', ()=>{ document.querySelectorAll('.filter-btn').forEach(x=>x.classList.remove('active')); b.classList.add('active'); currentGenre=b.dataset.genre; renderList(); }));
+
+document.getElementById('settings-btn').addEventListener('click', ()=>{
+  const s = getSettings();
+  document.getElementById('anthropic-key-input').value = s.anthropicKey;
+  document.getElementById('github-token-input').value  = s.githubToken;
+  document.getElementById('settings-modal').classList.add('open');
 });
+document.getElementById('settings-save-btn').addEventListener('click', ()=>{
+  localStorage.setItem('anthropic_key', document.getElementById('anthropic-key-input').value);
+  localStorage.setItem('github_token',  document.getElementById('github-token-input').value);
+  document.getElementById('settings-modal').classList.remove('open');
+  alert('✅ 設定を保存しました');
+});
+document.getElementById('settings-close-btn').addEventListener('click', ()=>document.getElementById('settings-modal').classList.remove('open'));
 
 loadScripts();
 </script>
