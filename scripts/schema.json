@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Inside Edge LINE台本データ形式",
+  "example": {
+    "id": "script_001",
+    "created_at": "2026-05-25",
+    "title": "【LINE】既読無視の犯人、まさかの理由w #笑える話 #LINEドラマ #Shorts",
+    "genre": "笑い系",
+    "category": "笑い_天然",
+    "setup": "幼なじみに大事なLINEを3日既読スルーされた",
+    "messages": [
+      { "type": "telop", "text": "幼なじみ・付き合い10年・連絡マメな性格" },
+      { "sender": "self", "text": "ねえ3日も既読スルーはさすがに" },
+      { "sender": "other", "text": "ごめんスマホ川に落とした" }
+    ],
+    "message_count": 42,
+    "char_count": 385,
+    "video_status": "pending",
+    "scores": {
+      "total": 0,
+      "title": 0,
+      "opening": 0,
+      "info_density": 0,
+      "twist": 0,
+      "ending": 0,
+      "genre_bonus": 0
+    },
+    "notes": ""
+  },
+  "genres": ["スカッと系", "感動系", "笑い系", "問いかけ系"],
+  "video_status_values": ["pending", "approved", "done"],
+  "scoring": {
+    "title":       { "max": 20, "desc": "結末を隠してる・引きがある" },
+    "opening":     { "max": 15, "desc": "冒頭telop：状況即把握・数字/固有名詞あり" },
+    "info_density":{ "max": 15, "desc": "情報密度：文字数・内容の濃さ（目安350字〜）" },
+    "twist":       { "max": 20, "desc": "中盤の予想外転換がある" },
+    "ending":      { "max": 15, "desc": "オチ：1行完結・インパクト" },
+    "genre_bonus": {
+      "max": 15,
+      "desc": "ジャンル加点",
+      "rules": {
+        "スカッと系": "溜め→爽快感の落差が大きい",
+        "感動系":     "感情の動き・共感ポイントがある",
+        "笑い系":     "キャラのズレ・パターン確立→破壊がある",
+        "問いかけ系": "コメントを誘う問いの強さ"
+      }
+    }
+  }
+}

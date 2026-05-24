@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inside Edge 台本管理</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f0f2f5; color: #333; }
+
+  /* ヘッダー */
+  header { background: #06C755; color: white; padding: 14px 16px; position: sticky; top: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; }
+  header h1 { font-size: 17px; font-weight: bold; }
+  header .badge { background: rgba(255,255,255,0.25); border-radius: 12px; padding: 3px 10px; font-size: 13px; }
+
+  /* タブ */
+  .tabs { display: flex; background: white; border-bottom: 1px solid #ddd; position: sticky; top: 49px; z-index: 99; }
+  .tab { flex: 1; text-align: center; padding: 12px 0; font-size: 14px; cursor: pointer; color: #888; border-bottom: 2px solid transparent; transition: .2s; }
+  .tab.active { color: #06C755; border-bottom-color: #06C755; font-weight: bold; }
+
+  /* フィルター */
+  .filter-bar { padding: 10px 12px; background: white; display: flex; gap: 8px; flex-wrap: wrap; border-bottom: 1px solid #eee; }
+  .filter-btn { padding: 5px 12px; border-radius: 20px; border: 1px solid #ddd; background: white; font-size: 13px; cursor: pointer; transition: .2s; }
+  .filter-btn.active { background: #06C755; color: white; border-color: #06C755; }
+
+  /* 台本カード */
+  .scripts-list { padding: 10px; display: flex; flex-direction: column; gap: 10px; }
+  .script-card { background: white; border-radius: 12px; padding: 14px; box-shadow: 0 1px 4px rgba(0,0,0,.08); cursor: pointer; transition: .15s; }
+  .script-card:hover { box-shadow: 0 3px 10px rgba(0,0,0,.12); }
+  .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+  .card-title { font-size: 15px; font-weight: bold; line-height: 1.4; flex: 1; }
+  .score-circle { width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: bold; color: white; flex-shrink: 0; }
+  .card-meta { margin-top: 8px; display: flex; gap: 8px; flex-wrap: wrap; }
+  .tag { font-size: 12px; padding: 3px 8px; border-radius: 10px; background: #f0f0f0; color: #555; }
+  .tag.genre-スカッと系 { background: #ffe0e0; color: #c00; }
+  .tag.genre-感動系 { background: #e0ecff; color: #0055cc; }
+  .tag.genre-笑い系 { background: #fff3cd; color: #a07000; }
+  .tag.genre-問いかけ系 { background: #e8f5e9; color: #2e7d32; }
+  .status-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; margin-right: 4px; }
+  .status-pending { background: #aaa; }
+  .status-approved { background: #06C755; }
+  .status-done { background: #2196F3; }
+
+  /* 詳細モーダル */
+  .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.5); z-index: 200; overflow-y: auto; }
+  .modal-overlay.open { display: block; }
+  .modal { background: white; max-width: 640px; margin: 20px auto; border-radius: 16px; overflow: hidden; }
+  .modal-header { background: #06C755; color: white; padding: 14px 16px; display: flex; justify-content: space-between; align-items: center; }
+  .modal-header h2 { font-size: 15px; line-height: 1.4; flex: 1; margin-right: 10px; }
+  .close-btn { background: none; border: none; color: white; font-size: 22px; cursor: pointer; line-height: 1; }
+  .modal-body { padding: 16px; }
+
+  /* LINEプレビュー */
+  .line-preview { background: #B0CFE0; border-radius: 10px; padding: 10px; max-height: 340px; overflow-y: auto; display: flex; flex-direction: column; gap: 6px; }
+  .msg-telop { text-align: center; background: rgba(0,0,0,.25); color: white; font-size: 12px; border-radius: 6px; padding: 4px 10px; margin: 2px auto; max-width: 90%; }
+  .msg-row { display: flex; align-items: flex-end; gap: 6px; }
+  .msg-row.self { justify-content: flex-end; }
+  .bubble { max-width: 70%; padding: 8px 11px; border-radius: 14px; font-size: 14px; line-height: 1.5; word-break: break-all; }
+  .bubble.self { background: #95EC69; border-bottom-right-radius: 4px; }
+  .bubble.other { background: white; border-bottom-left-radius: 4px; }
+
+  /* 採点フォーム */
+  .score-section { margin-top: 16px; }
+  .score-section h3 { font-size: 14px; font-weight: bold; color: #555; margin-bottom: 10px; border-bottom: 1px solid #eee; padding-bottom: 6px; }
+  .score-item { margin-bottom: 12px; }
+  .score-label { display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 4px; }
+  .score-label span:last-child { color: #06C755; font-weight: bold; }
+  input[type=range] { width: 100%; accent-color: #06C755; }
+  .score-total { text-align: center; margin-top: 14px; font-size: 28px; font-weight: bold; color: #06C755; }
+  .score-total small { font-size: 14px; color: #888; }
+
+  /* 編集エリア */
+  .edit-section { margin-top: 16px; }
+  .edit-section h3 { font-size: 14px; font-weight: bold; color: #555; margin-bottom: 10px; border-bottom: 1px solid #eee; padding-bottom: 6px; }
+  textarea { width: 100%; border: 1px solid #ddd; border-radius: 8px; padding: 10px; font-size: 14px; resize: vertical; min-height: 120px; font-family: inherit; }
+  .save-btn { background: #06C755; color: white; border: none; border-radius: 8px; padding: 11px 0; width: 100%; font-size: 15px; cursor: pointer; margin-top: 10px; font-weight: bold; }
+  .save-btn:hover { background: #05b34b; }
+
+  /* ノート */
+  .notes-input { width: 100%; border: 1px solid #ddd; border-radius: 8px; padding: 8px; font-size: 13px; font-family: inherit; margin-top: 6px; }
+
+  /* 空状態 */
+  .empty { text-align: center; padding: 60px 20px; color: #aaa; }
+  .empty p { margin-top: 8px; font-size: 14px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>📱 Inside Edge 台本管理</h1>
+  <span class="badge" id="total-badge">0本</span>
+</header>
+
+<div class="tabs">
+  <div class="tab active" data-tab="list">一覧</div>
+  <div class="tab" data-tab="pending">未採点</div>
+  <div class="tab" data-tab="approved">承認済</div>
+  <div class="tab" data-tab="done">動画化済</div>
+</div>
+
+<div class="filter-bar" id="filter-bar">
+  <button class="filter-btn active" data-genre="all">全て</button>
+  <button class="filter-btn" data-genre="スカッと系">スカッと</button>
+  <button class="filter-btn" data-genre="感動系">感動</button>
+  <button class="filter-btn" data-genre="笑い系">笑い</button>
+  <button class="filter-btn" data-genre="問いかけ系">問いかけ</button>
+</div>
+
+<div class="scripts-list" id="scripts-list"></div>
+
+<!-- 詳細モーダル -->
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal">
+    <div class="modal-header">
+      <h2 id="modal-title"></h2>
+      <button class="close-btn" id="close-modal">×</button>
+    </div>
+    <div class="modal-body">
+      <!-- LINEプレビュー -->
+      <div class="line-preview" id="line-preview"></div>
+
+      <!-- 採点 -->
+      <div class="score-section">
+        <h3>🎯 採点</h3>
+        <div id="score-items"></div>
+        <div class="score-total"><span id="score-total-val">0</span><small>/100点</small></div>
+      </div>
+
+      <!-- メモ -->
+      <div class="edit-section">
+        <h3>📝 メモ</h3>
+        <textarea class="notes-input" id="notes-input" placeholder="気になった点・修正案など"></textarea>
+      </div>
+
+      <!-- ステータス変更 -->
+      <div class="edit-section">
+        <h3>📌 ステータス</h3>
+        <select id="status-select" style="width:100%;padding:9px;border:1px solid #ddd;border-radius:8px;font-size:14px;">
+          <option value="pending">⬜ 未採点</option>
+          <option value="approved">✅ 承認済</option>
+          <option value="done">🎬 動画化済</option>
+        </select>
+      </div>
+
+      <button class="save-btn" id="save-btn">保存する</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const REPO = 'insideedgeworking-cyber/inside-edge-scripts';
+const BRANCH = 'main';
+const API = `https://api.github.com/repos/${REPO}/contents/scripts/`;
+
+let scripts = [];
+let currentScript = null;
+let currentFilter = { tab: 'list', genre: 'all' };
+
+const scoreKeys = [
+  { key: 'title',        label: 'タイトル',     max: 20 },
+  { key: 'opening',      label: '冒頭telop',    max: 15 },
+  { key: 'info_density', label: '情報密度',     max: 15 },
+  { key: 'twist',        label: '中盤の転換',   max: 20 },
+  { key: 'ending',       label: 'オチ',         max: 15 },
+  { key: 'genre_bonus',  label: 'ジャンル加点', max: 15 },
+];
+
+// スコアに応じた色
+function scoreColor(score) {
+  if (score >= 80) return '#06C755';
+  if (score >= 60) return '#FFA000';
+  if (score >= 40) return '#FF7043';
+  return '#9E9E9E';
+}
+
+// GitHubからJSONファイル一覧を取得
+async function loadScripts() {
+  try {
+    const res = await fetch(`${API}?ref=${BRANCH}&t=${Date.now()}`);
+    const files = await res.json();
+    const jsonFiles = files.filter(f => f.name.endsWith('.json') && f.name !== 'schema.json' && f.name !== 'placeholder.json');
+    const loaded = await Promise.all(jsonFiles.map(async f => {
+      const r = await fetch(f.download_url + '?t=' + Date.now());
+      return await r.json();
+    }));
+    scripts = loaded.sort((a, b) => b.created_at.localeCompare(a.created_at));
+    document.getElementById('total-badge').textContent = `${scripts.length}本`;
+    renderList();
+  } catch(e) {
+    document.getElementById('scripts-list').innerHTML = '<div class="empty"><div>⚠️</div><p>読み込みエラー</p></div>';
+  }
+}
+
+function renderList() {
+  const container = document.getElementById('scripts-list');
+  let filtered = scripts;
+
+  if (currentFilter.tab === 'pending')  filtered = filtered.filter(s => s.video_status === 'pending');
+  if (currentFilter.tab === 'approved') filtered = filtered.filter(s => s.video_status === 'approved');
+  if (currentFilter.tab === 'done')     filtered = filtered.filter(s => s.video_status === 'done');
+  if (currentFilter.genre !== 'all')    filtered = filtered.filter(s => s.genre === currentFilter.genre);
+
+  if (filtered.length === 0) {
+    container.innerHTML = '<div class="empty"><div>📭</div><p>台本がありません</p></div>';
+    return;
+  }
+
+  container.innerHTML = filtered.map(s => {
+    const total = s.scores ? s.scores.total || 0 : 0;
+    const color = scoreColor(total);
+    const statusClass = `status-${s.video_status || 'pending'}`;
+    const statusLabel = { pending: '未採点', approved: '承認済', done: '動画化済' }[s.video_status] || '未採点';
+    return `
+    <div class="script-card" onclick="openModal('${s.id}')">
+      <div class="card-top">
+        <div class="card-title">${s.title}</div>
+        <div class="score-circle" style="background:${color}">${total}</div>
+      </div>
+      <div class="card-meta">
+        <span class="tag genre-${s.genre}">${s.genre}</span>
+        <span class="tag"><span class="status-dot ${statusClass}"></span>${statusLabel}</span>
+        <span class="tag">💬 ${s.message_count || 0}件</span>
+        <span class="tag">📅 ${s.created_at}</span>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function openModal(id) {
+  currentScript = scripts.find(s => s.id === id);
+  if (!currentScript) return;
+
+  document.getElementById('modal-title').textContent = currentScript.title;
+  document.getElementById('status-select').value = currentScript.video_status || 'pending';
+  document.getElementById('notes-input').value = currentScript.notes || '';
+
+  // LINEプレビュー
+  const preview = document.getElementById('line-preview');
+  preview.innerHTML = (currentScript.messages || []).map(m => {
+    if (m.type === 'telop') return `<div class="msg-telop">${m.text}</div>`;
+    const side = m.sender === 'self' ? 'self' : 'other';
+    return `<div class="msg-row ${side}"><div class="bubble ${side}">${m.text}</div></div>`;
+  }).join('');
+
+  // 採点スライダー
+  const scoreItems = document.getElementById('score-items');
+  scoreItems.innerHTML = scoreKeys.map(sk => {
+    const val = currentScript.scores ? (currentScript.scores[sk.key] || 0) : 0;
+    return `
+    <div class="score-item">
+      <div class="score-label"><span>${sk.label}（0〜${sk.max}）</span><span id="lbl-${sk.key}">${val}</span></div>
+      <input type="range" min="0" max="${sk.max}" value="${val}" data-key="${sk.key}" oninput="updateScore(this)">
+    </div>`;
+  }).join('');
+
+  updateTotalScore();
+  document.getElementById('modal-overlay').classList.add('open');
+}
+
+function updateScore(el) {
+  const key = el.dataset.key;
+  document.getElementById(`lbl-${key}`).textContent = el.value;
+  updateTotalScore();
+}
+
+function updateTotalScore() {
+  const total = scoreKeys.reduce((sum, sk) => {
+    const el = document.querySelector(`input[data-key="${sk.key}"]`);
+    return sum + (el ? parseInt(el.value) : 0);
+  }, 0);
+  document.getElementById('score-total-val').textContent = total;
+}
+
+document.getElementById('save-btn').addEventListener('click', () => {
+  if (!currentScript) return;
+  const scores = { total: 0 };
+  scoreKeys.forEach(sk => {
+    const el = document.querySelector(`input[data-key="${sk.key}"]`);
+    scores[sk.key] = el ? parseInt(el.value) : 0;
+    scores.total += scores[sk.key];
+  });
+  currentScript.scores = scores;
+  currentScript.video_status = document.getElementById('status-select').value;
+  currentScript.notes = document.getElementById('notes-input').value;
+
+  // ローカル反映
+  const idx = scripts.findIndex(s => s.id === currentScript.id);
+  if (idx >= 0) scripts[idx] = currentScript;
+  renderList();
+  document.getElementById('modal-overlay').classList.remove('open');
+  alert(`保存しました（スコア: ${scores.total}点）\n※GitHubへの反映はgenerate.pyから行ってください`);
+});
+
+document.getElementById('close-modal').addEventListener('click', () => {
+  document.getElementById('modal-overlay').classList.remove('open');
+});
+document.getElementById('modal-overlay').addEventListener('click', e => {
+  if (e.target === document.getElementById('modal-overlay'))
+    document.getElementById('modal-overlay').classList.remove('open');
+});
+
+// タブ
+document.querySelectorAll('.tab').forEach(t => {
+  t.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+    t.classList.add('active');
+    currentFilter.tab = t.dataset.tab;
+    renderList();
+  });
+});
+
+// ジャンルフィルター
+document.querySelectorAll('.filter-btn').forEach(b => {
+  b.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    currentFilter.genre = b.dataset.genre;
+    renderList();
+  });
+});
+
+loadScripts();
+</script>
+</body>
+</html>
