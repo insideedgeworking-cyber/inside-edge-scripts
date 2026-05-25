@@ -6,51 +6,174 @@
   "category": "笑い_上司部下",
   "setup": "新人に「上司は毎朝コーヒー2杯飲まないと名前が覚えられない」という嘘を吹き込んだ",
   "messages": [
-    { "type": "telop", "text": "新人・入社2ヶ月・素直すぎる" },
-    { "sender": "other", "text": "お前新人に何言うたんや" },
-    { "sender": "self", "text": "褒めてましたけど" },
-    { "sender": "other", "text": "今日の朝会の前に" },
-    { "sender": "other", "text": "俺の席にコーヒー2杯置かれた" },
-    { "sender": "other", "text": "そのまま横に立ってた" },
-    { "sender": "other", "text": "何がしたいんかわからん" },
-    { "sender": "self", "text": "コーヒー2杯飲まないと" },
-    { "sender": "self", "text": "名前覚えられないと教えました" },
-    { "sender": "other", "text": "だから2杯置いてたんか！！" },
-    { "sender": "other", "text": "名前は最初から覚えてるわ！" },
-    { "sender": "self", "text": "それ新人は知らないので" },
-    { "sender": "other", "text": "お前が言うたんやろ！" },
-    { "sender": "self", "text": "確かに言いました" },
-    { "sender": "other", "text": "今認めた！" },
-    { "sender": "other", "text": "なんでそんな嘘ついた" },
-    { "sender": "self", "text": "コーヒーお好きかなと" },
-    { "sender": "other", "text": "好みで嘘つくな！" },
-    { "sender": "other", "text": "昼にもコーヒー来た" },
-    { "sender": "self", "text": "まだ覚えてもらえてないんですね" },
-    { "sender": "other", "text": "覚えてるわ！" },
-    { "sender": "other", "text": "何杯で終わるんや" },
-    { "sender": "self", "text": "本人に聞いてみては" },
-    { "sender": "other", "text": "聞いたら増えた" },
-    { "sender": "self", "text": "何杯になりましたか" },
-    { "sender": "other", "text": "明日から5杯や" },
-    { "sender": "self", "text": "出世しましたね" },
-    { "sender": "other", "text": "コーヒーで出世するか！" },
-    { "sender": "other", "text": "一回止めてもらえ" },
-    { "sender": "self", "text": "断れる空気じゃないので" },
-    { "sender": "other", "text": "空気で仕事するな！" },
-    { "type": "telop", "text": "翌週・デスクに3万のコーヒーメーカー" },
-    { "sender": "other", "text": "プレゼントされた" },
-    { "sender": "self", "text": "高そう" },
-    { "sender": "other", "text": "3万のやつやぞ" },
-    { "sender": "self", "text": "出世しましたね" },
-    { "sender": "other", "text": "また言うた！" },
-    { "sender": "other", "text": "責任取れ" },
-    { "sender": "self", "text": "毎朝コーヒー持ちます" },
-    { "sender": "other", "text": "俺の分だけにしとけ" },
-    { "type": "telop", "text": "今も毎朝コーヒーを持参している" }
+    {
+      "type": "telop",
+      "text": "新人・入社2ヶ月・素直すぎる"
+    },
+    {
+      "sender": "other",
+      "text": "お前新人に何言うたんや"
+    },
+    {
+      "sender": "self",
+      "text": "褒めてましたけど"
+    },
+    {
+      "sender": "other",
+      "text": "今日の朝会の前に"
+    },
+    {
+      "sender": "other",
+      "text": "俺の席にコーヒー2杯置かれた"
+    },
+    {
+      "sender": "other",
+      "text": "そのまま横に立ってた"
+    },
+    {
+      "sender": "other",
+      "text": "何がしたいんかわからん"
+    },
+    {
+      "sender": "self",
+      "text": "コーヒー2杯飲まないと"
+    },
+    {
+      "sender": "self",
+      "text": "名前覚えられないと教えました"
+    },
+    {
+      "sender": "other",
+      "text": "だから2杯置いてたんか！！"
+    },
+    {
+      "sender": "other",
+      "text": "名前は最初から覚えてるわ！"
+    },
+    {
+      "sender": "self",
+      "text": "それ新人は知らないので"
+    },
+    {
+      "sender": "other",
+      "text": "お前が言うたんやろ！"
+    },
+    {
+      "sender": "self",
+      "text": "確かに言いました"
+    },
+    {
+      "sender": "other",
+      "text": "今認めた！"
+    },
+    {
+      "sender": "other",
+      "text": "なんでそんな嘘ついた"
+    },
+    {
+      "sender": "self",
+      "text": "コーヒーお好きかなと"
+    },
+    {
+      "sender": "other",
+      "text": "好みで嘘つくな！"
+    },
+    {
+      "sender": "other",
+      "text": "昼にもコーヒー来た"
+    },
+    {
+      "sender": "self",
+      "text": "まだ覚えてもらえてないんですね"
+    },
+    {
+      "sender": "other",
+      "text": "覚えてるわ！"
+    },
+    {
+      "sender": "other",
+      "text": "何杯で終わるんや"
+    },
+    {
+      "sender": "self",
+      "text": "本人に聞いてみては"
+    },
+    {
+      "sender": "other",
+      "text": "聞いたら増えた"
+    },
+    {
+      "sender": "self",
+      "text": "何杯になりましたか"
+    },
+    {
+      "sender": "other",
+      "text": "明日から5杯や"
+    },
+    {
+      "sender": "self",
+      "text": "出世しましたね"
+    },
+    {
+      "sender": "other",
+      "text": "コーヒーで出世するか！"
+    },
+    {
+      "sender": "other",
+      "text": "一回止めてもらえ"
+    },
+    {
+      "sender": "self",
+      "text": "断れる空気じゃないので"
+    },
+    {
+      "sender": "other",
+      "text": "空気で仕事するな！"
+    },
+    {
+      "type": "telop",
+      "text": "翌週・デスクに3万のコーヒーメーカー"
+    },
+    {
+      "sender": "other",
+      "text": "プレゼントされた"
+    },
+    {
+      "sender": "self",
+      "text": "高そう"
+    },
+    {
+      "sender": "other",
+      "text": "3万のやつやぞ"
+    },
+    {
+      "sender": "self",
+      "text": "出世しましたね"
+    },
+    {
+      "sender": "other",
+      "text": "また言うた！"
+    },
+    {
+      "sender": "other",
+      "text": "責任取れ"
+    },
+    {
+      "sender": "self",
+      "text": "毎朝コーヒー持ちます"
+    },
+    {
+      "sender": "other",
+      "text": "俺の分だけにしとけ"
+    },
+    {
+      "type": "telop",
+      "text": "今も毎朝コーヒーを持参している"
+    }
   ],
   "message_count": 41,
   "char_count": 381,
-  "video_status": "pending",
+  "video_status": "approved",
   "scores": {
     "total": 88,
     "title": 16,
