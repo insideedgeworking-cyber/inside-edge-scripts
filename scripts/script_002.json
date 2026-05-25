@@ -6,52 +6,178 @@
   "category": "笑い_上司部下",
   "setup": "新人に「上司は怒ると花壇に水やりしに行く習慣がある」という嘘を吹き込んだ",
   "messages": [
-    { "type": "telop", "text": "新人・入社3ヶ月・信じやすい" },
-    { "sender": "other", "text": "お前新人に何言うたんや" },
-    { "sender": "self", "text": "え何かしました？" },
-    { "sender": "other", "text": "さっき俺が怒鳴った後に" },
-    { "sender": "other", "text": "新人が外に飛び出した" },
-    { "sender": "other", "text": "花壇の前でじっと立ってた" },
-    { "sender": "other", "text": "意味がわからんかった" },
-    { "sender": "self", "text": "上司は怒ると花壇に行くと" },
-    { "sender": "self", "text": "水やりするって教えました" },
-    { "sender": "other", "text": "だから待っとったんか！！" },
-    { "sender": "other", "text": "30分も立っとったんやぞ" },
-    { "sender": "self", "text": "熱心ですね" },
-    { "sender": "other", "text": "熱心ちゃう！" },
-    { "sender": "other", "text": "なんでそんな嘘ついた" },
-    { "sender": "self", "text": "上司が怖いって言うので" },
-    { "sender": "self", "text": "お花を見せてあげようかと" },
-    { "sender": "other", "text": "逆効果やろが！" },
-    { "sender": "other", "text": "来なくていいって言うたら" },
-    { "sender": "self", "text": "どうでしたか" },
-    { "sender": "other", "text": "泣きそうになってた" },
-    { "sender": "self", "text": "見たかったです" },
-    { "sender": "other", "text": "お前のせいやろ！" },
-    { "sender": "other", "text": "自分でジョウロ買ってきた" },
-    { "sender": "self", "text": "行動力ありますね" },
-    { "sender": "other", "text": "誉めてる場合か！" },
-    { "sender": "other", "text": "今もずっと持ち歩いてる" },
-    { "sender": "other", "text": "何時間持ち歩いてるんや" },
-    { "sender": "self", "text": "愛着湧きましたかね" },
-    { "sender": "other", "text": "湧いてるわ！" },
-    { "sender": "self", "text": "仲良くなれてよかった" },
-    { "sender": "other", "text": "仲良くならせたんはお前やろ！" },
-    { "type": "telop", "text": "翌日・新人のデスクにジョウロ" },
-    { "sender": "other", "text": "どうするんやこれ" },
-    { "sender": "self", "text": "記念に飾っとけば" },
-    { "sender": "other", "text": "総務から花壇担当の辞令来た" },
-    { "sender": "self", "text": "出世やないですか" },
-    { "sender": "other", "text": "こっちが倒れそうや" },
-    { "sender": "self", "text": "才能が開花しましたね" },
-    { "sender": "other", "text": "誰のせいやと思てる" },
-    { "sender": "self", "text": "花が咲いたら送ります" },
-    { "sender": "other", "text": "もう連絡してくるな" },
-    { "type": "telop", "text": "翌週・花壇の写真が届いた" }
+    {
+      "type": "telop",
+      "text": "新人・入社3ヶ月・信じやすい"
+    },
+    {
+      "sender": "other",
+      "text": "お前新人に何言うたんや"
+    },
+    {
+      "sender": "self",
+      "text": "え何かしました？"
+    },
+    {
+      "sender": "other",
+      "text": "さっき俺が怒鳴った後に"
+    },
+    {
+      "sender": "other",
+      "text": "新人が外に飛び出した"
+    },
+    {
+      "sender": "other",
+      "text": "花壇の前でじっと立ってた"
+    },
+    {
+      "sender": "other",
+      "text": "意味がわからんかった"
+    },
+    {
+      "sender": "self",
+      "text": "上司は怒ると花壇に行くと"
+    },
+    {
+      "sender": "self",
+      "text": "水やりするって教えました"
+    },
+    {
+      "sender": "other",
+      "text": "だから待っとったんか！！"
+    },
+    {
+      "sender": "other",
+      "text": "30分も立っとったんやぞ"
+    },
+    {
+      "sender": "self",
+      "text": "熱心ですね"
+    },
+    {
+      "sender": "other",
+      "text": "熱心ちゃう！"
+    },
+    {
+      "sender": "other",
+      "text": "なんでそんな嘘ついた"
+    },
+    {
+      "sender": "self",
+      "text": "上司が怖いって言うので"
+    },
+    {
+      "sender": "self",
+      "text": "お花を見せてあげようかと"
+    },
+    {
+      "sender": "other",
+      "text": "逆効果やろが！"
+    },
+    {
+      "sender": "other",
+      "text": "来なくていいって言うたら"
+    },
+    {
+      "sender": "self",
+      "text": "どうでしたか"
+    },
+    {
+      "sender": "other",
+      "text": "泣きそうになってた"
+    },
+    {
+      "sender": "self",
+      "text": "見たかったです"
+    },
+    {
+      "sender": "other",
+      "text": "お前のせいやろ！"
+    },
+    {
+      "sender": "other",
+      "text": "自分でジョウロ買ってきた"
+    },
+    {
+      "sender": "self",
+      "text": "行動力ありますね"
+    },
+    {
+      "sender": "other",
+      "text": "誉めてる場合か！"
+    },
+    {
+      "sender": "other",
+      "text": "今もずっと持ち歩いてる"
+    },
+    {
+      "sender": "other",
+      "text": "何時間持ち歩いてるんや"
+    },
+    {
+      "sender": "self",
+      "text": "愛着湧きましたかね"
+    },
+    {
+      "sender": "other",
+      "text": "湧いてるわ！"
+    },
+    {
+      "sender": "self",
+      "text": "仲良くなれてよかった"
+    },
+    {
+      "sender": "other",
+      "text": "仲良くならせたんはお前やろ！"
+    },
+    {
+      "type": "telop",
+      "text": "翌日・新人のデスクにジョウロ"
+    },
+    {
+      "sender": "other",
+      "text": "どうするんやこれ"
+    },
+    {
+      "sender": "self",
+      "text": "記念に飾っとけば"
+    },
+    {
+      "sender": "other",
+      "text": "総務から花壇担当の辞令来た"
+    },
+    {
+      "sender": "self",
+      "text": "出世やないですか"
+    },
+    {
+      "sender": "other",
+      "text": "こっちが倒れそうや"
+    },
+    {
+      "sender": "self",
+      "text": "才能が開花しましたね"
+    },
+    {
+      "sender": "other",
+      "text": "誰のせいやと思てる"
+    },
+    {
+      "sender": "self",
+      "text": "花が咲いたら送ります"
+    },
+    {
+      "sender": "other",
+      "text": "もう連絡してくるな"
+    },
+    {
+      "type": "telop",
+      "text": "翌週・花壇の写真が届いた"
+    }
   ],
   "message_count": 42,
   "char_count": 384,
-  "video_status": "pending",
+  "video_status": "approved",
   "scores": {
     "total": 84,
     "title": 16,
