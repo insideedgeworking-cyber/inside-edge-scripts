@@ -29,6 +29,11 @@ header h1 { font-size: 17px; font-weight: bold; }
 .drag-handle { color: #bbb; font-size: 18px; cursor: grab; padding: 0 6px 0 0; flex-shrink: 0; user-select: none; }
 .drag-handle:active { cursor: grabbing; }
 .order-badge { background: #06C755; color: white; border-radius: 10px; padding: 1px 7px; font-size: 12px; font-weight: bold; margin-right: 4px; }
+.card-rank-1 { border: 2px solid #FFD700; box-shadow: 0 2px 10px rgba(255,215,0,.4); }
+.card-rank-2 { border: 2px solid #C0C0C0; box-shadow: 0 2px 8px rgba(192,192,192,.4); }
+.card-rank-3 { border: 2px solid #CD7F32; box-shadow: 0 2px 8px rgba(205,127,50,.4); }
+.rank-label { font-size: 16px; margin-right: 4px; }
+.tab-count { background: #e8f5e9; color: #06C755; border-radius: 10px; padding: 1px 6px; font-size: 11px; font-weight: bold; margin-left: 4px; }
 .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
 .card-title { font-size: 15px; font-weight: bold; line-height: 1.4; flex: 1; }
 .score-circle { width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: bold; color: white; flex-shrink: 0; }
@@ -135,7 +140,7 @@ label { font-size: 13px; color: #666; display: block; margin-bottom: 5px; }
 <div class="tabs">
   <div class="tab active" data-tab="list">全て</div>
   <div class="tab" data-tab="pending">未採点</div>
-  <div class="tab" data-tab="approved">承認済</div>
+  <div class="tab" data-tab="approved">承認済<span class="tab-count" id="approved-count"></span></div>
   <div class="tab" data-tab="done">動画化済</div>
 </div>
 
@@ -306,19 +311,29 @@ function renderList() {
   else list.sort((a,b)=>b.created_at.localeCompare(a.created_at));
 
   if (!list.length){ c.innerHTML='<div class="empty">📭 台本がありません</div>'; return; }
+  // 承認済みバッジ更新
+  const approvedAll = scripts.filter(s=>s.video_status==='approved');
+  const countEl = document.getElementById('approved-count');
+  if (countEl) countEl.textContent = approvedAll.length ? approvedAll.length : '';
+
   const statusLabel = {pending:'未採点',approved:'承認済',done:'動画化済'};
   const isApproved = currentTab==='approved';
+  const rankEmoji = ['🥇','🥈','🥉'];
+  const rankClass = ['card-rank-1','card-rank-2','card-rank-3'];
   c.innerHTML = list.map((s, idx) => {
     const total = s.scores?.total||0;
+    const isTop3 = isApproved && idx < 3;
+    const rankE   = isTop3 ? `<span class="rank-label">${rankEmoji[idx]}</span>` : '';
     const orderNum = isApproved ? `<span class="order-badge">${idx+1}</span>` : '';
     const handle   = isApproved ? `<span class="drag-handle" title="ドラッグして並び替え">☰</span>` : '';
-    return `<div class="script-card" id="card-${s.id}" draggable="${isApproved}" data-id="${s.id}"
+    const extraClass = isTop3 ? rankClass[idx] : '';
+    return `<div class="script-card ${extraClass}" id="card-${s.id}" draggable="${isApproved}" data-id="${s.id}"
       ondragstart="onDragStart(event)" ondragover="onDragOver(event)" ondrop="onDrop(event)" ondragend="onDragEnd(event)"
       onclick="handleCardClick(event,'${s.id}')">
       <div class="card-top">
         <div style="display:flex;align-items:center;flex:1;min-width:0;">
           ${handle}
-          <div class="card-title">${orderNum}${s.title}</div>
+          <div class="card-title">${rankE}${orderNum}${s.title}</div>
         </div>
         <div class="score-circle" style="background:${scoreColor(total)}">${total}</div>
       </div>
