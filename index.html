@@ -28,6 +28,16 @@ header h1 { font-size: 17px; font-weight: bold; }
 .script-card.drag-over { border: 2px dashed #06C755; }
 .drag-handle { color: #bbb; font-size: 18px; cursor: grab; padding: 0 6px 0 0; flex-shrink: 0; user-select: none; }
 .drag-handle:active { cursor: grabbing; }
+.move-btns { display: flex; flex-direction: column; gap: 2px; flex-shrink: 0; margin-right: 6px; }
+.move-btn { background: #f0f0f0; border: none; border-radius: 5px; width: 26px; height: 22px; font-size: 12px; cursor: pointer; color: #555; line-height: 1; }
+.move-btn:active { background: #06C755; color: white; }
+/* PCはドラッグ・スマホは↑↓ボタン */
+@media (hover: hover) and (pointer: fine) {
+  .move-btns { display: none; }
+}
+@media (hover: none), (pointer: coarse) {
+  .drag-handle { display: none; }
+}
 .order-badge { background: #06C755; color: white; border-radius: 10px; padding: 1px 7px; font-size: 12px; font-weight: bold; margin-right: 4px; }
 .card-rank-1 { border: 2px solid #FFD700; box-shadow: 0 2px 10px rgba(255,215,0,.4); }
 .card-rank-2 { border: 2px solid #C0C0C0; box-shadow: 0 2px 8px rgba(192,192,192,.4); }
@@ -326,13 +336,17 @@ function renderList() {
     const rankE   = isTop3 ? `<span class="rank-label">${rankEmoji[idx]}</span>` : '';
     const orderNum = isApproved ? `<span class="order-badge">${idx+1}</span>` : '';
     const handle   = isApproved ? `<span class="drag-handle" title="ドラッグして並び替え">☰</span>` : '';
+    const moveBtns = isApproved ? `<div class="move-btns">
+      <button class="move-btn" onclick="moveCard('${s.id}',-1,event)">▲</button>
+      <button class="move-btn" onclick="moveCard('${s.id}',1,event)">▼</button>
+    </div>` : '';
     const extraClass = isTop3 ? rankClass[idx] : '';
     return `<div class="script-card ${extraClass}" id="card-${s.id}" draggable="${isApproved}" data-id="${s.id}"
       ondragstart="onDragStart(event)" ondragover="onDragOver(event)" ondrop="onDrop(event)" ondragend="onDragEnd(event)"
       onclick="handleCardClick(event,'${s.id}')">
       <div class="card-top">
         <div style="display:flex;align-items:center;flex:1;min-width:0;">
-          ${handle}
+          ${moveBtns}${handle}
           <div class="card-title">${rankE}${orderNum}${s.title}</div>
         </div>
         <div class="score-circle" style="background:${scoreColor(total)}">${total}</div>
@@ -378,10 +392,24 @@ function onDragEnd(e) {
     el.classList.remove('dragging','drag-over');
   });
 }
-// ドラッグハンドル以外のクリックでモーダルを開く
+// ドラッグハンドル・↑↓ボタン以外のクリックでモーダルを開く
 function handleCardClick(e, id) {
   if (e.target.classList.contains('drag-handle')) return;
+  if (e.target.classList.contains('move-btn')) return;
   openModal(id);
+}
+
+// ↑↓ボタンで並び替え
+function moveCard(id, dir, e) {
+  e.stopPropagation();
+  const cards = [...document.querySelectorAll('.script-card')].map(el=>el.dataset.id);
+  const idx = cards.indexOf(id);
+  const newIdx = idx + dir;
+  if (newIdx < 0 || newIdx >= cards.length) return;
+  cards.splice(idx, 1);
+  cards.splice(newIdx, 0, id);
+  saveOrder(cards);
+  renderList();
 }
 
 // ── モーダル ──
