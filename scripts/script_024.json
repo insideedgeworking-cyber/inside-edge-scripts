@@ -1,0 +1,191 @@
+{
+  "id": "script_024",
+  "created_at": "2026-05-27",
+  "title": "【LINE】弟と秘密を握り合って脅し合った結果ｗｗ #家族あるある #LINEドラマ #Shorts",
+  "genre": "笑い系",
+  "category": "笑い_脅し合い",
+  "setup": "弟のサボりと自分の秘密をお互い握って脅し合うLINEバトルになった",
+  "messages": [
+    {
+      "type": "telop",
+      "text": "姉と弟・お互いの秘密を握ってる"
+    },
+    {
+      "sender": "other",
+      "text": "姉ちゃん昨日サボったやろ"
+    },
+    {
+      "sender": "self",
+      "text": "は？証拠は"
+    },
+    {
+      "sender": "other",
+      "text": "制服で映画館おったやん"
+    },
+    {
+      "sender": "self",
+      "text": "あんたこそゲーム隠してる"
+    },
+    {
+      "sender": "other",
+      "text": "なんで知ってんの"
+    },
+    {
+      "sender": "self",
+      "text": "押し入れの奥でしょ"
+    },
+    {
+      "sender": "other",
+      "text": "バラしたら許さんからな"
+    },
+    {
+      "sender": "self",
+      "text": "そっちこそ"
+    },
+    {
+      "sender": "other",
+      "text": "取引しようや"
+    },
+    {
+      "sender": "self",
+      "text": "何を"
+    },
+    {
+      "sender": "other",
+      "text": "お互い黙る"
+    },
+    {
+      "sender": "self",
+      "text": "いいよ"
+    },
+    {
+      "sender": "other",
+      "text": "約束な"
+    },
+    {
+      "sender": "self",
+      "text": "破ったら倍返し"
+    },
+    {
+      "sender": "other",
+      "text": "怖"
+    },
+    {
+      "sender": "self",
+      "text": "そっちが先に言い出した"
+    },
+    {
+      "sender": "other",
+      "text": "もう何も言わん"
+    },
+    {
+      "sender": "self",
+      "text": "賢明やね"
+    },
+    {
+      "type": "telop",
+      "text": "その夜・家族LINEに通知が来た"
+    },
+    {
+      "sender": "other",
+      "text": "母さんから来たんやけど"
+    },
+    {
+      "sender": "self",
+      "text": "なんて"
+    },
+    {
+      "sender": "other",
+      "text": "「二人とも全部知ってます」"
+    },
+    {
+      "sender": "self",
+      "text": "は？"
+    },
+    {
+      "sender": "other",
+      "text": "「映画もゲームも」"
+    },
+    {
+      "sender": "self",
+      "text": "なんでバレてんの"
+    },
+    {
+      "sender": "other",
+      "text": "「家族LINEに誤爆してたよ」"
+    },
+    {
+      "sender": "self",
+      "text": "私たちのやりとり"
+    },
+    {
+      "sender": "other",
+      "text": "ずっと母さんに送ってた"
+    },
+    {
+      "sender": "self",
+      "text": "嘘でしょ"
+    },
+    {
+      "sender": "other",
+      "text": "グループ間違えてたみたい"
+    },
+    {
+      "sender": "self",
+      "text": "最悪すぎる"
+    },
+    {
+      "type": "telop",
+      "text": "翌朝・母から追加メッセージ"
+    },
+    {
+      "sender": "other",
+      "text": "母さん「映画代は小遣いから」"
+    },
+    {
+      "sender": "self",
+      "text": "ばれてる"
+    },
+    {
+      "sender": "other",
+      "text": "「ゲームは一週間没収」"
+    },
+    {
+      "sender": "self",
+      "text": "あんた巻き込まれてるやん"
+    },
+    {
+      "sender": "other",
+      "text": "姉ちゃんのせいや"
+    },
+    {
+      "sender": "self",
+      "text": "お互い様でしょ"
+    },
+    {
+      "sender": "other",
+      "text": "脅し合った意味"
+    },
+    {
+      "sender": "self",
+      "text": "ゼロやね"
+    },
+    {
+      "type": "telop",
+      "text": "母は今もそのグループにいる"
+    }
+  ],
+  "message_count": 42,
+  "char_count": 347,
+  "video_status": "pending",
+  "scores": {
+    "total": 0,
+    "title": 0,
+    "opening": 0,
+    "info_density": 0,
+    "twist": 0,
+    "ending": 0,
+    "genre_bonus": 0
+  },
+  "notes": ""
+}

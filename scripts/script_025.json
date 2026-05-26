@@ -1,0 +1,203 @@
+{
+  "id": "script_025",
+  "created_at": "2026-05-27",
+  "title": "【LINE】貸した3万を「覚えてない」ととぼけた友人にしたこと #スカッと #友達 #Shorts",
+  "genre": "スカッと系",
+  "category": "スカッと_金銭",
+  "setup": "友人に貸した3万円を「そんな約束してない」ととぼけられた",
+  "messages": [
+    {
+      "type": "telop",
+      "text": "友人・付き合い5年・先月3万貸した"
+    },
+    {
+      "sender": "self",
+      "text": "そろそろ3万返してほしい"
+    },
+    {
+      "sender": "other",
+      "text": "何の話？"
+    },
+    {
+      "sender": "self",
+      "text": "先月貸したでしょ"
+    },
+    {
+      "sender": "other",
+      "text": "借りた覚えないけど"
+    },
+    {
+      "sender": "self",
+      "text": "え"
+    },
+    {
+      "sender": "other",
+      "text": "勘違いじゃない？"
+    },
+    {
+      "sender": "self",
+      "text": "証拠あるよ"
+    },
+    {
+      "sender": "other",
+      "text": "あるわけない"
+    },
+    {
+      "sender": "self",
+      "text": "給料日に返すってLINE"
+    },
+    {
+      "sender": "other",
+      "text": "..."
+    },
+    {
+      "sender": "self",
+      "text": "スクショ残ってる"
+    },
+    {
+      "sender": "other",
+      "text": "冗談だっただけ"
+    },
+    {
+      "sender": "self",
+      "text": "3万が冗談？"
+    },
+    {
+      "sender": "other",
+      "text": "ノリで言っただけ"
+    },
+    {
+      "sender": "self",
+      "text": "振込履歴もあるけど"
+    },
+    {
+      "sender": "other",
+      "text": "勝手に送ってきたんでしょ"
+    },
+    {
+      "sender": "self",
+      "text": "お願いされたよね"
+    },
+    {
+      "sender": "other",
+      "text": "記憶にない"
+    },
+    {
+      "type": "telop",
+      "text": "共通の友人に相談してみた"
+    },
+    {
+      "sender": "self",
+      "text": "みんなにも聞いてみた"
+    },
+    {
+      "sender": "other",
+      "text": "何を"
+    },
+    {
+      "sender": "self",
+      "text": "同じことされた子が3人"
+    },
+    {
+      "sender": "other",
+      "text": "は？"
+    },
+    {
+      "sender": "self",
+      "text": "あんた常習なんだね"
+    },
+    {
+      "sender": "other",
+      "text": "人聞き悪い"
+    },
+    {
+      "sender": "self",
+      "text": "全員スクショ持ってた"
+    },
+    {
+      "sender": "other",
+      "text": "たまたまでしょ"
+    },
+    {
+      "sender": "self",
+      "text": "少額訴訟って知ってる"
+    },
+    {
+      "sender": "other",
+      "text": "脅す気？"
+    },
+    {
+      "sender": "self",
+      "text": "手続き調べただけ"
+    },
+    {
+      "sender": "other",
+      "text": "大げさな"
+    },
+    {
+      "sender": "self",
+      "text": "証拠は全部揃ってる"
+    },
+    {
+      "sender": "other",
+      "text": "...わかった返す"
+    },
+    {
+      "sender": "self",
+      "text": "急に思い出したね"
+    },
+    {
+      "sender": "other",
+      "text": "利子はいらないよね"
+    },
+    {
+      "sender": "self",
+      "text": "期限はとっくに過ぎてる"
+    },
+    {
+      "sender": "other",
+      "text": "え"
+    },
+    {
+      "sender": "self",
+      "text": "今日中にお願い"
+    },
+    {
+      "type": "telop",
+      "text": "30分後・全額振り込まれた"
+    },
+    {
+      "sender": "other",
+      "text": "振り込んだよ"
+    },
+    {
+      "sender": "self",
+      "text": "記憶力戻ってよかった"
+    },
+    {
+      "sender": "other",
+      "text": "もう貸してくれないの？"
+    },
+    {
+      "sender": "self",
+      "text": "二度と貸さないよ"
+    },
+    {
+      "type": "telop",
+      "text": "それ以来連絡は来ていない"
+    }
+  ],
+  "message_count": 45,
+  "char_count": 356,
+  "video_status": "pending",
+  "scores": {
+    "total": 0,
+    "title": 0,
+    "opening": 0,
+    "info_density": 0,
+    "twist": 0,
+    "ending": 0,
+    "genre_bonus": 0
+  },
+  "notes": ""
+}

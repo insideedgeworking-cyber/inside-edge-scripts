@@ -1,0 +1,183 @@
+{
+  "id": "script_029",
+  "created_at": "2026-05-27",
+  "title": "【LINE】母からLINEが来たけど、何かがおかしい #怖い話 #ゾッとする #Shorts",
+  "genre": "怖い系",
+  "category": "怖い_なりすまし",
+  "setup": "久しぶりに母からLINEが来たが会話するうちに違和感が募っていった",
+  "messages": [
+    {
+      "type": "telop",
+      "text": "久しぶりに母からLINEが来た"
+    },
+    {
+      "sender": "other",
+      "text": "元気にしてる？"
+    },
+    {
+      "sender": "self",
+      "text": "お母さん珍しいね"
+    },
+    {
+      "sender": "other",
+      "text": "たまには連絡しようと思って"
+    },
+    {
+      "sender": "self",
+      "text": "どうしたの急に"
+    },
+    {
+      "sender": "other",
+      "text": "声が聞きたくなって"
+    },
+    {
+      "sender": "self",
+      "text": "風邪治った？"
+    },
+    {
+      "sender": "other",
+      "text": "もう大丈夫"
+    },
+    {
+      "sender": "self",
+      "text": "ならよかった"
+    },
+    {
+      "sender": "other",
+      "text": "今度実家に帰っておいで"
+    },
+    {
+      "sender": "self",
+      "text": "お盆に帰るって言ったよね"
+    },
+    {
+      "sender": "other",
+      "text": "そうだったね"
+    },
+    {
+      "sender": "self",
+      "text": "忘れたの？"
+    },
+    {
+      "sender": "other",
+      "text": "最近物忘れが多くて"
+    },
+    {
+      "sender": "self",
+      "text": "大丈夫？"
+    },
+    {
+      "sender": "other",
+      "text": "ところで暗証番号教えて"
+    },
+    {
+      "sender": "self",
+      "text": "何の"
+    },
+    {
+      "sender": "other",
+      "text": "あなたの口座の"
+    },
+    {
+      "sender": "self",
+      "text": "なんで母が聞くの"
+    },
+    {
+      "type": "telop",
+      "text": "違和感が大きくなっていった"
+    },
+    {
+      "sender": "self",
+      "text": "お母さんそんなこと聞かない"
+    },
+    {
+      "sender": "other",
+      "text": "親なんだから当然でしょ"
+    },
+    {
+      "sender": "self",
+      "text": "私の誕生日いつか言って"
+    },
+    {
+      "sender": "other",
+      "text": "そんなのどうでもいい"
+    },
+    {
+      "sender": "self",
+      "text": "答えられないの？"
+    },
+    {
+      "sender": "other",
+      "text": "早く番号を教えて"
+    },
+    {
+      "sender": "self",
+      "text": "あなた誰"
+    },
+    {
+      "sender": "other",
+      "text": "母だよ"
+    },
+    {
+      "sender": "self",
+      "text": "母は敬語なんか使わない"
+    },
+    {
+      "sender": "other",
+      "text": "..."
+    },
+    {
+      "sender": "self",
+      "text": "スマホどこで拾ったの"
+    },
+    {
+      "type": "telop",
+      "text": "既読がついたまま無言が続いた"
+    },
+    {
+      "sender": "other",
+      "text": "親切に連絡してやったのに"
+    },
+    {
+      "sender": "self",
+      "text": "やっぱり別人だ"
+    },
+    {
+      "sender": "other",
+      "text": "もう遅いけどな"
+    },
+    {
+      "sender": "self",
+      "text": "どういう意味"
+    },
+    {
+      "sender": "other",
+      "text": "今家の前まで来てる"
+    },
+    {
+      "sender": "self",
+      "text": "警察に電話する"
+    },
+    {
+      "sender": "other",
+      "text": "間に合うかな"
+    },
+    {
+      "type": "telop",
+      "text": "母は3日前にスマホを失くしていた"
+    }
+  ],
+  "message_count": 40,
+  "char_count": 340,
+  "video_status": "pending",
+  "scores": {
+    "total": 0,
+    "title": 0,
+    "opening": 0,
+    "info_density": 0,
+    "twist": 0,
+    "ending": 0,
+    "genre_bonus": 0
+  },
+  "notes": ""
+}

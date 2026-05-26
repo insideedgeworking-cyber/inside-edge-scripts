@@ -1,0 +1,191 @@
+{
+  "id": "script_026",
+  "created_at": "2026-05-27",
+  "title": "【LINE】彼に「大事な話がある」と切り出された結果 #どんでん返し #キュン #Shorts",
+  "genre": "どんでん返し系",
+  "category": "どんでん返し_実は同じ",
+  "setup": "彼から深刻な顔で「話したいことがある」と言われ最悪を覚悟した",
+  "messages": [
+    {
+      "type": "telop",
+      "text": "付き合って3年・彼から呼び出された"
+    },
+    {
+      "sender": "other",
+      "text": "大事な話があるんだ"
+    },
+    {
+      "sender": "self",
+      "text": "な、何"
+    },
+    {
+      "sender": "other",
+      "text": "今度の週末あけといて"
+    },
+    {
+      "sender": "self",
+      "text": "もしかして別れ話？"
+    },
+    {
+      "sender": "other",
+      "text": "なんでそうなる"
+    },
+    {
+      "sender": "self",
+      "text": "最近よそよそしいから"
+    },
+    {
+      "sender": "other",
+      "text": "それは"
+    },
+    {
+      "sender": "self",
+      "text": "やっぱり何かある"
+    },
+    {
+      "sender": "other",
+      "text": "隠してたことがあるんだ"
+    },
+    {
+      "sender": "self",
+      "text": "聞くのが怖い"
+    },
+    {
+      "sender": "other",
+      "text": "半年前から準備してた"
+    },
+    {
+      "sender": "self",
+      "text": "準備って"
+    },
+    {
+      "sender": "other",
+      "text": "言いにくいんだけど"
+    },
+    {
+      "sender": "self",
+      "text": "私も隠してたことある"
+    },
+    {
+      "sender": "other",
+      "text": "え"
+    },
+    {
+      "sender": "self",
+      "text": "先に言っていい？"
+    },
+    {
+      "sender": "other",
+      "text": "どうぞ"
+    },
+    {
+      "sender": "self",
+      "text": "指輪のサイズ調べてた"
+    },
+    {
+      "sender": "other",
+      "text": "は？"
+    },
+    {
+      "sender": "self",
+      "text": "いつか渡したくて"
+    },
+    {
+      "type": "telop",
+      "text": "数秒の沈黙"
+    },
+    {
+      "sender": "other",
+      "text": "嘘だろ"
+    },
+    {
+      "sender": "self",
+      "text": "重いよね、ごめん"
+    },
+    {
+      "sender": "other",
+      "text": "俺もなんだけど"
+    },
+    {
+      "sender": "self",
+      "text": "え"
+    },
+    {
+      "sender": "other",
+      "text": "半年前から指輪探してた"
+    },
+    {
+      "sender": "self",
+      "text": "まさか"
+    },
+    {
+      "sender": "other",
+      "text": "週末あけてって言ったの"
+    },
+    {
+      "sender": "self",
+      "text": "それって"
+    },
+    {
+      "sender": "other",
+      "text": "一緒に選びに行こう"
+    },
+    {
+      "sender": "self",
+      "text": "同じこと考えてたの"
+    },
+    {
+      "sender": "other",
+      "text": "隠す必要なかったな"
+    },
+    {
+      "sender": "self",
+      "text": "笑えるんだけど"
+    },
+    {
+      "type": "telop",
+      "text": "二人とも同じ指輪屋の会員だった"
+    },
+    {
+      "sender": "other",
+      "text": "会員証見せてみ"
+    },
+    {
+      "sender": "self",
+      "text": "なんで持ってるの"
+    },
+    {
+      "sender": "other",
+      "text": "同じ店やん"
+    },
+    {
+      "sender": "self",
+      "text": "偶然すぎる"
+    },
+    {
+      "sender": "other",
+      "text": "もう運命でええやろ"
+    },
+    {
+      "sender": "self",
+      "text": "それは認める"
+    },
+    {
+      "type": "telop",
+      "text": "来月二人で指輪を選びに行く"
+    }
+  ],
+  "message_count": 42,
+  "char_count": 313,
+  "video_status": "pending",
+  "scores": {
+    "total": 0,
+    "title": 0,
+    "opening": 0,
+    "info_density": 0,
+    "twist": 0,
+    "ending": 0,
+    "genre_bonus": 0
+  },
+  "notes": ""
+}

@@ -1,0 +1,199 @@
+{
+  "id": "script_023",
+  "created_at": "2026-05-27",
+  "title": "【LINE】新人が上司に英語でしか話しかけなくなった理由 #職場あるある #LINEドラマ #Shorts",
+  "genre": "笑い系",
+  "category": "笑い_上司部下",
+  "setup": "新人に「上司は英語で挨拶しないと不機嫌になる」という嘘を吹き込んだ",
+  "messages": [
+    {
+      "type": "telop",
+      "text": "新人・入社1ヶ月・素直で疑わない"
+    },
+    {
+      "sender": "other",
+      "text": "お前新人に何吹き込んだ"
+    },
+    {
+      "sender": "self",
+      "text": "褒めときましたよ"
+    },
+    {
+      "sender": "other",
+      "text": "今朝から様子がおかしい"
+    },
+    {
+      "sender": "other",
+      "text": "俺に英語でしか話しかけん"
+    },
+    {
+      "sender": "other",
+      "text": "グッモーニンて言われた"
+    },
+    {
+      "sender": "other",
+      "text": "意味がわからん"
+    },
+    {
+      "sender": "self",
+      "text": "上司は英語で挨拶しないと"
+    },
+    {
+      "sender": "self",
+      "text": "不機嫌になると教えました"
+    },
+    {
+      "sender": "other",
+      "text": "だから朝からハローか！！"
+    },
+    {
+      "sender": "other",
+      "text": "日本語で十分やわ"
+    },
+    {
+      "sender": "self",
+      "text": "国際的でかっこいいかと"
+    },
+    {
+      "sender": "other",
+      "text": "どこがやねん"
+    },
+    {
+      "sender": "other",
+      "text": "昼飯もサンキュー言うてきた"
+    },
+    {
+      "sender": "self",
+      "text": "完璧ですね"
+    },
+    {
+      "sender": "other",
+      "text": "完璧ちゃう！"
+    },
+    {
+      "sender": "other",
+      "text": "なんでそんな嘘ついた"
+    },
+    {
+      "sender": "self",
+      "text": "上司が怖いと言うので"
+    },
+    {
+      "sender": "self",
+      "text": "距離を縮めようかと"
+    },
+    {
+      "sender": "other",
+      "text": "縮まってへんやろ"
+    },
+    {
+      "sender": "other",
+      "text": "さっき名刺見せてきた"
+    },
+    {
+      "sender": "self",
+      "text": "何かありました"
+    },
+    {
+      "sender": "other",
+      "text": "名前がローマ字だけ"
+    },
+    {
+      "sender": "self",
+      "text": "グローバルですね"
+    },
+    {
+      "sender": "other",
+      "text": "漢字どこいった"
+    },
+    {
+      "sender": "other",
+      "text": "取引先にもhello言うてた"
+    },
+    {
+      "sender": "self",
+      "text": "度胸ありますね"
+    },
+    {
+      "sender": "other",
+      "text": "先方ぽかんとしてた"
+    },
+    {
+      "sender": "self",
+      "text": "掴みはばっちり"
+    },
+    {
+      "sender": "other",
+      "text": "滑ってるわ！"
+    },
+    {
+      "type": "telop",
+      "text": "翌日・新人が英和辞書を持参"
+    },
+    {
+      "sender": "other",
+      "text": "分厚い辞書持ってきた"
+    },
+    {
+      "sender": "self",
+      "text": "やる気ありますね"
+    },
+    {
+      "sender": "other",
+      "text": "俺と話すためらしい"
+    },
+    {
+      "sender": "self",
+      "text": "愛されてますね"
+    },
+    {
+      "sender": "other",
+      "text": "重荷でしかない"
+    },
+    {
+      "sender": "other",
+      "text": "もう日本語でええて言うた"
+    },
+    {
+      "sender": "self",
+      "text": "どうでしたか"
+    },
+    {
+      "sender": "other",
+      "text": "ショック受けてた"
+    },
+    {
+      "sender": "self",
+      "text": "真面目なんですよ"
+    },
+    {
+      "sender": "other",
+      "text": "お前が言うな"
+    },
+    {
+      "sender": "self",
+      "text": "フォローしときます"
+    },
+    {
+      "sender": "other",
+      "text": "英語でやらすなよ"
+    },
+    {
+      "type": "telop",
+      "text": "新人は今も時々ハローと言う"
+    }
+  ],
+  "message_count": 44,
+  "char_count": 406,
+  "video_status": "pending",
+  "scores": {
+    "total": 0,
+    "title": 0,
+    "opening": 0,
+    "info_density": 0,
+    "twist": 0,
+    "ending": 0,
+    "genre_bonus": 0
+  },
+  "notes": ""
+}

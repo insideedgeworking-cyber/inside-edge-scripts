@@ -1,0 +1,183 @@
+{
+  "id": "script_027",
+  "created_at": "2026-05-27",
+  "title": "【LINE】無口な父が定年の日に初めて送ってきた長文 #感動する話 #LINEドラマ #Shorts",
+  "genre": "感動系",
+  "category": "感動_家族",
+  "setup": "単身赴任の父は家族LINEでいつもスタンプ1個・定年の日に長文が届いた",
+  "messages": [
+    {
+      "type": "telop",
+      "text": "単身赴任10年・父はスタンプだけ"
+    },
+    {
+      "sender": "self",
+      "text": "お父さん今日で定年だね"
+    },
+    {
+      "sender": "other",
+      "text": "（スタンプ）"
+    },
+    {
+      "sender": "self",
+      "text": "それだけ？"
+    },
+    {
+      "sender": "other",
+      "text": "（スタンプ）"
+    },
+    {
+      "sender": "self",
+      "text": "いつも一言もないんだから"
+    },
+    {
+      "sender": "other",
+      "text": "おう"
+    },
+    {
+      "sender": "self",
+      "text": "珍しく返事きた"
+    },
+    {
+      "sender": "other",
+      "text": "話があるんだ"
+    },
+    {
+      "sender": "self",
+      "text": "何かあった？"
+    },
+    {
+      "sender": "other",
+      "text": "長くなるけどいいか"
+    },
+    {
+      "sender": "self",
+      "text": "お父さんが長文？"
+    },
+    {
+      "sender": "other",
+      "text": "10年単身赴任してきた"
+    },
+    {
+      "sender": "self",
+      "text": "うん"
+    },
+    {
+      "sender": "other",
+      "text": "家族に寂しい思いさせた"
+    },
+    {
+      "sender": "self",
+      "text": "そんなことないよ"
+    },
+    {
+      "sender": "other",
+      "text": "本当はずっと帰りたかった"
+    },
+    {
+      "sender": "self",
+      "text": "初めて聞いた"
+    },
+    {
+      "sender": "other",
+      "text": "入学式も行けなかったな"
+    },
+    {
+      "sender": "self",
+      "text": "覚えてたんだ"
+    },
+    {
+      "type": "telop",
+      "text": "父からの長文は続いた"
+    },
+    {
+      "sender": "other",
+      "text": "スタンプしか送れなかった"
+    },
+    {
+      "sender": "self",
+      "text": "なんで"
+    },
+    {
+      "sender": "other",
+      "text": "言葉にすると里心がつく"
+    },
+    {
+      "sender": "self",
+      "text": "お父さん"
+    },
+    {
+      "sender": "other",
+      "text": "ずっと我慢してたんだ"
+    },
+    {
+      "sender": "self",
+      "text": "知らなかった"
+    },
+    {
+      "sender": "other",
+      "text": "明日やっと帰れる"
+    },
+    {
+      "sender": "self",
+      "text": "おかえりって言わせて"
+    },
+    {
+      "sender": "other",
+      "text": "ただいまって言うわ"
+    },
+    {
+      "sender": "self",
+      "text": "泣きそう"
+    },
+    {
+      "sender": "other",
+      "text": "母さんには内緒な"
+    },
+    {
+      "sender": "self",
+      "text": "なんで"
+    },
+    {
+      "sender": "other",
+      "text": "照れくさいから"
+    },
+    {
+      "type": "telop",
+      "text": "翌日・父が10年ぶりに帰宅した"
+    },
+    {
+      "sender": "other",
+      "text": "玄関着いた"
+    },
+    {
+      "sender": "self",
+      "text": "今開けるね"
+    },
+    {
+      "sender": "other",
+      "text": "ただいま"
+    },
+    {
+      "sender": "self",
+      "text": "おかえり、お父さん"
+    },
+    {
+      "type": "telop",
+      "text": "父の手には不器用な花束があった"
+    }
+  ],
+  "message_count": 40,
+  "char_count": 319,
+  "video_status": "pending",
+  "scores": {
+    "total": 0,
+    "title": 0,
+    "opening": 0,
+    "info_density": 0,
+    "twist": 0,
+    "ending": 0,
+    "genre_bonus": 0
+  },
+  "notes": ""
+}

@@ -1,0 +1,183 @@
+{
+  "id": "script_028",
+  "created_at": "2026-05-27",
+  "title": "【LINE】結婚後、給料は全部夫が管理。これってあり？なし？ #問いかけ #夫婦 #Shorts",
+  "genre": "問いかけ系",
+  "category": "問いかけ_お金",
+  "setup": "結婚を機に夫が「給料は全部俺が管理する」と言い出した",
+  "messages": [
+    {
+      "type": "telop",
+      "text": "結婚3ヶ月・お金の管理で意見が割れた"
+    },
+    {
+      "sender": "other",
+      "text": "給料は俺がまとめて管理する"
+    },
+    {
+      "sender": "self",
+      "text": "全部？"
+    },
+    {
+      "sender": "other",
+      "text": "その方が貯まるよ"
+    },
+    {
+      "sender": "self",
+      "text": "私の分は？"
+    },
+    {
+      "sender": "other",
+      "text": "生活費は毎月渡す"
+    },
+    {
+      "sender": "self",
+      "text": "お小遣い制ってこと"
+    },
+    {
+      "sender": "other",
+      "text": "二人とも同じ条件だよ"
+    },
+    {
+      "sender": "self",
+      "text": "それなら平等だけど"
+    },
+    {
+      "sender": "other",
+      "text": "無駄遣いも減るし"
+    },
+    {
+      "sender": "self",
+      "text": "確かに貯金は増えそう"
+    },
+    {
+      "sender": "other",
+      "text": "だろ"
+    },
+    {
+      "sender": "self",
+      "text": "でも自由がない気も"
+    },
+    {
+      "sender": "other",
+      "text": "大きい買い物は相談で"
+    },
+    {
+      "sender": "self",
+      "text": "急に欲しい物は？"
+    },
+    {
+      "sender": "other",
+      "text": "言ってくれれば出すよ"
+    },
+    {
+      "sender": "self",
+      "text": "いちいち報告するの"
+    },
+    {
+      "sender": "other",
+      "text": "家族なんだから"
+    },
+    {
+      "sender": "self",
+      "text": "それはそうだけど"
+    },
+    {
+      "type": "telop",
+      "text": "私の親に話してみた"
+    },
+    {
+      "sender": "self",
+      "text": "母は反対だった"
+    },
+    {
+      "sender": "other",
+      "text": "なんで"
+    },
+    {
+      "sender": "self",
+      "text": "自分の収入は自分でって"
+    },
+    {
+      "sender": "other",
+      "text": "考え方の違いだね"
+    },
+    {
+      "sender": "self",
+      "text": "あなたの家は？"
+    },
+    {
+      "sender": "other",
+      "text": "うちは父が全部管理してた"
+    },
+    {
+      "sender": "self",
+      "text": "育った環境なんだ"
+    },
+    {
+      "sender": "other",
+      "text": "だから自然だと思ってた"
+    },
+    {
+      "sender": "self",
+      "text": "私は各自管理がいい"
+    },
+    {
+      "sender": "other",
+      "text": "生活費だけ折半で？"
+    },
+    {
+      "sender": "self",
+      "text": "その方が気楽"
+    },
+    {
+      "sender": "other",
+      "text": "貯金額は決めておこう"
+    },
+    {
+      "sender": "self",
+      "text": "それなら賛成"
+    },
+    {
+      "sender": "other",
+      "text": "お互い譲り合いだね"
+    },
+    {
+      "type": "telop",
+      "text": "結論は出たけど…"
+    },
+    {
+      "sender": "self",
+      "text": "でもまだモヤモヤする"
+    },
+    {
+      "sender": "other",
+      "text": "どっちが正解なんだろ"
+    },
+    {
+      "sender": "self",
+      "text": "みんなはどう思う？"
+    },
+    {
+      "sender": "other",
+      "text": "全額共有か各自管理か"
+    },
+    {
+      "type": "telop",
+      "text": "あなたならどっちにする？"
+    }
+  ],
+  "message_count": 40,
+  "char_count": 348,
+  "video_status": "pending",
+  "scores": {
+    "total": 0,
+    "title": 0,
+    "opening": 0,
+    "info_density": 0,
+    "twist": 0,
+    "ending": 0,
+    "genre_bonus": 0
+  },
+  "notes": ""
+}
