@@ -6,54 +6,194 @@
   "category": "笑い_純粋",
   "setup": "バイト先の後輩りく・冗談がまったく通じない天然",
   "messages": [
-    { "type": "telop", "text": "後輩りく・冗談が全く通じない" },
-    { "sender": "other", "text": "先輩、明日シフト入れますか" },
-    { "sender": "self", "text": "明日ちょっと無理かな" },
-    { "sender": "other", "text": "体調悪いんですか？" },
-    { "sender": "self", "text": "いや体調は普通だよ" },
-    { "sender": "other", "text": "じゃあなぜですか" },
-    { "sender": "self", "text": "宇宙人に連れてかれるから笑" },
-    { "sender": "other", "text": "それ本当ですか" },
-    { "sender": "self", "text": "嘘だよ笑笑" },
-    { "sender": "other", "text": "冗談ですよね" },
-    { "sender": "self", "text": "そうそう冗談" },
-    { "sender": "other", "text": "冗談ってどうわかるんですか" },
-    { "sender": "self", "text": "え？" },
-    { "sender": "other", "text": "文章だと伝わらないので" },
-    { "sender": "other", "text": "（冗談）って書いてくれれば" },
-    { "sender": "self", "text": "そんなシステムないよ笑" },
-    { "sender": "other", "text": "ないんですか" },
-    { "sender": "self", "text": "普通は雰囲気でわかるよ" },
-    { "sender": "other", "text": "雰囲気は難しいです" },
-    { "sender": "self", "text": "まあ文章だとね確かに" },
-    { "type": "telop", "text": "りく・全部本気に聞こえてた" },
-    { "sender": "other", "text": "先輩「無理」って言うのも" },
-    { "sender": "self", "text": "うん？" },
-    { "sender": "other", "text": "全部冗談だと思ってました" },
-    { "sender": "self", "text": "全部本気だよ！" },
-    { "sender": "other", "text": "え" },
-    { "sender": "other", "text": "シフト代わってくれなかったのも" },
-    { "sender": "self", "text": "全部本気で断ってた" },
-    { "sender": "other", "text": "3ヶ月前からずっと…" },
-    { "sender": "self", "text": "3ヶ月！？" },
-    { "sender": "other", "text": "一人で入ってました" },
-    { "sender": "self", "text": "ごめんごめんごめん" },
-    { "sender": "other", "text": "（本気ですか？）" },
-    { "sender": "self", "text": "本気本気！笑" },
-    { "sender": "other", "text": "（本気です）って書いてくれれば" },
-    { "sender": "self", "text": "それも変だって！笑" },
-    { "sender": "other", "text": "難しいですね" },
-    { "sender": "self", "text": "難しいのあなたです笑" },
-    { "type": "telop", "text": "翌日・先輩がランチに誘ってみた" },
-    { "sender": "self", "text": "今日ランチ行かない？おごる" },
-    { "sender": "other", "text": "冗談ですか" },
-    { "sender": "self", "text": "本気です！！！" },
-    { "sender": "other", "text": "わかりました（本気です）" },
-    { "sender": "self", "text": "もうそれでいい笑笑" }
+    {
+      "type": "telop",
+      "text": "後輩りく・冗談が全く通じない"
+    },
+    {
+      "sender": "other",
+      "text": "先輩、明日シフト入れますか"
+    },
+    {
+      "sender": "self",
+      "text": "明日ちょっと無理かな"
+    },
+    {
+      "sender": "other",
+      "text": "体調悪いんですか？"
+    },
+    {
+      "sender": "self",
+      "text": "いや体調は普通だよ"
+    },
+    {
+      "sender": "other",
+      "text": "じゃあなぜですか"
+    },
+    {
+      "sender": "self",
+      "text": "宇宙人に連れてかれるから笑"
+    },
+    {
+      "sender": "other",
+      "text": "それ本当ですか"
+    },
+    {
+      "sender": "self",
+      "text": "嘘だよ笑笑"
+    },
+    {
+      "sender": "other",
+      "text": "冗談ですよね"
+    },
+    {
+      "sender": "self",
+      "text": "そうそう冗談"
+    },
+    {
+      "sender": "other",
+      "text": "冗談ってどうわかるんですか"
+    },
+    {
+      "sender": "self",
+      "text": "え？"
+    },
+    {
+      "sender": "other",
+      "text": "文章だと伝わらないので"
+    },
+    {
+      "sender": "other",
+      "text": "（冗談）って書いてくれれば"
+    },
+    {
+      "sender": "self",
+      "text": "そんなシステムないよ笑"
+    },
+    {
+      "sender": "other",
+      "text": "ないんですか"
+    },
+    {
+      "sender": "self",
+      "text": "普通は雰囲気でわかるよ"
+    },
+    {
+      "sender": "other",
+      "text": "雰囲気は難しいです"
+    },
+    {
+      "sender": "self",
+      "text": "まあ文章だとね確かに"
+    },
+    {
+      "type": "telop",
+      "text": "りく・全部本気に聞こえてた"
+    },
+    {
+      "sender": "other",
+      "text": "先輩「無理」って言うのも"
+    },
+    {
+      "sender": "self",
+      "text": "うん？"
+    },
+    {
+      "sender": "other",
+      "text": "全部冗談だと思ってました"
+    },
+    {
+      "sender": "self",
+      "text": "全部本気だよ！"
+    },
+    {
+      "sender": "other",
+      "text": "え"
+    },
+    {
+      "sender": "other",
+      "text": "シフト代わってくれなかったのも"
+    },
+    {
+      "sender": "self",
+      "text": "全部本気で断ってた"
+    },
+    {
+      "sender": "other",
+      "text": "3ヶ月前からずっと…"
+    },
+    {
+      "sender": "self",
+      "text": "3ヶ月！？"
+    },
+    {
+      "sender": "other",
+      "text": "一人で入ってました"
+    },
+    {
+      "sender": "self",
+      "text": "ごめんごめんごめん"
+    },
+    {
+      "sender": "other",
+      "text": "（本気ですか？）"
+    },
+    {
+      "sender": "self",
+      "text": "本気本気！笑"
+    },
+    {
+      "sender": "other",
+      "text": "（本気です）って書いてくれれば"
+    },
+    {
+      "sender": "self",
+      "text": "それも変だって！笑"
+    },
+    {
+      "sender": "other",
+      "text": "難しいですね"
+    },
+    {
+      "sender": "self",
+      "text": "難しいのあなたです笑"
+    },
+    {
+      "type": "telop",
+      "text": "翌日・先輩がランチに誘ってみた"
+    },
+    {
+      "sender": "self",
+      "text": "今日ランチ行かない？おごる"
+    },
+    {
+      "sender": "other",
+      "text": "冗談ですか"
+    },
+    {
+      "sender": "self",
+      "text": "本気です！！！"
+    },
+    {
+      "sender": "other",
+      "text": "わかりました（本気です）"
+    },
+    {
+      "sender": "self",
+      "text": "もうそれでいい笑笑"
+    }
   ],
   "message_count": 44,
   "char_count": 421,
   "video_status": "pending",
-  "scores": { "total": 66, "title": 11, "opening": 10, "info_density": 11, "twist": 14, "ending": 11, "genre_bonus": 9 },
+  "scores": {
+    "total": 0,
+    "title": 0,
+    "opening": 0,
+    "info_density": 0,
+    "twist": 0,
+    "ending": 0,
+    "genre_bonus": 0
+  },
   "notes": ""
 }
