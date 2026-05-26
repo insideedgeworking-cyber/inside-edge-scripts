@@ -6,53 +6,190 @@
   "category": "怖い_別人",
   "setup": "10ヶ月音信不通の元彼から突然LINEが来たが何かがおかしい",
   "messages": [
-    { "type": "telop", "text": "10ヶ月音信不通の元彼からLINE" },
-    { "sender": "other", "text": "久しぶり、元気にしてた？" },
-    { "sender": "self", "text": "え、急にどうしたの" },
-    { "sender": "other", "text": "なんか思い出してさ" },
-    { "sender": "self", "text": "そっか、私は元気だよ" },
-    { "sender": "other", "text": "よかった" },
-    { "sender": "self", "text": "あなたは？" },
-    { "sender": "other", "text": "俺も元気" },
-    { "sender": "self", "text": "何してるの最近" },
-    { "sender": "other", "text": "変わらず仕事してる" },
-    { "sender": "self", "text": "そっか、頑張ってるね" },
-    { "sender": "other", "text": "お前の声が聞きたいな" },
-    { "sender": "self", "text": "え" },
-    { "sender": "other", "text": "また会えたりする？" },
-    { "sender": "self", "text": "急にどうしたの本当に" },
-    { "sender": "other", "text": "なんかお前のこと思い出して" },
-    { "sender": "self", "text": "10ヶ月連絡なかったのに" },
-    { "sender": "other", "text": "ごめん、色々あって" },
-    { "sender": "self", "text": "色々って何" },
-    { "sender": "other", "text": "仕事が忙しくてさ" },
-    { "sender": "self", "text": "一個確認していい？" },
-    { "type": "telop", "text": "まい・違和感の正体を確認した" },
-    { "sender": "other", "text": "何？" },
-    { "sender": "self", "text": "私の誕生日って覚えてる？" },
-    { "sender": "other", "text": "6月だろ" },
-    { "sender": "self", "text": "違うよ" },
-    { "sender": "other", "text": "え、じゃあいつ？" },
-    { "sender": "self", "text": "付き合ってた時祝ってくれたよね" },
-    { "sender": "other", "text": "..." },
-    { "sender": "self", "text": "もう一個聞いていい？" },
-    { "sender": "other", "text": "なに" },
-    { "sender": "self", "text": "私の名前、何て？" },
-    { "sender": "other", "text": "え" },
-    { "sender": "self", "text": "すぐ答えられないの？" },
-    { "sender": "other", "text": "まい、だろ" },
-    { "sender": "self", "text": "私の名前は「まい」じゃないよ" },
-    { "sender": "other", "text": "えっと" },
-    { "type": "telop", "text": "別の女に間違えてLINEしてた" },
-    { "sender": "self", "text": "誰に送るつもりだったの" },
-    { "sender": "other", "text": "..." },
-    { "sender": "self", "text": "ブロックします" },
-    { "sender": "other", "text": "ちがう待って" },
-    { "sender": "self", "text": "さよなら" }
+    {
+      "type": "telop",
+      "text": "10ヶ月音信不通の元彼からLINE"
+    },
+    {
+      "sender": "other",
+      "text": "久しぶり、元気にしてた？"
+    },
+    {
+      "sender": "self",
+      "text": "え、急にどうしたの"
+    },
+    {
+      "sender": "other",
+      "text": "なんか思い出してさ"
+    },
+    {
+      "sender": "self",
+      "text": "そっか、私は元気だよ"
+    },
+    {
+      "sender": "other",
+      "text": "よかった"
+    },
+    {
+      "sender": "self",
+      "text": "あなたは？"
+    },
+    {
+      "sender": "other",
+      "text": "俺も元気"
+    },
+    {
+      "sender": "self",
+      "text": "何してるの最近"
+    },
+    {
+      "sender": "other",
+      "text": "変わらず仕事してる"
+    },
+    {
+      "sender": "self",
+      "text": "そっか、頑張ってるね"
+    },
+    {
+      "sender": "other",
+      "text": "お前の声が聞きたいな"
+    },
+    {
+      "sender": "self",
+      "text": "え"
+    },
+    {
+      "sender": "other",
+      "text": "また会えたりする？"
+    },
+    {
+      "sender": "self",
+      "text": "急にどうしたの本当に"
+    },
+    {
+      "sender": "other",
+      "text": "なんかお前のこと思い出して"
+    },
+    {
+      "sender": "self",
+      "text": "10ヶ月連絡なかったのに"
+    },
+    {
+      "sender": "other",
+      "text": "ごめん、色々あって"
+    },
+    {
+      "sender": "self",
+      "text": "色々って何"
+    },
+    {
+      "sender": "other",
+      "text": "仕事が忙しくてさ"
+    },
+    {
+      "sender": "self",
+      "text": "一個確認していい？"
+    },
+    {
+      "type": "telop",
+      "text": "まい・違和感の正体を確認した"
+    },
+    {
+      "sender": "other",
+      "text": "何？"
+    },
+    {
+      "sender": "self",
+      "text": "私の誕生日って覚えてる？"
+    },
+    {
+      "sender": "other",
+      "text": "6月だろ"
+    },
+    {
+      "sender": "self",
+      "text": "違うよ"
+    },
+    {
+      "sender": "other",
+      "text": "え、じゃあいつ？"
+    },
+    {
+      "sender": "self",
+      "text": "付き合ってた時祝ってくれたよね"
+    },
+    {
+      "sender": "other",
+      "text": "..."
+    },
+    {
+      "sender": "self",
+      "text": "もう一個聞いていい？"
+    },
+    {
+      "sender": "other",
+      "text": "なに"
+    },
+    {
+      "sender": "self",
+      "text": "私の名前、何て？"
+    },
+    {
+      "sender": "other",
+      "text": "え"
+    },
+    {
+      "sender": "self",
+      "text": "すぐ答えられないの？"
+    },
+    {
+      "sender": "other",
+      "text": "まい、だろ"
+    },
+    {
+      "sender": "self",
+      "text": "私の名前は「まい」じゃないよ"
+    },
+    {
+      "sender": "other",
+      "text": "えっと"
+    },
+    {
+      "type": "telop",
+      "text": "別の女に間違えてLINEしてた"
+    },
+    {
+      "sender": "self",
+      "text": "誰に送るつもりだったの"
+    },
+    {
+      "sender": "other",
+      "text": "..."
+    },
+    {
+      "sender": "self",
+      "text": "ブロックします"
+    },
+    {
+      "sender": "other",
+      "text": "ちがう待って"
+    },
+    {
+      "sender": "self",
+      "text": "さよなら"
+    }
   ],
   "message_count": 43,
   "char_count": 447,
   "video_status": "pending",
-  "scores": { "total": 81, "title": 16, "opening": 12, "info_density": 12, "twist": 16, "ending": 14, "genre_bonus": 11 },
+  "scores": {
+    "total": 0,
+    "title": 0,
+    "opening": 0,
+    "info_density": 0,
+    "twist": 0,
+    "ending": 0,
+    "genre_bonus": 0
+  },
   "notes": ""
 }
