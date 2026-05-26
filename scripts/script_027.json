@@ -171,13 +171,13 @@
   "char_count": 319,
   "video_status": "pending",
   "scores": {
-    "total": 0,
-    "title": 0,
-    "opening": 0,
-    "info_density": 0,
-    "twist": 0,
-    "ending": 0,
-    "genre_bonus": 0
+    "total": 80,
+    "title": 16,
+    "opening": 13,
+    "info_density": 10,
+    "twist": 14,
+    "ending": 13,
+    "genre_bonus": 14
   },
-  "notes": ""
+  "notes": "文字数少なめ(319)。中盤がやや淡々で情報密度を上げたい。"
 }

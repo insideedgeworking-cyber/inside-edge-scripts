@@ -6,55 +6,198 @@
   "category": "問いかけ_友情",
   "setup": "5年片思いの相手に彼女ができた・親友に相談したら答えが割れた",
   "messages": [
-    { "type": "telop", "text": "5年片思いの相手に彼女ができた" },
-    { "sender": "self", "text": "さら相談ある" },
-    { "sender": "other", "text": "どうした" },
-    { "sender": "self", "text": "しょうたに彼女できた" },
-    { "sender": "other", "text": "え！？いつ" },
-    { "sender": "self", "text": "今日報告された" },
-    { "sender": "other", "text": "どんな気持ち？" },
-    { "sender": "self", "text": "正直に言っていい？" },
-    { "sender": "other", "text": "言って" },
-    { "sender": "self", "text": "告白しようと思ってた" },
-    { "sender": "other", "text": "は！？いつ" },
-    { "sender": "self", "text": "来週の誕生日に" },
-    { "sender": "other", "text": "タイミング最悪じゃん" },
-    { "sender": "self", "text": "知ってる笑" },
-    { "sender": "other", "text": "5年の気持ち伝える？" },
-    { "sender": "self", "text": "わからない" },
-    { "sender": "other", "text": "彼女いるのに言うのは" },
-    { "sender": "self", "text": "わかってる" },
-    { "sender": "other", "text": "でも5年だよ？" },
-    { "sender": "self", "text": "だから迷ってる" },
-    { "type": "telop", "text": "みき・本音を打ち明けた" },
-    { "sender": "self", "text": "彼女の立場なら嫌だよね" },
-    { "sender": "other", "text": "私が彼女なら嫌かも" },
-    { "sender": "self", "text": "やっぱり" },
-    { "sender": "other", "text": "でも言わなかったら" },
-    { "sender": "self", "text": "ずっと引きずる" },
-    { "sender": "other", "text": "それも辛いよね" },
-    { "sender": "self", "text": "どっちが正解なの" },
-    { "sender": "other", "text": "正解はないと思う" },
-    { "sender": "self", "text": "最悪笑" },
-    { "sender": "other", "text": "気持ち整理できてる？" },
-    { "sender": "self", "text": "全然" },
-    { "sender": "other", "text": "しょうたのこと好き？" },
-    { "sender": "self", "text": "今も" },
-    { "sender": "other", "text": "怖くても言いたい？" },
-    { "sender": "self", "text": "言いたい" },
-    { "sender": "other", "text": "じゃあ答え出てるじゃん" },
-    { "sender": "self", "text": "でも彼女がいる" },
-    { "sender": "other", "text": "そこが難しいよね" },
-    { "sender": "self", "text": "さらはどうする？" },
-    { "sender": "other", "text": "私なら言う" },
-    { "sender": "self", "text": "言ったあとが怖い" },
-    { "sender": "other", "text": "後悔しないために言う派？" },
-    { "type": "telop", "text": "気持ち伝えるのってあり？なし？" },
-    { "sender": "self", "text": "みんなはどう思う？" }
+    {
+      "type": "telop",
+      "text": "5年片思いの相手に彼女ができた"
+    },
+    {
+      "sender": "self",
+      "text": "さら相談ある"
+    },
+    {
+      "sender": "other",
+      "text": "どうした"
+    },
+    {
+      "sender": "self",
+      "text": "しょうたに彼女できた"
+    },
+    {
+      "sender": "other",
+      "text": "え！？いつ"
+    },
+    {
+      "sender": "self",
+      "text": "今日報告された"
+    },
+    {
+      "sender": "other",
+      "text": "どんな気持ち？"
+    },
+    {
+      "sender": "self",
+      "text": "正直に言っていい？"
+    },
+    {
+      "sender": "other",
+      "text": "言って"
+    },
+    {
+      "sender": "self",
+      "text": "告白しようと思ってた"
+    },
+    {
+      "sender": "other",
+      "text": "は！？いつ"
+    },
+    {
+      "sender": "self",
+      "text": "来週の誕生日に"
+    },
+    {
+      "sender": "other",
+      "text": "タイミング最悪じゃん"
+    },
+    {
+      "sender": "self",
+      "text": "知ってる笑"
+    },
+    {
+      "sender": "other",
+      "text": "5年の気持ち伝える？"
+    },
+    {
+      "sender": "self",
+      "text": "わからない"
+    },
+    {
+      "sender": "other",
+      "text": "彼女いるのに言うのは"
+    },
+    {
+      "sender": "self",
+      "text": "わかってる"
+    },
+    {
+      "sender": "other",
+      "text": "でも5年だよ？"
+    },
+    {
+      "sender": "self",
+      "text": "だから迷ってる"
+    },
+    {
+      "type": "telop",
+      "text": "みき・本音を打ち明けた"
+    },
+    {
+      "sender": "self",
+      "text": "彼女の立場なら嫌だよね"
+    },
+    {
+      "sender": "other",
+      "text": "私が彼女なら嫌かも"
+    },
+    {
+      "sender": "self",
+      "text": "やっぱり"
+    },
+    {
+      "sender": "other",
+      "text": "でも言わなかったら"
+    },
+    {
+      "sender": "self",
+      "text": "ずっと引きずる"
+    },
+    {
+      "sender": "other",
+      "text": "それも辛いよね"
+    },
+    {
+      "sender": "self",
+      "text": "どっちが正解なの"
+    },
+    {
+      "sender": "other",
+      "text": "正解はないと思う"
+    },
+    {
+      "sender": "self",
+      "text": "最悪笑"
+    },
+    {
+      "sender": "other",
+      "text": "気持ち整理できてる？"
+    },
+    {
+      "sender": "self",
+      "text": "全然"
+    },
+    {
+      "sender": "other",
+      "text": "しょうたのこと好き？"
+    },
+    {
+      "sender": "self",
+      "text": "今も"
+    },
+    {
+      "sender": "other",
+      "text": "怖くても言いたい？"
+    },
+    {
+      "sender": "self",
+      "text": "言いたい"
+    },
+    {
+      "sender": "other",
+      "text": "じゃあ答え出てるじゃん"
+    },
+    {
+      "sender": "self",
+      "text": "でも彼女がいる"
+    },
+    {
+      "sender": "other",
+      "text": "そこが難しいよね"
+    },
+    {
+      "sender": "self",
+      "text": "さらはどうする？"
+    },
+    {
+      "sender": "other",
+      "text": "私なら言う"
+    },
+    {
+      "sender": "self",
+      "text": "言ったあとが怖い"
+    },
+    {
+      "sender": "other",
+      "text": "後悔しないために言う派？"
+    },
+    {
+      "type": "telop",
+      "text": "気持ち伝えるのってあり？なし？"
+    },
+    {
+      "sender": "self",
+      "text": "みんなはどう思う？"
+    }
   ],
   "message_count": 45,
   "char_count": 436,
   "video_status": "pending",
-  "scores": { "total": 0, "title": 0, "opening": 0, "info_density": 0, "twist": 0, "ending": 0, "genre_bonus": 0 },
-  "notes": ""
+  "scores": {
+    "total": 81,
+    "title": 16,
+    "opening": 12,
+    "info_density": 13,
+    "twist": 13,
+    "ending": 13,
+    "genre_bonus": 14
+  },
+  "notes": "中盤の予想外の転換が弱い(終始相談ベース)。展開が静かで引きが平坦。"
 }

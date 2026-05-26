@@ -6,55 +6,198 @@
   "category": "どんでん返し_かばう",
   "setup": "ずっと嫌いだった男子が卒業後に「3年間ずっと陰で守ってた」と告白してきた",
   "messages": [
-    { "type": "telop", "text": "卒業4ヶ月後・嫌いな男子から連絡" },
-    { "sender": "other", "text": "久しぶり、元気？" },
-    { "sender": "self", "text": "何の用" },
-    { "sender": "other", "text": "ちょっと話したくて" },
-    { "sender": "self", "text": "高校のとき嫌いだったけど" },
-    { "sender": "other", "text": "知ってる" },
-    { "sender": "self", "text": "なんで連絡してくるの" },
-    { "sender": "other", "text": "伝えたいことがあって" },
-    { "sender": "self", "text": "何を" },
-    { "sender": "other", "text": "2年の時Aクラスの男子覚えてる？" },
-    { "sender": "self", "text": "絡んできてたやつ？" },
-    { "sender": "other", "text": "そいつに話をつけたの俺" },
-    { "sender": "self", "text": "え" },
-    { "sender": "other", "text": "3年間ずっと動き見てた" },
-    { "sender": "self", "text": "なんで私のこと知ってんの" },
-    { "sender": "other", "text": "気になってたから" },
-    { "sender": "self", "text": "..." },
-    { "sender": "other", "text": "あいつが転校したの覚えてる？" },
-    { "sender": "self", "text": "2年の終わりに急に" },
-    { "type": "telop", "text": "なつき・全部思い出してきた" },
-    { "sender": "other", "text": "俺が先生に話したから" },
-    { "sender": "self", "text": "あなたが？" },
-    { "sender": "other", "text": "お前に知らせたくなかったから" },
-    { "sender": "self", "text": "なんで嫌なやつのフリしてたの" },
-    { "sender": "other", "text": "好きだったから" },
-    { "sender": "self", "text": "は" },
-    { "sender": "other", "text": "近くにいたら守れると思って" },
-    { "sender": "self", "text": "意味わからん" },
-    { "sender": "other", "text": "ごめん、変だよな" },
-    { "sender": "self", "text": "嫌いだったのに" },
-    { "sender": "other", "text": "俺の方がずっと好きだったよ" },
-    { "sender": "self", "text": "..." },
-    { "sender": "self", "text": "廊下で毎日すれ違ってたの" },
-    { "sender": "other", "text": "確認してた" },
-    { "sender": "self", "text": "変だよ笑" },
-    { "sender": "other", "text": "笑えた？" },
-    { "sender": "self", "text": "笑えた" },
-    { "sender": "other", "text": "よかった" },
-    { "sender": "self", "text": "教えてくれればよかったのに" },
-    { "sender": "other", "text": "勇気なかった" },
-    { "type": "telop", "text": "なつき・返事を送った" },
-    { "sender": "self", "text": "いまも勇気ない？" },
-    { "sender": "other", "text": "ない笑" },
-    { "sender": "self", "text": "連絡してきたくせに笑" },
-    { "sender": "other", "text": "それだけで精一杯だった" }
+    {
+      "type": "telop",
+      "text": "卒業4ヶ月後・嫌いな男子から連絡"
+    },
+    {
+      "sender": "other",
+      "text": "久しぶり、元気？"
+    },
+    {
+      "sender": "self",
+      "text": "何の用"
+    },
+    {
+      "sender": "other",
+      "text": "ちょっと話したくて"
+    },
+    {
+      "sender": "self",
+      "text": "高校のとき嫌いだったけど"
+    },
+    {
+      "sender": "other",
+      "text": "知ってる"
+    },
+    {
+      "sender": "self",
+      "text": "なんで連絡してくるの"
+    },
+    {
+      "sender": "other",
+      "text": "伝えたいことがあって"
+    },
+    {
+      "sender": "self",
+      "text": "何を"
+    },
+    {
+      "sender": "other",
+      "text": "2年の時Aクラスの男子覚えてる？"
+    },
+    {
+      "sender": "self",
+      "text": "絡んできてたやつ？"
+    },
+    {
+      "sender": "other",
+      "text": "そいつに話をつけたの俺"
+    },
+    {
+      "sender": "self",
+      "text": "え"
+    },
+    {
+      "sender": "other",
+      "text": "3年間ずっと動き見てた"
+    },
+    {
+      "sender": "self",
+      "text": "なんで私のこと知ってんの"
+    },
+    {
+      "sender": "other",
+      "text": "気になってたから"
+    },
+    {
+      "sender": "self",
+      "text": "..."
+    },
+    {
+      "sender": "other",
+      "text": "あいつが転校したの覚えてる？"
+    },
+    {
+      "sender": "self",
+      "text": "2年の終わりに急に"
+    },
+    {
+      "type": "telop",
+      "text": "なつき・全部思い出してきた"
+    },
+    {
+      "sender": "other",
+      "text": "俺が先生に話したから"
+    },
+    {
+      "sender": "self",
+      "text": "あなたが？"
+    },
+    {
+      "sender": "other",
+      "text": "お前に知らせたくなかったから"
+    },
+    {
+      "sender": "self",
+      "text": "なんで嫌なやつのフリしてたの"
+    },
+    {
+      "sender": "other",
+      "text": "好きだったから"
+    },
+    {
+      "sender": "self",
+      "text": "は"
+    },
+    {
+      "sender": "other",
+      "text": "近くにいたら守れると思って"
+    },
+    {
+      "sender": "self",
+      "text": "意味わからん"
+    },
+    {
+      "sender": "other",
+      "text": "ごめん、変だよな"
+    },
+    {
+      "sender": "self",
+      "text": "嫌いだったのに"
+    },
+    {
+      "sender": "other",
+      "text": "俺の方がずっと好きだったよ"
+    },
+    {
+      "sender": "self",
+      "text": "..."
+    },
+    {
+      "sender": "self",
+      "text": "廊下で毎日すれ違ってたの"
+    },
+    {
+      "sender": "other",
+      "text": "確認してた"
+    },
+    {
+      "sender": "self",
+      "text": "変だよ笑"
+    },
+    {
+      "sender": "other",
+      "text": "笑えた？"
+    },
+    {
+      "sender": "self",
+      "text": "笑えた"
+    },
+    {
+      "sender": "other",
+      "text": "よかった"
+    },
+    {
+      "sender": "self",
+      "text": "教えてくれればよかったのに"
+    },
+    {
+      "sender": "other",
+      "text": "勇気なかった"
+    },
+    {
+      "type": "telop",
+      "text": "なつき・返事を送った"
+    },
+    {
+      "sender": "self",
+      "text": "いまも勇気ない？"
+    },
+    {
+      "sender": "other",
+      "text": "ない笑"
+    },
+    {
+      "sender": "self",
+      "text": "連絡してきたくせに笑"
+    },
+    {
+      "sender": "other",
+      "text": "それだけで精一杯だった"
+    }
   ],
   "message_count": 45,
   "char_count": 432,
   "video_status": "pending",
-  "scores": { "total": 0, "title": 0, "opening": 0, "info_density": 0, "twist": 0, "ending": 0, "genre_bonus": 0 },
-  "notes": ""
+  "scores": {
+    "total": 81,
+    "title": 16,
+    "opening": 12,
+    "info_density": 13,
+    "twist": 15,
+    "ending": 12,
+    "genre_bonus": 13
+  },
+  "notes": "「陰で守ってた」設定が重く、見方によっては怖い。反転は良いが好み割れる。"
 }

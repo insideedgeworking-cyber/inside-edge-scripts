@@ -179,13 +179,13 @@
   "char_count": 347,
   "video_status": "pending",
   "scores": {
-    "total": 0,
-    "title": 0,
-    "opening": 0,
-    "info_density": 0,
-    "twist": 0,
-    "ending": 0,
-    "genre_bonus": 0
+    "total": 77,
+    "title": 15,
+    "opening": 11,
+    "info_density": 11,
+    "twist": 15,
+    "ending": 12,
+    "genre_bonus": 13
   },
-  "notes": ""
+  "notes": "文字数が少なめ(347)。冒頭の具体性が薄い。母の介入オチはベタ。"
 }

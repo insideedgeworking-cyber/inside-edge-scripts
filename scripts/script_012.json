@@ -6,55 +6,198 @@
   "category": "問いかけ_恋愛",
   "setup": "付き合って2年の彼氏が元カノと2人で飲みに行くと言い出した",
   "messages": [
-    { "type": "telop", "text": "付き合って2年・彼から連絡が来た" },
-    { "sender": "other", "text": "今週土曜、予定ある？" },
-    { "sender": "self", "text": "空いてるよ、一緒に行く？" },
-    { "sender": "other", "text": "実は先に予定入れてて" },
-    { "sender": "self", "text": "え、誰と？" },
-    { "sender": "other", "text": "元カノと2人で飲もうって" },
-    { "sender": "self", "text": "え" },
-    { "sender": "other", "text": "引越しの報告したいって言われて" },
-    { "sender": "self", "text": "それ私も一緒に行くやつじゃないの" },
-    { "sender": "other", "text": "2人で来てって言われてたから" },
-    { "sender": "self", "text": "2人で？" },
-    { "sender": "other", "text": "別れてから友達だし" },
-    { "sender": "self", "text": "友達の飲みに彼女呼ばないの" },
-    { "sender": "other", "text": "ちょっと気まずいじゃん" },
-    { "sender": "self", "text": "誰が気まずいの？" },
-    { "sender": "other", "text": "向こうが" },
-    { "sender": "self", "text": "向こうが気まずいのに会うの？" },
-    { "sender": "other", "text": "..." },
-    { "sender": "self", "text": "正直に言う" },
-    { "sender": "other", "text": "うん" },
-    { "sender": "self", "text": "嫌だよ、2人で" },
-    { "type": "telop", "text": "みほ・本音をぶつけた" },
-    { "sender": "other", "text": "でも友達だし" },
-    { "sender": "self", "text": "じゃあ私も元彼と2人で飲める？" },
-    { "sender": "other", "text": "それは" },
-    { "sender": "self", "text": "同じことじゃない？" },
-    { "sender": "other", "text": "...それは嫌だな" },
-    { "sender": "self", "text": "なんで" },
-    { "sender": "other", "text": "好きだから" },
-    { "sender": "self", "text": "じゃあ私も同じ" },
-    { "sender": "other", "text": "..." },
-    { "sender": "self", "text": "断ってくれるの？" },
-    { "sender": "other", "text": "みほがそこまで言うなら" },
-    { "sender": "self", "text": "「そこまで」って何" },
-    { "sender": "other", "text": "ごめん、断ってくる" },
-    { "sender": "self", "text": "ありがとう" },
-    { "sender": "other", "text": "元カノとは友達続けてもいい？" },
-    { "sender": "self", "text": "3人で会うならいいよ" },
-    { "sender": "other", "text": "それは難しいかも" },
-    { "type": "telop", "text": "元カノとの友達付き合い・あり？なし？" },
-    { "sender": "self", "text": "なんで難しいの" },
-    { "sender": "other", "text": "向こうが嫌がると思うから" },
-    { "sender": "self", "text": "それって友達って言える？" },
-    { "sender": "other", "text": "..." },
-    { "sender": "self", "text": "みんなはどう思う？" }
+    {
+      "type": "telop",
+      "text": "付き合って2年・彼から連絡が来た"
+    },
+    {
+      "sender": "other",
+      "text": "今週土曜、予定ある？"
+    },
+    {
+      "sender": "self",
+      "text": "空いてるよ、一緒に行く？"
+    },
+    {
+      "sender": "other",
+      "text": "実は先に予定入れてて"
+    },
+    {
+      "sender": "self",
+      "text": "え、誰と？"
+    },
+    {
+      "sender": "other",
+      "text": "元カノと2人で飲もうって"
+    },
+    {
+      "sender": "self",
+      "text": "え"
+    },
+    {
+      "sender": "other",
+      "text": "引越しの報告したいって言われて"
+    },
+    {
+      "sender": "self",
+      "text": "それ私も一緒に行くやつじゃないの"
+    },
+    {
+      "sender": "other",
+      "text": "2人で来てって言われてたから"
+    },
+    {
+      "sender": "self",
+      "text": "2人で？"
+    },
+    {
+      "sender": "other",
+      "text": "別れてから友達だし"
+    },
+    {
+      "sender": "self",
+      "text": "友達の飲みに彼女呼ばないの"
+    },
+    {
+      "sender": "other",
+      "text": "ちょっと気まずいじゃん"
+    },
+    {
+      "sender": "self",
+      "text": "誰が気まずいの？"
+    },
+    {
+      "sender": "other",
+      "text": "向こうが"
+    },
+    {
+      "sender": "self",
+      "text": "向こうが気まずいのに会うの？"
+    },
+    {
+      "sender": "other",
+      "text": "..."
+    },
+    {
+      "sender": "self",
+      "text": "正直に言う"
+    },
+    {
+      "sender": "other",
+      "text": "うん"
+    },
+    {
+      "sender": "self",
+      "text": "嫌だよ、2人で"
+    },
+    {
+      "type": "telop",
+      "text": "みほ・本音をぶつけた"
+    },
+    {
+      "sender": "other",
+      "text": "でも友達だし"
+    },
+    {
+      "sender": "self",
+      "text": "じゃあ私も元彼と2人で飲める？"
+    },
+    {
+      "sender": "other",
+      "text": "それは"
+    },
+    {
+      "sender": "self",
+      "text": "同じことじゃない？"
+    },
+    {
+      "sender": "other",
+      "text": "...それは嫌だな"
+    },
+    {
+      "sender": "self",
+      "text": "なんで"
+    },
+    {
+      "sender": "other",
+      "text": "好きだから"
+    },
+    {
+      "sender": "self",
+      "text": "じゃあ私も同じ"
+    },
+    {
+      "sender": "other",
+      "text": "..."
+    },
+    {
+      "sender": "self",
+      "text": "断ってくれるの？"
+    },
+    {
+      "sender": "other",
+      "text": "みほがそこまで言うなら"
+    },
+    {
+      "sender": "self",
+      "text": "「そこまで」って何"
+    },
+    {
+      "sender": "other",
+      "text": "ごめん、断ってくる"
+    },
+    {
+      "sender": "self",
+      "text": "ありがとう"
+    },
+    {
+      "sender": "other",
+      "text": "元カノとは友達続けてもいい？"
+    },
+    {
+      "sender": "self",
+      "text": "3人で会うならいいよ"
+    },
+    {
+      "sender": "other",
+      "text": "それは難しいかも"
+    },
+    {
+      "type": "telop",
+      "text": "元カノとの友達付き合い・あり？なし？"
+    },
+    {
+      "sender": "self",
+      "text": "なんで難しいの"
+    },
+    {
+      "sender": "other",
+      "text": "向こうが嫌がると思うから"
+    },
+    {
+      "sender": "self",
+      "text": "それって友達って言える？"
+    },
+    {
+      "sender": "other",
+      "text": "..."
+    },
+    {
+      "sender": "self",
+      "text": "みんなはどう思う？"
+    }
   ],
   "message_count": 44,
   "char_count": 447,
   "video_status": "pending",
-  "scores": { "total": 81, "title": 19, "opening": 13, "info_density": 12, "twist": 15, "ending": 11, "genre_bonus": 11 },
-  "notes": ""
+  "scores": {
+    "total": 85,
+    "title": 17,
+    "opening": 12,
+    "info_density": 14,
+    "twist": 15,
+    "ending": 13,
+    "genre_bonus": 14
+  },
+  "notes": "後半で彼氏が一方的に折れ、賛否が彼女寄りに傾く。問いかけは中立性が命。"
 }

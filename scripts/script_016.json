@@ -6,52 +6,186 @@
   "category": "笑い_勘違い",
   "setup": "バイト後輩まな・やたら優しくしてくれると思ったらシフトが目的だった",
   "messages": [
-    { "type": "telop", "text": "後輩まな・やたら優しい" },
-    { "sender": "other", "text": "最近後輩どう？" },
-    { "sender": "self", "text": "なんか特別扱いされてる" },
-    { "sender": "other", "text": "どういうこと？" },
-    { "sender": "self", "text": "休憩中によく話しかけてくる" },
-    { "sender": "other", "text": "キュンとした？笑" },
-    { "sender": "self", "text": "ちょっとだけ笑" },
-    { "sender": "other", "text": "脈ありじゃん" },
-    { "sender": "self", "text": "スイーツ持ってきてくれたり" },
-    { "sender": "other", "text": "完全に好きじゃん！！" },
-    { "sender": "self", "text": "昨日「話があります」って" },
-    { "sender": "other", "text": "え！！告白じゃん！！" },
-    { "sender": "self", "text": "ドキドキしながら聞いたら" },
-    { "sender": "other", "text": "何て言ったの！？" },
-    { "sender": "self", "text": "シフト増やしてもらえますか" },
-    { "sender": "other", "text": "は！！！！" },
-    { "sender": "self", "text": "全然そっちだった" },
-    { "sender": "other", "text": "スイーツは？笑" },
-    { "type": "telop", "text": "まな・バイト代が足りなかった" },
-    { "sender": "self", "text": "よく来てくれてるからって" },
-    { "sender": "other", "text": "お客さん扱いじゃん笑" },
-    { "sender": "self", "text": "休憩中話しかけてきたのも" },
-    { "sender": "other", "text": "シフト相談したかっただけ？" },
-    { "sender": "self", "text": "全部そうだった笑" },
-    { "sender": "other", "text": "ドキドキ損したね笑" },
-    { "sender": "self", "text": "シフト入れることにした" },
-    { "sender": "other", "text": "え！なんで！" },
-    { "sender": "self", "text": "断れなかった笑" },
-    { "sender": "other", "text": "好き引きずってるじゃん笑" },
-    { "sender": "self", "text": "違うし笑笑" },
-    { "sender": "other", "text": "どう見ても引きずってる笑" },
-    { "sender": "self", "text": "なんかもう可愛くて笑" },
-    { "sender": "other", "text": "アウトじゃん笑笑" },
-    { "sender": "self", "text": "黙っといて笑" },
-    { "sender": "other", "text": "頑張れよ笑" },
-    { "type": "telop", "text": "翌週・シフトが週4になった" },
-    { "sender": "self", "text": "ありがとうございます！って来た" },
-    { "sender": "other", "text": "誰のセリフ笑" },
-    { "sender": "self", "text": "まなの笑" },
-    { "sender": "other", "text": "完全に振り回されてる笑" },
-    { "sender": "self", "text": "でもなんか楽しい笑" },
-    { "sender": "other", "text": "もう好きじゃん笑笑" }
+    {
+      "type": "telop",
+      "text": "後輩まな・やたら優しい"
+    },
+    {
+      "sender": "other",
+      "text": "最近後輩どう？"
+    },
+    {
+      "sender": "self",
+      "text": "なんか特別扱いされてる"
+    },
+    {
+      "sender": "other",
+      "text": "どういうこと？"
+    },
+    {
+      "sender": "self",
+      "text": "休憩中によく話しかけてくる"
+    },
+    {
+      "sender": "other",
+      "text": "キュンとした？笑"
+    },
+    {
+      "sender": "self",
+      "text": "ちょっとだけ笑"
+    },
+    {
+      "sender": "other",
+      "text": "脈ありじゃん"
+    },
+    {
+      "sender": "self",
+      "text": "スイーツ持ってきてくれたり"
+    },
+    {
+      "sender": "other",
+      "text": "完全に好きじゃん！！"
+    },
+    {
+      "sender": "self",
+      "text": "昨日「話があります」って"
+    },
+    {
+      "sender": "other",
+      "text": "え！！告白じゃん！！"
+    },
+    {
+      "sender": "self",
+      "text": "ドキドキしながら聞いたら"
+    },
+    {
+      "sender": "other",
+      "text": "何て言ったの！？"
+    },
+    {
+      "sender": "self",
+      "text": "シフト増やしてもらえますか"
+    },
+    {
+      "sender": "other",
+      "text": "は！！！！"
+    },
+    {
+      "sender": "self",
+      "text": "全然そっちだった"
+    },
+    {
+      "sender": "other",
+      "text": "スイーツは？笑"
+    },
+    {
+      "type": "telop",
+      "text": "まな・バイト代が足りなかった"
+    },
+    {
+      "sender": "self",
+      "text": "よく来てくれてるからって"
+    },
+    {
+      "sender": "other",
+      "text": "お客さん扱いじゃん笑"
+    },
+    {
+      "sender": "self",
+      "text": "休憩中話しかけてきたのも"
+    },
+    {
+      "sender": "other",
+      "text": "シフト相談したかっただけ？"
+    },
+    {
+      "sender": "self",
+      "text": "全部そうだった笑"
+    },
+    {
+      "sender": "other",
+      "text": "ドキドキ損したね笑"
+    },
+    {
+      "sender": "self",
+      "text": "シフト入れることにした"
+    },
+    {
+      "sender": "other",
+      "text": "え！なんで！"
+    },
+    {
+      "sender": "self",
+      "text": "断れなかった笑"
+    },
+    {
+      "sender": "other",
+      "text": "好き引きずってるじゃん笑"
+    },
+    {
+      "sender": "self",
+      "text": "違うし笑笑"
+    },
+    {
+      "sender": "other",
+      "text": "どう見ても引きずってる笑"
+    },
+    {
+      "sender": "self",
+      "text": "なんかもう可愛くて笑"
+    },
+    {
+      "sender": "other",
+      "text": "アウトじゃん笑笑"
+    },
+    {
+      "sender": "self",
+      "text": "黙っといて笑"
+    },
+    {
+      "sender": "other",
+      "text": "頑張れよ笑"
+    },
+    {
+      "type": "telop",
+      "text": "翌週・シフトが週4になった"
+    },
+    {
+      "sender": "self",
+      "text": "ありがとうございます！って来た"
+    },
+    {
+      "sender": "other",
+      "text": "誰のセリフ笑"
+    },
+    {
+      "sender": "self",
+      "text": "まなの笑"
+    },
+    {
+      "sender": "other",
+      "text": "完全に振り回されてる笑"
+    },
+    {
+      "sender": "self",
+      "text": "でもなんか楽しい笑"
+    },
+    {
+      "sender": "other",
+      "text": "もう好きじゃん笑笑"
+    }
   ],
   "message_count": 42,
   "char_count": 394,
   "video_status": "pending",
-  "scores": { "total": 0, "title": 0, "opening": 0, "info_density": 0, "twist": 0, "ending": 0, "genre_bonus": 0 },
-  "notes": ""
+  "scores": {
+    "total": 78,
+    "title": 16,
+    "opening": 11,
+    "info_density": 12,
+    "twist": 15,
+    "ending": 11,
+    "genre_bonus": 13
+  },
+  "notes": "冒頭の具体性が弱い。オチが緩く締まらない。後半「好き引きずってる」のやりとりが冗長。"
 }

@@ -6,54 +6,194 @@
   "category": "笑い_誤送信",
   "setup": "修学旅行中・先生の悪口をクラスLINEに誤送信した",
   "messages": [
-    { "type": "telop", "text": "修学旅行3日目・夜のLINE" },
-    { "sender": "self", "text": "みく聞いて死にたい" },
-    { "sender": "other", "text": "え何？" },
-    { "sender": "self", "text": "クラスLINEに誤爆した" },
-    { "sender": "other", "text": "何を！？" },
-    { "sender": "self", "text": "先生の愚痴笑" },
-    { "sender": "other", "text": "は！？！？ちょっと待って" },
-    { "sender": "self", "text": "どうしよどうしよ" },
-    { "sender": "other", "text": "何て書いたの" },
-    { "sender": "self", "text": "「先生の声うるさすぎｗ」" },
-    { "sender": "other", "text": "最悪！！笑" },
-    { "sender": "self", "text": "笑えない笑えない" },
-    { "sender": "other", "text": "消せたの？" },
-    { "sender": "self", "text": "一応消したけど" },
-    { "sender": "other", "text": "既に全員見てる？" },
-    { "sender": "self", "text": "多分..." },
-    { "sender": "other", "text": "コメント来てる？" },
-    { "sender": "self", "text": "爆笑してるｗｗｗ" },
-    { "sender": "other", "text": "それはまだいい！" },
-    { "sender": "self", "text": "でもこれ" },
-    { "sender": "other", "text": "何？" },
-    { "type": "telop", "text": "先生もグループにいた" },
-    { "sender": "self", "text": "先生もグループにいるんだけど" },
-    { "sender": "other", "text": "は！！！！！！" },
-    { "sender": "self", "text": "先生からコメント来た" },
-    { "sender": "other", "text": "何て！？" },
-    { "sender": "self", "text": "「声量気をつけます」" },
-    { "sender": "other", "text": "先生器でかすぎｗ" },
-    { "sender": "self", "text": "どう返せばいいの" },
-    { "sender": "other", "text": "普通に謝れ！！" },
-    { "sender": "self", "text": "先生すみませんでした" },
-    { "sender": "other", "text": "それだけ！？笑" },
-    { "sender": "self", "text": "返信来た" },
-    { "sender": "other", "text": "何て？" },
-    { "sender": "self", "text": "「クラス全員で共有ありがとう」" },
-    { "sender": "other", "text": "先生最高すぎる笑" },
-    { "sender": "self", "text": "クラス全員笑ってる" },
-    { "sender": "other", "text": "むしろ仲良くなれたじゃん" },
-    { "type": "telop", "text": "翌日・先生に呼ばれた" },
-    { "sender": "self", "text": "授業中気をつけますって言われた" },
-    { "sender": "other", "text": "先生笑いながら？" },
-    { "sender": "self", "text": "笑いながら言われた笑" },
-    { "sender": "other", "text": "来年も担任になってほしい笑" },
-    { "sender": "self", "text": "それだけはやめて！笑笑" }
+    {
+      "type": "telop",
+      "text": "修学旅行3日目・夜のLINE"
+    },
+    {
+      "sender": "self",
+      "text": "みく聞いて死にたい"
+    },
+    {
+      "sender": "other",
+      "text": "え何？"
+    },
+    {
+      "sender": "self",
+      "text": "クラスLINEに誤爆した"
+    },
+    {
+      "sender": "other",
+      "text": "何を！？"
+    },
+    {
+      "sender": "self",
+      "text": "先生の愚痴笑"
+    },
+    {
+      "sender": "other",
+      "text": "は！？！？ちょっと待って"
+    },
+    {
+      "sender": "self",
+      "text": "どうしよどうしよ"
+    },
+    {
+      "sender": "other",
+      "text": "何て書いたの"
+    },
+    {
+      "sender": "self",
+      "text": "「先生の声うるさすぎｗ」"
+    },
+    {
+      "sender": "other",
+      "text": "最悪！！笑"
+    },
+    {
+      "sender": "self",
+      "text": "笑えない笑えない"
+    },
+    {
+      "sender": "other",
+      "text": "消せたの？"
+    },
+    {
+      "sender": "self",
+      "text": "一応消したけど"
+    },
+    {
+      "sender": "other",
+      "text": "既に全員見てる？"
+    },
+    {
+      "sender": "self",
+      "text": "多分..."
+    },
+    {
+      "sender": "other",
+      "text": "コメント来てる？"
+    },
+    {
+      "sender": "self",
+      "text": "爆笑してるｗｗｗ"
+    },
+    {
+      "sender": "other",
+      "text": "それはまだいい！"
+    },
+    {
+      "sender": "self",
+      "text": "でもこれ"
+    },
+    {
+      "sender": "other",
+      "text": "何？"
+    },
+    {
+      "type": "telop",
+      "text": "先生もグループにいた"
+    },
+    {
+      "sender": "self",
+      "text": "先生もグループにいるんだけど"
+    },
+    {
+      "sender": "other",
+      "text": "は！！！！！！"
+    },
+    {
+      "sender": "self",
+      "text": "先生からコメント来た"
+    },
+    {
+      "sender": "other",
+      "text": "何て！？"
+    },
+    {
+      "sender": "self",
+      "text": "「声量気をつけます」"
+    },
+    {
+      "sender": "other",
+      "text": "先生器でかすぎｗ"
+    },
+    {
+      "sender": "self",
+      "text": "どう返せばいいの"
+    },
+    {
+      "sender": "other",
+      "text": "普通に謝れ！！"
+    },
+    {
+      "sender": "self",
+      "text": "先生すみませんでした"
+    },
+    {
+      "sender": "other",
+      "text": "それだけ！？笑"
+    },
+    {
+      "sender": "self",
+      "text": "返信来た"
+    },
+    {
+      "sender": "other",
+      "text": "何て？"
+    },
+    {
+      "sender": "self",
+      "text": "「クラス全員で共有ありがとう」"
+    },
+    {
+      "sender": "other",
+      "text": "先生最高すぎる笑"
+    },
+    {
+      "sender": "self",
+      "text": "クラス全員笑ってる"
+    },
+    {
+      "sender": "other",
+      "text": "むしろ仲良くなれたじゃん"
+    },
+    {
+      "type": "telop",
+      "text": "翌日・先生に呼ばれた"
+    },
+    {
+      "sender": "self",
+      "text": "授業中気をつけますって言われた"
+    },
+    {
+      "sender": "other",
+      "text": "先生笑いながら？"
+    },
+    {
+      "sender": "self",
+      "text": "笑いながら言われた笑"
+    },
+    {
+      "sender": "other",
+      "text": "来年も担任になってほしい笑"
+    },
+    {
+      "sender": "self",
+      "text": "それだけはやめて！笑笑"
+    }
   ],
   "message_count": 44,
   "char_count": 418,
   "video_status": "pending",
-  "scores": { "total": 61, "title": 10, "opening": 9, "info_density": 11, "twist": 14, "ending": 9, "genre_bonus": 8 },
-  "notes": ""
+  "scores": {
+    "total": 82,
+    "title": 15,
+    "opening": 12,
+    "info_density": 13,
+    "twist": 16,
+    "ending": 12,
+    "genre_bonus": 14
+  },
+  "notes": "先生が良い人すぎてスカッと/驚きが穏やか。誤爆系は他にもあり食傷注意。"
 }
