@@ -6,53 +6,190 @@
   "category": "スカッと_職場",
   "setup": "入社3年目・徹夜で作った企画書を同僚に横取りされた",
   "messages": [
-    { "type": "telop", "text": "入社3年目・徹夜で作った企画書" },
-    { "sender": "self", "text": "ねえ聞いてくれる今日のこと" },
-    { "sender": "other", "text": "山田さんの件？" },
-    { "sender": "self", "text": "気づいてたの？" },
-    { "sender": "other", "text": "なんとなくわかってた" },
-    { "sender": "self", "text": "証拠3週間集めてたんだよ" },
-    { "sender": "other", "text": "え、準備してたの！？" },
-    { "sender": "self", "text": "ファイルの作成日時とか" },
-    { "sender": "other", "text": "すごい..." },
-    { "sender": "self", "text": "先月10日・深夜2時のやつ" },
-    { "sender": "other", "text": "徹夜した日じゃん" },
-    { "sender": "self", "text": "修正履歴も全部残ってた" },
-    { "sender": "other", "text": "それは確実だよ" },
-    { "sender": "self", "text": "今日上司に全部見せた" },
-    { "sender": "other", "text": "最初信じてもらえた？" },
-    { "sender": "self", "text": "最初は信じてもらえなかった" },
-    { "sender": "other", "text": "え！？" },
-    { "sender": "self", "text": "でも証拠を並べたら" },
-    { "sender": "other", "text": "うん？" },
-    { "sender": "self", "text": "修正履歴に私の名前が全部" },
-    { "sender": "other", "text": "完全に証拠じゃん" },
-    { "sender": "self", "text": "上司の顔色が変わった" },
-    { "type": "telop", "text": "山田・上司に呼ばれた" },
-    { "sender": "other", "text": "山田さんは？" },
-    { "sender": "self", "text": "私の横で上司に呼ばれてた" },
-    { "sender": "other", "text": "！？" },
-    { "sender": "self", "text": "「原案は田中が作りました」って" },
-    { "sender": "other", "text": "上司が言ってくれた！？" },
-    { "sender": "self", "text": "山田さんの顔が真っ青だった" },
-    { "sender": "other", "text": "当然！！！" },
-    { "sender": "self", "text": "その後私だけ上司に呼ばれて" },
-    { "sender": "other", "text": "何て？" },
-    { "sender": "self", "text": "来月から企画リーダーに" },
-    { "sender": "other", "text": "！！！！！" },
-    { "sender": "self", "text": "証拠は大事だね笑" },
-    { "sender": "other", "text": "完璧すぎる" },
-    { "type": "telop", "text": "その夜・山田から謝罪LINEが来た" },
-    { "sender": "self", "text": "「ごめんなさい」って来た" },
-    { "sender": "other", "text": "何て返したの" },
-    { "sender": "self", "text": "既読スルー" },
-    { "sender": "other", "text": "最高の対応笑" },
-    { "sender": "self", "text": "次は抜かされないよ" },
-    { "sender": "other", "text": "リーダー頑張れ！" }
+    {
+      "type": "telop",
+      "text": "入社3年目・徹夜で作った企画書"
+    },
+    {
+      "sender": "self",
+      "text": "ねえ聞いてくれる今日のこと"
+    },
+    {
+      "sender": "other",
+      "text": "山田さんの件？"
+    },
+    {
+      "sender": "self",
+      "text": "気づいてたの？"
+    },
+    {
+      "sender": "other",
+      "text": "なんとなくわかってた"
+    },
+    {
+      "sender": "self",
+      "text": "証拠3週間集めてたんだよ"
+    },
+    {
+      "sender": "other",
+      "text": "え、準備してたの！？"
+    },
+    {
+      "sender": "self",
+      "text": "ファイルの作成日時とか"
+    },
+    {
+      "sender": "other",
+      "text": "すごい..."
+    },
+    {
+      "sender": "self",
+      "text": "先月10日・深夜2時のやつ"
+    },
+    {
+      "sender": "other",
+      "text": "徹夜した日じゃん"
+    },
+    {
+      "sender": "self",
+      "text": "修正履歴も全部残ってた"
+    },
+    {
+      "sender": "other",
+      "text": "それは確実だよ"
+    },
+    {
+      "sender": "self",
+      "text": "今日上司に全部見せた"
+    },
+    {
+      "sender": "other",
+      "text": "最初信じてもらえた？"
+    },
+    {
+      "sender": "self",
+      "text": "最初は信じてもらえなかった"
+    },
+    {
+      "sender": "other",
+      "text": "え！？"
+    },
+    {
+      "sender": "self",
+      "text": "でも証拠を並べたら"
+    },
+    {
+      "sender": "other",
+      "text": "うん？"
+    },
+    {
+      "sender": "self",
+      "text": "修正履歴に私の名前が全部"
+    },
+    {
+      "sender": "other",
+      "text": "完全に証拠じゃん"
+    },
+    {
+      "sender": "self",
+      "text": "上司の顔色が変わった"
+    },
+    {
+      "type": "telop",
+      "text": "山田・上司に呼ばれた"
+    },
+    {
+      "sender": "other",
+      "text": "山田さんは？"
+    },
+    {
+      "sender": "self",
+      "text": "私の横で上司に呼ばれてた"
+    },
+    {
+      "sender": "other",
+      "text": "！？"
+    },
+    {
+      "sender": "self",
+      "text": "「原案は田中が作りました」って"
+    },
+    {
+      "sender": "other",
+      "text": "上司が言ってくれた！？"
+    },
+    {
+      "sender": "self",
+      "text": "山田さんの顔が真っ青だった"
+    },
+    {
+      "sender": "other",
+      "text": "当然！！！"
+    },
+    {
+      "sender": "self",
+      "text": "その後私だけ上司に呼ばれて"
+    },
+    {
+      "sender": "other",
+      "text": "何て？"
+    },
+    {
+      "sender": "self",
+      "text": "来月から企画リーダーに"
+    },
+    {
+      "sender": "other",
+      "text": "！！！！！"
+    },
+    {
+      "sender": "self",
+      "text": "証拠は大事だね笑"
+    },
+    {
+      "sender": "other",
+      "text": "完璧すぎる"
+    },
+    {
+      "type": "telop",
+      "text": "その夜・山田から謝罪LINEが来た"
+    },
+    {
+      "sender": "self",
+      "text": "「ごめんなさい」って来た"
+    },
+    {
+      "sender": "other",
+      "text": "何て返したの"
+    },
+    {
+      "sender": "self",
+      "text": "既読スルー"
+    },
+    {
+      "sender": "other",
+      "text": "最高の対応笑"
+    },
+    {
+      "sender": "self",
+      "text": "次は抜かされないよ"
+    },
+    {
+      "sender": "other",
+      "text": "リーダー頑張れ！"
+    }
   ],
   "message_count": 43,
   "char_count": 445,
   "video_status": "pending",
-  "scores": { "total": 72, "title": 14, "opening": 12, "info_density": 13, "twist": 12, "ending": 12, "genre_bonus": 9 },
+  "scores": {
+    "total": 0,
+    "title": 0,
+    "opening": 0,
+    "info_density": 0,
+    "twist": 0,
+    "ending": 0,
+    "genre_bonus": 0
+  },
   "notes": ""
 }
