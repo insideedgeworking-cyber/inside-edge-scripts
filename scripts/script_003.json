@@ -175,13 +175,13 @@
   "char_count": 381,
   "video_status": "pending",
   "scores": {
-    "total": 82,
-    "title": 16,
-    "opening": 13,
-    "info_density": 14,
-    "twist": 15,
-    "ending": 11,
-    "genre_bonus": 13
+    "total": 0,
+    "title": 0,
+    "opening": 0,
+    "info_density": 0,
+    "twist": 0,
+    "ending": 0,
+    "genre_bonus": 0
   },
   "notes": ""
 }
