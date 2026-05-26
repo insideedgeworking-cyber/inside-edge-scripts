@@ -51,6 +51,6 @@
   "message_count": 42,
   "char_count": 448,
   "video_status": "pending",
-  "scores": { "total": 0, "title": 0, "opening": 0, "info_density": 0, "twist": 0, "ending": 0, "genre_bonus": 0 },
+  "scores": { "total": 83, "title": 13, "opening": 13, "info_density": 13, "twist": 17, "ending": 14, "genre_bonus": 13 },
   "notes": ""
 }
