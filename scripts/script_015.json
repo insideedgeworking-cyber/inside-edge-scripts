@@ -1,195 +1,171 @@
 {
   "id": "script_015",
-  "created_at": "2026-05-26",
-  "title": "【LINE】10ヶ月ぶりに元彼から来たLINEの違和感 #怖い話 #ゾッとする #Shorts",
+  "created_at": "2026-05-27",
+  "title": "【LINE】上の階から苦情が来たけど、私の部屋は最上階 #怖い話 #意味怖 #Shorts",
   "genre": "怖い系",
-  "category": "怖い_別人",
-  "setup": "10ヶ月音信不通の元彼から突然LINEが来たが何かがおかしい",
+  "category": "怖い_意味怖",
+  "setup": "知らない番号から「夜うるさい」と苦情が来たが、自分の部屋は最上階だった",
   "messages": [
     {
       "type": "telop",
-      "text": "10ヶ月音信不通の元彼からLINE"
+      "text": "引っ越して1週間・知らない番号からLINE"
     },
     {
       "sender": "other",
-      "text": "久しぶり、元気にしてた？"
+      "text": "夜の足音うるさいです"
     },
     {
       "sender": "self",
-      "text": "え、急にどうしたの"
+      "text": "どちら様ですか"
     },
     {
       "sender": "other",
-      "text": "なんか思い出してさ"
+      "text": "上の階の者です"
     },
     {
       "sender": "self",
-      "text": "そっか、私は元気だよ"
+      "text": "すみません気をつけます"
     },
     {
       "sender": "other",
-      "text": "よかった"
+      "text": "毎晩2時頃ドンドン響く"
     },
     {
       "sender": "self",
-      "text": "あなたは？"
+      "text": "本当にすみません"
     },
     {
       "sender": "other",
-      "text": "俺も元気"
+      "text": "改善してください"
     },
     {
       "sender": "self",
-      "text": "何してるの最近"
-    },
-    {
-      "sender": "other",
-      "text": "変わらず仕事してる"
+      "text": "はい以後気をつけます"
     },
     {
       "sender": "self",
-      "text": "そっか、頑張ってるね"
-    },
-    {
-      "sender": "other",
-      "text": "お前の声が聞きたいな"
-    },
-    {
-      "sender": "self",
-      "text": "え"
-    },
-    {
-      "sender": "other",
-      "text": "また会えたりする？"
-    },
-    {
-      "sender": "self",
-      "text": "急にどうしたの本当に"
-    },
-    {
-      "sender": "other",
-      "text": "なんかお前のこと思い出して"
-    },
-    {
-      "sender": "self",
-      "text": "10ヶ月連絡なかったのに"
-    },
-    {
-      "sender": "other",
-      "text": "ごめん、色々あって"
-    },
-    {
-      "sender": "self",
-      "text": "色々って何"
-    },
-    {
-      "sender": "other",
-      "text": "仕事が忙しくてさ"
-    },
-    {
-      "sender": "self",
-      "text": "一個確認していい？"
+      "text": "あれ"
     },
     {
       "type": "telop",
-      "text": "まい・違和感の正体を確認した"
-    },
-    {
-      "sender": "other",
-      "text": "何？"
+      "text": "ふと違和感に気づく"
     },
     {
       "sender": "self",
-      "text": "私の誕生日って覚えてる？"
+      "text": "うち最上階なんですけど"
     },
     {
       "sender": "other",
-      "text": "6月だろ"
+      "text": "そうですか"
     },
     {
       "sender": "self",
-      "text": "違うよ"
+      "text": "上の階に部屋はないです"
     },
     {
       "sender": "other",
-      "text": "え、じゃあいつ？"
+      "text": "ありますよ"
     },
     {
       "sender": "self",
-      "text": "付き合ってた時祝ってくれたよね"
+      "text": "屋上しかないはずです"
     },
     {
       "sender": "other",
-      "text": "..."
+      "text": "私はずっと上にいます"
     },
     {
       "sender": "self",
-      "text": "もう一個聞いていい？"
+      "text": "管理会社に確認します"
     },
     {
       "sender": "other",
-      "text": "なに"
+      "text": "しなくていいですよ"
     },
     {
       "sender": "self",
-      "text": "私の名前、何て？"
+      "text": "なんでですか"
     },
     {
       "sender": "other",
-      "text": "え"
-    },
-    {
-      "sender": "self",
-      "text": "すぐ答えられないの？"
-    },
-    {
-      "sender": "other",
-      "text": "まい、だろ"
-    },
-    {
-      "sender": "self",
-      "text": "私の名前は「まい」じゃないよ"
-    },
-    {
-      "sender": "other",
-      "text": "えっと"
+      "text": "見ればわかるので"
     },
     {
       "type": "telop",
-      "text": "別の女に間違えてLINEしてた"
-    },
-    {
-      "sender": "self",
-      "text": "誰に送るつもりだったの"
+      "text": "既読の直後、また返信が来た"
     },
     {
       "sender": "other",
-      "text": "..."
+      "text": "さっきベランダ出ましたよね"
     },
     {
       "sender": "self",
-      "text": "ブロックします"
+      "text": "見えるんですか"
     },
     {
       "sender": "other",
-      "text": "ちがう待って"
+      "text": "真上から見てます"
     },
     {
       "sender": "self",
-      "text": "さよなら"
+      "text": "真上は何もないですよね"
+    },
+    {
+      "sender": "other",
+      "text": "だから上にいるんです"
+    },
+    {
+      "sender": "self",
+      "text": "どういう意味ですか"
+    },
+    {
+      "sender": "other",
+      "text": "今もあなたを見てます"
+    },
+    {
+      "sender": "self",
+      "text": "やめてください"
+    },
+    {
+      "sender": "other",
+      "text": "足音じゃなくて私の音です"
+    },
+    {
+      "type": "telop",
+      "text": "その夜・天井からドンッと音がした"
+    },
+    {
+      "sender": "self",
+      "text": "今の音なに"
+    },
+    {
+      "sender": "other",
+      "text": "やっと気づきましたね"
+    },
+    {
+      "sender": "self",
+      "text": "警察に電話します"
+    },
+    {
+      "sender": "other",
+      "text": "天井を見てください"
+    },
+    {
+      "type": "telop",
+      "text": "最上階の、さらに上から"
     }
   ],
-  "message_count": 43,
-  "char_count": 447,
   "video_status": "pending",
   "scores": {
-    "total": 84,
-    "title": 16,
-    "opening": 12,
-    "info_density": 14,
-    "twist": 16,
-    "ending": 12,
-    "genre_bonus": 14
+    "total": 0,
+    "title": 0,
+    "opening": 0,
+    "info_density": 0,
+    "twist": 0,
+    "ending": 0,
+    "genre_bonus": 0
   },
-  "notes": "「別人に誤爆」オチは既視感あり。なぜ送られたかの不気味さをもう一押し。"
+  "notes": "",
+  "message_count": 37,
+  "char_count": 348
 }
