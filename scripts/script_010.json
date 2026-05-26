@@ -6,52 +6,186 @@
   "category": "感動_友情",
   "setup": "仕事でミスした夜・3年連絡してなかった親友からLINEが来た",
   "messages": [
-    { "type": "telop", "text": "仕事で大失敗した夜・午前0時" },
-    { "sender": "self", "text": "ねえ今日やらかした" },
-    { "sender": "other", "text": "え、どうした？" },
-    { "sender": "self", "text": "取引先に間違えたデータ送った" },
-    { "sender": "other", "text": "取り返せる？" },
-    { "sender": "self", "text": "上司に3時間怒られた" },
-    { "sender": "other", "text": "大変だったね..." },
-    { "sender": "self", "text": "3年ぶりに連絡するのに急でごめん" },
-    { "sender": "other", "text": "え、気にしないで" },
-    { "sender": "self", "text": "落ち込んだとき思い出して" },
-    { "sender": "other", "text": "どうして？" },
-    { "sender": "self", "text": "昔も失敗したとき聞いてくれてたから" },
-    { "sender": "other", "text": "高校の時のやつね" },
-    { "sender": "self", "text": "あの時のこと今でも覚えてる" },
-    { "sender": "other", "text": "私もだよ" },
-    { "sender": "self", "text": "久しぶりすぎてごめん" },
-    { "sender": "other", "text": "連絡してくれてよかった" },
-    { "sender": "self", "text": "かなから来ると思ってなかった" },
-    { "sender": "other", "text": "実はね" },
-    { "sender": "self", "text": "うん" },
-    { "sender": "other", "text": "私も今年転職して失敗した" },
-    { "type": "telop", "text": "かな・同じ状況だったと言った" },
-    { "sender": "self", "text": "え、そうなの" },
-    { "sender": "other", "text": "同じ状況で懐かしくなって" },
-    { "sender": "self", "text": "今日連絡しようと思ってたの？" },
-    { "sender": "other", "text": "そう、今日偶然" },
-    { "sender": "self", "text": "同じタイミングで" },
-    { "sender": "other", "text": "縁だね笑" },
-    { "sender": "self", "text": "聞いてくれてありがとう" },
-    { "sender": "other", "text": "こっちこそ" },
-    { "sender": "self", "text": "また連絡するね" },
-    { "sender": "other", "text": "うん、今度は私から" },
-    { "sender": "self", "text": "待ってる" },
-    { "type": "telop", "text": "その夜・2人は3時間電話した" },
-    { "sender": "other", "text": "なんか元気出た" },
-    { "sender": "self", "text": "私も" },
-    { "sender": "other", "text": "3年って何だったんだろうね" },
-    { "sender": "self", "text": "今日から0年にすればいい" },
-    { "sender": "other", "text": "それいいね笑" },
-    { "sender": "self", "text": "おやすみ" },
-    { "sender": "other", "text": "おやすみ、また明日" },
-    { "sender": "self", "text": "うん、また明日" }
+    {
+      "type": "telop",
+      "text": "仕事で大失敗した夜・午前0時"
+    },
+    {
+      "sender": "self",
+      "text": "ねえ今日やらかした"
+    },
+    {
+      "sender": "other",
+      "text": "え、どうした？"
+    },
+    {
+      "sender": "self",
+      "text": "取引先に間違えたデータ送った"
+    },
+    {
+      "sender": "other",
+      "text": "取り返せる？"
+    },
+    {
+      "sender": "self",
+      "text": "上司に3時間怒られた"
+    },
+    {
+      "sender": "other",
+      "text": "大変だったね..."
+    },
+    {
+      "sender": "self",
+      "text": "3年ぶりに連絡するのに急でごめん"
+    },
+    {
+      "sender": "other",
+      "text": "え、気にしないで"
+    },
+    {
+      "sender": "self",
+      "text": "落ち込んだとき思い出して"
+    },
+    {
+      "sender": "other",
+      "text": "どうして？"
+    },
+    {
+      "sender": "self",
+      "text": "昔も失敗したとき聞いてくれてたから"
+    },
+    {
+      "sender": "other",
+      "text": "高校の時のやつね"
+    },
+    {
+      "sender": "self",
+      "text": "あの時のこと今でも覚えてる"
+    },
+    {
+      "sender": "other",
+      "text": "私もだよ"
+    },
+    {
+      "sender": "self",
+      "text": "久しぶりすぎてごめん"
+    },
+    {
+      "sender": "other",
+      "text": "連絡してくれてよかった"
+    },
+    {
+      "sender": "self",
+      "text": "かなから来ると思ってなかった"
+    },
+    {
+      "sender": "other",
+      "text": "実はね"
+    },
+    {
+      "sender": "self",
+      "text": "うん"
+    },
+    {
+      "sender": "other",
+      "text": "私も今年転職して失敗した"
+    },
+    {
+      "type": "telop",
+      "text": "かな・同じ状況だったと言った"
+    },
+    {
+      "sender": "self",
+      "text": "え、そうなの"
+    },
+    {
+      "sender": "other",
+      "text": "同じ状況で懐かしくなって"
+    },
+    {
+      "sender": "self",
+      "text": "今日連絡しようと思ってたの？"
+    },
+    {
+      "sender": "other",
+      "text": "そう、今日偶然"
+    },
+    {
+      "sender": "self",
+      "text": "同じタイミングで"
+    },
+    {
+      "sender": "other",
+      "text": "縁だね笑"
+    },
+    {
+      "sender": "self",
+      "text": "聞いてくれてありがとう"
+    },
+    {
+      "sender": "other",
+      "text": "こっちこそ"
+    },
+    {
+      "sender": "self",
+      "text": "また連絡するね"
+    },
+    {
+      "sender": "other",
+      "text": "うん、今度は私から"
+    },
+    {
+      "sender": "self",
+      "text": "待ってる"
+    },
+    {
+      "type": "telop",
+      "text": "その夜・2人は3時間電話した"
+    },
+    {
+      "sender": "other",
+      "text": "なんか元気出た"
+    },
+    {
+      "sender": "self",
+      "text": "私も"
+    },
+    {
+      "sender": "other",
+      "text": "3年って何だったんだろうね"
+    },
+    {
+      "sender": "self",
+      "text": "今日から0年にすればいい"
+    },
+    {
+      "sender": "other",
+      "text": "それいいね笑"
+    },
+    {
+      "sender": "self",
+      "text": "おやすみ"
+    },
+    {
+      "sender": "other",
+      "text": "おやすみ、また明日"
+    },
+    {
+      "sender": "self",
+      "text": "うん、また明日"
+    }
   ],
   "message_count": 42,
   "char_count": 463,
   "video_status": "pending",
-  "scores": { "total": 78, "title": 16, "opening": 12, "info_density": 13, "twist": 15, "ending": 11, "genre_bonus": 11 },
+  "scores": {
+    "total": 0,
+    "title": 0,
+    "opening": 0,
+    "info_density": 0,
+    "twist": 0,
+    "ending": 0,
+    "genre_bonus": 0
+  },
   "notes": ""
 }
