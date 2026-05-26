@@ -6,51 +6,182 @@
   "category": "感動_家族",
   "setup": "一人暮らし8ヶ月・親への返信が雑になっていた",
   "messages": [
-    { "type": "telop", "text": "一人暮らし8ヶ月・返信が雑に" },
-    { "sender": "other", "text": "元気？" },
-    { "sender": "self", "text": "うん、元気" },
-    { "sender": "other", "text": "ご飯ちゃんと食べてる？" },
-    { "sender": "self", "text": "食べてるよ" },
-    { "sender": "other", "text": "何食べたの？" },
-    { "sender": "self", "text": "コンビニ" },
-    { "sender": "other", "text": "また？体に気をつけて" },
-    { "sender": "self", "text": "わかってる" },
-    { "sender": "other", "text": "最近電話してないね" },
-    { "sender": "self", "text": "忙しくて" },
-    { "sender": "other", "text": "そっか" },
-    { "sender": "self", "text": "何かあった？" },
-    { "sender": "other", "text": "ううん、何もない" },
-    { "sender": "self", "text": "じゃあいいよ、また後で" },
-    { "sender": "other", "text": "...お父さんが入院したんだけど" },
-    { "type": "telop", "text": "え・何も言ってなかったのに" },
-    { "sender": "self", "text": "え？" },
-    { "sender": "other", "text": "大したことないから" },
-    { "sender": "self", "text": "大したことないって" },
-    { "sender": "other", "text": "心配かけたくなくて" },
-    { "sender": "self", "text": "いつから？" },
-    { "sender": "other", "text": "1週間前" },
-    { "sender": "self", "text": "1週間！" },
-    { "sender": "other", "text": "もう退院するから" },
-    { "sender": "self", "text": "なんで言わなかったの" },
-    { "sender": "other", "text": "あなたが忙しそうで" },
-    { "sender": "self", "text": "忙しくても言って" },
-    { "sender": "other", "text": "ごめんね" },
-    { "sender": "self", "text": "お母さん辛くなかった？" },
-    { "sender": "other", "text": "あなたの顔が見たかった" },
-    { "sender": "self", "text": "今週末帰る" },
-    { "sender": "other", "text": "え、仕事は？" },
-    { "sender": "self", "text": "帰る" },
-    { "type": "telop", "text": "その夜・初めて親に電話をかけた" },
-    { "sender": "other", "text": "電話なんて久しぶりね" },
-    { "sender": "self", "text": "ごめんなさい" },
-    { "sender": "other", "text": "泣いてるの？" },
-    { "sender": "self", "text": "泣いてない" },
-    { "sender": "other", "text": "待ってるよ、気をつけて帰って" },
-    { "sender": "self", "text": "うん。ありがとう" }
+    {
+      "type": "telop",
+      "text": "一人暮らし8ヶ月・返信が雑に"
+    },
+    {
+      "sender": "other",
+      "text": "元気？"
+    },
+    {
+      "sender": "self",
+      "text": "うん、元気"
+    },
+    {
+      "sender": "other",
+      "text": "ご飯ちゃんと食べてる？"
+    },
+    {
+      "sender": "self",
+      "text": "食べてるよ"
+    },
+    {
+      "sender": "other",
+      "text": "何食べたの？"
+    },
+    {
+      "sender": "self",
+      "text": "コンビニ"
+    },
+    {
+      "sender": "other",
+      "text": "また？体に気をつけて"
+    },
+    {
+      "sender": "self",
+      "text": "わかってる"
+    },
+    {
+      "sender": "other",
+      "text": "最近電話してないね"
+    },
+    {
+      "sender": "self",
+      "text": "忙しくて"
+    },
+    {
+      "sender": "other",
+      "text": "そっか"
+    },
+    {
+      "sender": "self",
+      "text": "何かあった？"
+    },
+    {
+      "sender": "other",
+      "text": "ううん、何もない"
+    },
+    {
+      "sender": "self",
+      "text": "じゃあいいよ、また後で"
+    },
+    {
+      "sender": "other",
+      "text": "...お父さんが入院したんだけど"
+    },
+    {
+      "type": "telop",
+      "text": "え・何も言ってなかったのに"
+    },
+    {
+      "sender": "self",
+      "text": "え？"
+    },
+    {
+      "sender": "other",
+      "text": "大したことないから"
+    },
+    {
+      "sender": "self",
+      "text": "大したことないって"
+    },
+    {
+      "sender": "other",
+      "text": "心配かけたくなくて"
+    },
+    {
+      "sender": "self",
+      "text": "いつから？"
+    },
+    {
+      "sender": "other",
+      "text": "1週間前"
+    },
+    {
+      "sender": "self",
+      "text": "1週間！"
+    },
+    {
+      "sender": "other",
+      "text": "もう退院するから"
+    },
+    {
+      "sender": "self",
+      "text": "なんで言わなかったの"
+    },
+    {
+      "sender": "other",
+      "text": "あなたが忙しそうで"
+    },
+    {
+      "sender": "self",
+      "text": "忙しくても言って"
+    },
+    {
+      "sender": "other",
+      "text": "ごめんね"
+    },
+    {
+      "sender": "self",
+      "text": "お母さん辛くなかった？"
+    },
+    {
+      "sender": "other",
+      "text": "あなたの顔が見たかった"
+    },
+    {
+      "sender": "self",
+      "text": "今週末帰る"
+    },
+    {
+      "sender": "other",
+      "text": "え、仕事は？"
+    },
+    {
+      "sender": "self",
+      "text": "帰る"
+    },
+    {
+      "type": "telop",
+      "text": "その夜・初めて親に電話をかけた"
+    },
+    {
+      "sender": "other",
+      "text": "電話なんて久しぶりね"
+    },
+    {
+      "sender": "self",
+      "text": "ごめんなさい"
+    },
+    {
+      "sender": "other",
+      "text": "泣いてるの？"
+    },
+    {
+      "sender": "self",
+      "text": "泣いてない"
+    },
+    {
+      "sender": "other",
+      "text": "待ってるよ、気をつけて帰って"
+    },
+    {
+      "sender": "self",
+      "text": "うん。ありがとう"
+    }
   ],
   "message_count": 42,
   "char_count": 448,
   "video_status": "pending",
-  "scores": { "total": 83, "title": 13, "opening": 13, "info_density": 13, "twist": 17, "ending": 14, "genre_bonus": 13 },
+  "scores": {
+    "total": 0,
+    "title": 0,
+    "opening": 0,
+    "info_density": 0,
+    "twist": 0,
+    "ending": 0,
+    "genre_bonus": 0
+  },
   "notes": ""
 }
