@@ -6,54 +6,194 @@
   "category": "どんでん返し_告白",
   "setup": "友達ゆいから好きな人の相談・特徴が全部自分に当てはまる",
   "messages": [
-    { "type": "telop", "text": "友達ゆいから「好きな人ができた」" },
-    { "sender": "other", "text": "はるな、ちょっと聞いていい？" },
-    { "sender": "self", "text": "どうした？" },
-    { "sender": "other", "text": "実は好きな人ができた" },
-    { "sender": "self", "text": "え！誰！？" },
-    { "sender": "other", "text": "同じ学科の人" },
-    { "sender": "self", "text": "名前は？" },
-    { "sender": "other", "text": "名前は言えない" },
-    { "sender": "self", "text": "特徴教えて" },
-    { "sender": "other", "text": "髪が短くて" },
-    { "sender": "self", "text": "うん" },
-    { "sender": "other", "text": "理系で背が高い" },
-    { "sender": "self", "text": "理系、珍しいね" },
-    { "sender": "other", "text": "笑顔がすごく温かい感じで" },
-    { "sender": "self", "text": "いいな、優しそう" },
-    { "sender": "other", "text": "趣味が映画と料理で" },
-    { "sender": "self", "text": "え" },
-    { "sender": "other", "text": "カフェとかよく行ってて" },
-    { "sender": "self", "text": "ちょっと待って" },
-    { "sender": "other", "text": "どうした？" },
-    { "sender": "self", "text": "今の説明って..." },
-    { "type": "telop", "text": "はるな・全部自分に当てはまる" },
-    { "sender": "other", "text": "うん？" },
-    { "sender": "self", "text": "髪短くて理系で背高くて" },
-    { "sender": "other", "text": "..." },
-    { "sender": "self", "text": "映画と料理が趣味でカフェが好き" },
-    { "sender": "other", "text": "偶然じゃないかな" },
-    { "sender": "self", "text": "全部私じゃない？" },
-    { "sender": "other", "text": "...はるな" },
-    { "sender": "self", "text": "え" },
-    { "sender": "other", "text": "ずっと言えなかったんだけど" },
-    { "sender": "self", "text": "え？ちょっと待って" },
-    { "sender": "other", "text": "友達でいたかったから" },
-    { "sender": "self", "text": "ゆい" },
-    { "sender": "other", "text": "ごめん、忘れて" },
-    { "sender": "self", "text": "忘れない笑" },
-    { "sender": "other", "text": "え" },
-    { "type": "telop", "text": "はるな・返事を送った" },
-    { "sender": "self", "text": "私もずっと好きだったよ" },
-    { "sender": "other", "text": "え" },
-    { "sender": "other", "text": "え！？！？" },
-    { "sender": "self", "text": "気づいてなかったの笑" },
-    { "sender": "other", "text": "は！！！！" },
-    { "sender": "self", "text": "告白の仕方遠回りすぎｗ" }
+    {
+      "type": "telop",
+      "text": "友達ゆいから「好きな人ができた」"
+    },
+    {
+      "sender": "other",
+      "text": "はるな、ちょっと聞いていい？"
+    },
+    {
+      "sender": "self",
+      "text": "どうした？"
+    },
+    {
+      "sender": "other",
+      "text": "実は好きな人ができた"
+    },
+    {
+      "sender": "self",
+      "text": "え！誰！？"
+    },
+    {
+      "sender": "other",
+      "text": "同じ学科の人"
+    },
+    {
+      "sender": "self",
+      "text": "名前は？"
+    },
+    {
+      "sender": "other",
+      "text": "名前は言えない"
+    },
+    {
+      "sender": "self",
+      "text": "特徴教えて"
+    },
+    {
+      "sender": "other",
+      "text": "髪が短くて"
+    },
+    {
+      "sender": "self",
+      "text": "うん"
+    },
+    {
+      "sender": "other",
+      "text": "理系で背が高い"
+    },
+    {
+      "sender": "self",
+      "text": "理系、珍しいね"
+    },
+    {
+      "sender": "other",
+      "text": "笑顔がすごく温かい感じで"
+    },
+    {
+      "sender": "self",
+      "text": "いいな、優しそう"
+    },
+    {
+      "sender": "other",
+      "text": "趣味が映画と料理で"
+    },
+    {
+      "sender": "self",
+      "text": "え"
+    },
+    {
+      "sender": "other",
+      "text": "カフェとかよく行ってて"
+    },
+    {
+      "sender": "self",
+      "text": "ちょっと待って"
+    },
+    {
+      "sender": "other",
+      "text": "どうした？"
+    },
+    {
+      "sender": "self",
+      "text": "今の説明って..."
+    },
+    {
+      "type": "telop",
+      "text": "はるな・全部自分に当てはまる"
+    },
+    {
+      "sender": "other",
+      "text": "うん？"
+    },
+    {
+      "sender": "self",
+      "text": "髪短くて理系で背高くて"
+    },
+    {
+      "sender": "other",
+      "text": "..."
+    },
+    {
+      "sender": "self",
+      "text": "映画と料理が趣味でカフェが好き"
+    },
+    {
+      "sender": "other",
+      "text": "偶然じゃないかな"
+    },
+    {
+      "sender": "self",
+      "text": "全部私じゃない？"
+    },
+    {
+      "sender": "other",
+      "text": "...はるな"
+    },
+    {
+      "sender": "self",
+      "text": "え"
+    },
+    {
+      "sender": "other",
+      "text": "ずっと言えなかったんだけど"
+    },
+    {
+      "sender": "self",
+      "text": "え？ちょっと待って"
+    },
+    {
+      "sender": "other",
+      "text": "友達でいたかったから"
+    },
+    {
+      "sender": "self",
+      "text": "ゆい"
+    },
+    {
+      "sender": "other",
+      "text": "ごめん、忘れて"
+    },
+    {
+      "sender": "self",
+      "text": "忘れない笑"
+    },
+    {
+      "sender": "other",
+      "text": "え"
+    },
+    {
+      "type": "telop",
+      "text": "はるな・返事を送った"
+    },
+    {
+      "sender": "self",
+      "text": "私もずっと好きだったよ"
+    },
+    {
+      "sender": "other",
+      "text": "え"
+    },
+    {
+      "sender": "other",
+      "text": "え！？！？"
+    },
+    {
+      "sender": "self",
+      "text": "気づいてなかったの笑"
+    },
+    {
+      "sender": "other",
+      "text": "は！！！！"
+    },
+    {
+      "sender": "self",
+      "text": "告白の仕方遠回りすぎｗ"
+    }
   ],
   "message_count": 44,
   "char_count": 428,
   "video_status": "pending",
-  "scores": { "total": 79, "title": 16, "opening": 11, "info_density": 11, "twist": 15, "ending": 13, "genre_bonus": 13 },
+  "scores": {
+    "total": 0,
+    "title": 0,
+    "opening": 0,
+    "info_density": 0,
+    "twist": 0,
+    "ending": 0,
+    "genre_bonus": 0
+  },
   "notes": ""
 }
