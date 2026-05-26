@@ -6,53 +6,190 @@
   "category": "どんでん返し_好感",
   "setup": "入社2年目・怖いと思ってた先輩の本音が予想外だった",
   "messages": [
-    { "type": "telop", "text": "入社2年目・苦手な先輩がいる" },
-    { "sender": "other", "text": "今日の資料、数字ちがってたよ" },
-    { "sender": "self", "text": "すみません、直します" },
-    { "sender": "other", "text": "4ページも確認してみて" },
-    { "sender": "self", "text": "全部確認しました" },
-    { "sender": "other", "text": "今日中に直せる？" },
-    { "sender": "self", "text": "はい、やります" },
-    { "sender": "other", "text": "わかった" },
-    { "sender": "self", "text": "ありがとうございます" },
-    { "sender": "other", "text": "今日体調悪そうだったけど" },
-    { "sender": "self", "text": "え？大丈夫です" },
-    { "sender": "other", "text": "顔色悪かった" },
-    { "sender": "self", "text": "気にしてくれてたんですか" },
-    { "sender": "other", "text": "今日早く帰っていいよ" },
-    { "sender": "self", "text": "でも仕事が" },
-    { "sender": "other", "text": "俺が引き継ぐ" },
-    { "sender": "self", "text": "えっと..." },
-    { "sender": "other", "text": "準備いいし問題ない" },
-    { "sender": "self", "text": "珍しいですね先輩が" },
-    { "sender": "other", "text": "何で驚いてるの" },
-    { "sender": "self", "text": "ずっと怖かったので" },
-    { "type": "telop", "text": "先輩・予想外のことを言い出した" },
-    { "sender": "other", "text": "...そうか" },
-    { "sender": "other", "text": "言い方きつかったね、ごめん" },
-    { "sender": "self", "text": "いえ、正確に教えてもらえて" },
-    { "sender": "other", "text": "実はね" },
-    { "sender": "self", "text": "はい？" },
-    { "sender": "other", "text": "お前、俺に似てるんだよ" },
-    { "sender": "self", "text": "え？" },
-    { "sender": "other", "text": "新人の頃の俺と全く同じ" },
-    { "sender": "self", "text": "だから気になってたんですか" },
-    { "sender": "other", "text": "同じミスをして欲しくなかった" },
-    { "sender": "self", "text": "それって..." },
-    { "sender": "other", "text": "来週も仕事頑張れよ" },
-    { "sender": "self", "text": "はい！" },
-    { "type": "telop", "text": "その夜・なんか泣けてきた" },
-    { "sender": "self", "text": "今日のこと、ありがとうございました" },
-    { "sender": "other", "text": "急にどうした" },
-    { "sender": "self", "text": "苦手じゃなくなった気がして" },
-    { "sender": "other", "text": "...それはよかった" },
-    { "sender": "self", "text": "明日から頑張ります！" },
-    { "sender": "other", "text": "今日は早く寝ろ" },
-    { "sender": "self", "text": "はい笑 おやすみなさい" }
+    {
+      "type": "telop",
+      "text": "入社2年目・苦手な先輩がいる"
+    },
+    {
+      "sender": "other",
+      "text": "今日の資料、数字ちがってたよ"
+    },
+    {
+      "sender": "self",
+      "text": "すみません、直します"
+    },
+    {
+      "sender": "other",
+      "text": "4ページも確認してみて"
+    },
+    {
+      "sender": "self",
+      "text": "全部確認しました"
+    },
+    {
+      "sender": "other",
+      "text": "今日中に直せる？"
+    },
+    {
+      "sender": "self",
+      "text": "はい、やります"
+    },
+    {
+      "sender": "other",
+      "text": "わかった"
+    },
+    {
+      "sender": "self",
+      "text": "ありがとうございます"
+    },
+    {
+      "sender": "other",
+      "text": "今日体調悪そうだったけど"
+    },
+    {
+      "sender": "self",
+      "text": "え？大丈夫です"
+    },
+    {
+      "sender": "other",
+      "text": "顔色悪かった"
+    },
+    {
+      "sender": "self",
+      "text": "気にしてくれてたんですか"
+    },
+    {
+      "sender": "other",
+      "text": "今日早く帰っていいよ"
+    },
+    {
+      "sender": "self",
+      "text": "でも仕事が"
+    },
+    {
+      "sender": "other",
+      "text": "俺が引き継ぐ"
+    },
+    {
+      "sender": "self",
+      "text": "えっと..."
+    },
+    {
+      "sender": "other",
+      "text": "準備いいし問題ない"
+    },
+    {
+      "sender": "self",
+      "text": "珍しいですね先輩が"
+    },
+    {
+      "sender": "other",
+      "text": "何で驚いてるの"
+    },
+    {
+      "sender": "self",
+      "text": "ずっと怖かったので"
+    },
+    {
+      "type": "telop",
+      "text": "先輩・予想外のことを言い出した"
+    },
+    {
+      "sender": "other",
+      "text": "...そうか"
+    },
+    {
+      "sender": "other",
+      "text": "言い方きつかったね、ごめん"
+    },
+    {
+      "sender": "self",
+      "text": "いえ、正確に教えてもらえて"
+    },
+    {
+      "sender": "other",
+      "text": "実はね"
+    },
+    {
+      "sender": "self",
+      "text": "はい？"
+    },
+    {
+      "sender": "other",
+      "text": "お前、俺に似てるんだよ"
+    },
+    {
+      "sender": "self",
+      "text": "え？"
+    },
+    {
+      "sender": "other",
+      "text": "新人の頃の俺と全く同じ"
+    },
+    {
+      "sender": "self",
+      "text": "だから気になってたんですか"
+    },
+    {
+      "sender": "other",
+      "text": "同じミスをして欲しくなかった"
+    },
+    {
+      "sender": "self",
+      "text": "それって..."
+    },
+    {
+      "sender": "other",
+      "text": "来週も仕事頑張れよ"
+    },
+    {
+      "sender": "self",
+      "text": "はい！"
+    },
+    {
+      "type": "telop",
+      "text": "その夜・なんか泣けてきた"
+    },
+    {
+      "sender": "self",
+      "text": "今日のこと、ありがとうございました"
+    },
+    {
+      "sender": "other",
+      "text": "急にどうした"
+    },
+    {
+      "sender": "self",
+      "text": "苦手じゃなくなった気がして"
+    },
+    {
+      "sender": "other",
+      "text": "...それはよかった"
+    },
+    {
+      "sender": "self",
+      "text": "明日から頑張ります！"
+    },
+    {
+      "sender": "other",
+      "text": "今日は早く寝ろ"
+    },
+    {
+      "sender": "self",
+      "text": "はい笑 おやすみなさい"
+    }
   ],
   "message_count": 43,
   "char_count": 452,
   "video_status": "pending",
-  "scores": { "total": 65, "title": 13, "opening": 11, "info_density": 12, "twist": 12, "ending": 8, "genre_bonus": 9 },
+  "scores": {
+    "total": 0,
+    "title": 0,
+    "opening": 0,
+    "info_density": 0,
+    "twist": 0,
+    "ending": 0,
+    "genre_bonus": 0
+  },
   "notes": ""
 }
