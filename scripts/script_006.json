@@ -6,53 +6,190 @@
   "category": "スカッと_浮気",
   "setup": "同棲中の彼氏が毎晩残業と言うが位置情報が全く違う場所",
   "messages": [
-    { "type": "telop", "text": "同棲1年半・彼の残業が急に週5に" },
-    { "sender": "other", "text": "今日も残業になりそう" },
-    { "sender": "self", "text": "そっか、わかった" },
-    { "sender": "other", "text": "帰りは11時すぎかも" },
-    { "sender": "self", "text": "ご飯どうする？" },
-    { "sender": "other", "text": "先食べてて" },
-    { "sender": "self", "text": "わかった" },
-    { "sender": "other", "text": "ありがとう、遅くなってごめん" },
-    { "sender": "self", "text": "うん、気をつけてね" },
-    { "type": "telop", "text": "3週間後・位置情報を確認した" },
-    { "sender": "self", "text": "今日どこにいる？" },
-    { "sender": "other", "text": "会社だよ" },
-    { "sender": "self", "text": "渋谷の会社だよね" },
-    { "sender": "other", "text": "そうだよ、なんで？" },
-    { "sender": "self", "text": "近くに来てるから" },
-    { "sender": "other", "text": "今日は遅くなるし" },
-    { "sender": "self", "text": "位置情報だけ送って" },
-    { "sender": "other", "text": "え、なんで？" },
-    { "sender": "self", "text": "心配だから" },
-    { "sender": "other", "text": "充電切れそうだし後で" },
-    { "sender": "self", "text": "共有設定にしてあるよね私と" },
-    { "sender": "other", "text": "え" },
-    { "sender": "self", "text": "3週間前から確認してた" },
-    { "sender": "other", "text": "それって" },
-    { "sender": "self", "text": "毎日渋谷じゃなくて恵比寿だよね" },
-    { "sender": "other", "text": "説明する" },
-    { "sender": "self", "text": "恵比寿の同じマンションに毎晩" },
-    { "sender": "other", "text": "知り合いで" },
-    { "sender": "self", "text": "女の子の部屋に毎晩5時間？" },
-    { "sender": "other", "text": "誤解だって" },
-    { "sender": "self", "text": "その子に直接聞いてもいい？" },
-    { "sender": "other", "text": "なんで知ってんの" },
-    { "sender": "self", "text": "SNSでつながってたから" },
-    { "sender": "other", "text": "" },
-    { "sender": "self", "text": "荷物は先週まとめてある" },
-    { "sender": "other", "text": "待ってよ話し合おう" },
-    { "sender": "self", "text": "鍵はポストに入れといた" },
-    { "sender": "other", "text": "出て！頼むから" },
-    { "type": "telop", "text": "この後・着信が100件以上来た" },
-    { "sender": "other", "text": "出てよ" },
-    { "sender": "other", "text": "ごめん本当にごめん" },
-    { "sender": "other", "text": "話だけでも" },
-    { "sender": "self", "text": "ブロックしました" }
+    {
+      "type": "telop",
+      "text": "同棲1年半・彼の残業が急に週5に"
+    },
+    {
+      "sender": "other",
+      "text": "今日も残業になりそう"
+    },
+    {
+      "sender": "self",
+      "text": "そっか、わかった"
+    },
+    {
+      "sender": "other",
+      "text": "帰りは11時すぎかも"
+    },
+    {
+      "sender": "self",
+      "text": "ご飯どうする？"
+    },
+    {
+      "sender": "other",
+      "text": "先食べてて"
+    },
+    {
+      "sender": "self",
+      "text": "わかった"
+    },
+    {
+      "sender": "other",
+      "text": "ありがとう、遅くなってごめん"
+    },
+    {
+      "sender": "self",
+      "text": "うん、気をつけてね"
+    },
+    {
+      "type": "telop",
+      "text": "3週間後・位置情報を確認した"
+    },
+    {
+      "sender": "self",
+      "text": "今日どこにいる？"
+    },
+    {
+      "sender": "other",
+      "text": "会社だよ"
+    },
+    {
+      "sender": "self",
+      "text": "渋谷の会社だよね"
+    },
+    {
+      "sender": "other",
+      "text": "そうだよ、なんで？"
+    },
+    {
+      "sender": "self",
+      "text": "近くに来てるから"
+    },
+    {
+      "sender": "other",
+      "text": "今日は遅くなるし"
+    },
+    {
+      "sender": "self",
+      "text": "位置情報だけ送って"
+    },
+    {
+      "sender": "other",
+      "text": "え、なんで？"
+    },
+    {
+      "sender": "self",
+      "text": "心配だから"
+    },
+    {
+      "sender": "other",
+      "text": "充電切れそうだし後で"
+    },
+    {
+      "sender": "self",
+      "text": "共有設定にしてあるよね私と"
+    },
+    {
+      "sender": "other",
+      "text": "え"
+    },
+    {
+      "sender": "self",
+      "text": "3週間前から確認してた"
+    },
+    {
+      "sender": "other",
+      "text": "それって"
+    },
+    {
+      "sender": "self",
+      "text": "毎日渋谷じゃなくて恵比寿だよね"
+    },
+    {
+      "sender": "other",
+      "text": "説明する"
+    },
+    {
+      "sender": "self",
+      "text": "恵比寿の同じマンションに毎晩"
+    },
+    {
+      "sender": "other",
+      "text": "知り合いで"
+    },
+    {
+      "sender": "self",
+      "text": "女の子の部屋に毎晩5時間？"
+    },
+    {
+      "sender": "other",
+      "text": "誤解だって"
+    },
+    {
+      "sender": "self",
+      "text": "その子に直接聞いてもいい？"
+    },
+    {
+      "sender": "other",
+      "text": "なんで知ってんの"
+    },
+    {
+      "sender": "self",
+      "text": "SNSでつながってたから"
+    },
+    {
+      "sender": "other",
+      "text": ""
+    },
+    {
+      "sender": "self",
+      "text": "荷物は先週まとめてある"
+    },
+    {
+      "sender": "other",
+      "text": "待ってよ話し合おう"
+    },
+    {
+      "sender": "self",
+      "text": "鍵はポストに入れといた"
+    },
+    {
+      "sender": "other",
+      "text": "出て！頼むから"
+    },
+    {
+      "type": "telop",
+      "text": "この後・着信が100件以上来た"
+    },
+    {
+      "sender": "other",
+      "text": "出てよ"
+    },
+    {
+      "sender": "other",
+      "text": "ごめん本当にごめん"
+    },
+    {
+      "sender": "other",
+      "text": "話だけでも"
+    },
+    {
+      "sender": "self",
+      "text": "ブロックしました"
+    }
   ],
   "message_count": 43,
   "char_count": 451,
   "video_status": "pending",
-  "scores": { "total": 80, "title": 16, "opening": 13, "info_density": 13, "twist": 15, "ending": 13, "genre_bonus": 10 },
+  "scores": {
+    "total": 0,
+    "title": 0,
+    "opening": 0,
+    "info_density": 0,
+    "twist": 0,
+    "ending": 0,
+    "genre_bonus": 0
+  },
   "notes": ""
 }
