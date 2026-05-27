@@ -24,7 +24,7 @@
     },
     {
       "sender": "other",
-      "text": "俺の前でだけ挙動が変なんや"
+      "text": "俺の前でだけ挙動が変や"
     },
     {
       "sender": "other",
@@ -44,11 +44,11 @@
     },
     {
       "sender": "other",
-      "text": "だから朝からハロー言うんか！！"
+      "text": "だから朝からハロー言うんか！"
     },
     {
       "sender": "other",
-      "text": "グッモーニンも言われたわ"
+      "text": "発音だけネイティブで怖い"
     },
     {
       "sender": "self",
@@ -60,7 +60,7 @@
     },
     {
       "sender": "other",
-      "text": "昼飯もサンキュー言うてきた"
+      "text": "昼飯もサンキューやで"
     },
     {
       "sender": "self",
@@ -84,7 +84,7 @@
     },
     {
       "sender": "other",
-      "text": "縮まってへんやろ"
+      "text": "縮まってへんわ"
     },
     {
       "type": "telop",
@@ -92,7 +92,7 @@
     },
     {
       "sender": "other",
-      "text": "さっき名刺見せてきた"
+      "text": "名刺見せてきよった"
     },
     {
       "sender": "self",
@@ -100,7 +100,7 @@
     },
     {
       "sender": "other",
-      "text": "名前がローマ字だけや"
+      "text": "名前がローマ字でRONと"
     },
     {
       "sender": "self",
@@ -108,11 +108,11 @@
     },
     {
       "sender": "other",
-      "text": "漢字どこいった"
+      "text": "田中ロンてなんやねん"
     },
     {
       "sender": "other",
-      "text": "取引先にもhello言うてた"
+      "text": "取引先にもhello連発や"
     },
     {
       "sender": "self",
@@ -120,15 +120,15 @@
     },
     {
       "sender": "other",
-      "text": "先方ぽかんとしてた"
+      "text": "先方、翻訳アプリ起動しよった"
     },
     {
       "sender": "self",
-      "text": "掴みはばっちり"
+      "text": "国際会議ですね"
     },
     {
       "sender": "other",
-      "text": "滑ってるわ！"
+      "text": "ただの定例会議や"
     },
     {
       "type": "telop",
@@ -136,7 +136,7 @@
     },
     {
       "sender": "other",
-      "text": "分厚い辞書持ってきた"
+      "text": "鈍器みたいな辞書抱えてきた"
     },
     {
       "sender": "self",
@@ -152,7 +152,7 @@
     },
     {
       "sender": "other",
-      "text": "重荷でしかない"
+      "text": "重すぎて肩壊すわ"
     },
     {
       "sender": "other",
@@ -160,11 +160,11 @@
     },
     {
       "sender": "self",
-      "text": "どうでしたか"
+      "text": "どうでした"
     },
     {
       "sender": "other",
-      "text": "ショック受けてた"
+      "text": "この世の終わりの顔しよった"
     },
     {
       "sender": "self",
@@ -180,7 +180,7 @@
     },
     {
       "sender": "other",
-      "text": "英語でやらすなよ"
+      "text": "英語でやらすな"
     },
     {
       "type": "telop",
@@ -188,7 +188,7 @@
     }
   ],
   "message_count": 45,
-  "char_count": 423,
+  "char_count": 433,
   "video_status": "pending",
   "scores": {
     "total": 81,

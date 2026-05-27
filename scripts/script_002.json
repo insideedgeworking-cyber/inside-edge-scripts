@@ -1,6 +1,6 @@
 {
   "id": "script_002",
-  "created_at": "2026-05-26",
+  "created_at": "2026-05-28",
   "title": "【LINE】新人が会社にジョウロ持ってきた理由が意外すぎた #職場あるある #LINEドラマ #Shorts",
   "genre": "笑い系",
   "category": "笑い_上司部下",
@@ -8,19 +8,19 @@
   "messages": [
     {
       "type": "telop",
-      "text": "新人・入社3ヶ月・信じやすい"
+      "text": "新人・入社3ヶ月・嘘を全部信じる"
     },
     {
       "sender": "other",
-      "text": "お前新人に何言うたんや"
+      "text": "お前新人に何吹き込んだ"
     },
     {
       "sender": "self",
-      "text": "え何かしました？"
+      "text": "褒めときましたよ"
     },
     {
       "sender": "other",
-      "text": "さっき俺が怒鳴った後に"
+      "text": "さっき俺が怒鳴った後や"
     },
     {
       "sender": "other",
@@ -28,27 +28,35 @@
     },
     {
       "sender": "other",
-      "text": "花壇の前でじっと立ってた"
+      "text": "花壇の前で仁王立ちしてる"
     },
     {
       "sender": "other",
-      "text": "意味がわからんかった"
+      "text": "何がしたいんかわからん"
+    },
+    {
+      "sender": "other",
+      "text": "お前何を教えた"
     },
     {
       "sender": "self",
-      "text": "上司は怒ると花壇に行くと"
+      "text": "上司は怒ると花壇に行って"
     },
     {
       "sender": "self",
-      "text": "水やりするって教えました"
+      "text": "水やりすると教えました"
     },
     {
       "sender": "other",
-      "text": "だから待っとったんか！！"
+      "text": "だから花壇で待っとったんか！"
     },
     {
       "sender": "other",
-      "text": "30分も立っとったんやぞ"
+      "text": "ジョウロ両手で構えてる"
+    },
+    {
+      "sender": "other",
+      "text": "銅像みたいに固まっとる"
     },
     {
       "sender": "self",
@@ -60,43 +68,43 @@
     },
     {
       "sender": "other",
-      "text": "なんでそんな嘘ついた"
+      "text": "30分微動だにせんねん"
     },
     {
       "sender": "self",
-      "text": "上司が怖いって言うので"
-    },
-    {
-      "sender": "self",
-      "text": "お花を見せてあげようかと"
+      "text": "庭師の才能あります"
     },
     {
       "sender": "other",
-      "text": "逆効果やろが！"
+      "text": "ないわ！"
     },
     {
       "sender": "other",
-      "text": "来なくていいって言うたら"
+      "text": "来なくていいて言うたら"
     },
     {
       "sender": "self",
-      "text": "どうでしたか"
+      "text": "どうでした"
     },
     {
       "sender": "other",
-      "text": "泣きそうになってた"
+      "text": "捨てられた子犬の目で見てきた"
     },
     {
       "sender": "self",
-      "text": "見たかったです"
+      "text": "可哀想に"
     },
     {
       "sender": "other",
       "text": "お前のせいやろ！"
     },
     {
+      "type": "telop",
+      "text": "翌日・新人がジョウロを持参"
+    },
+    {
       "sender": "other",
-      "text": "自分でジョウロ買ってきた"
+      "text": "マイジョウロ買うてきよった"
     },
     {
       "sender": "self",
@@ -104,47 +112,31 @@
     },
     {
       "sender": "other",
-      "text": "誉めてる場合か！"
-    },
-    {
-      "sender": "other",
-      "text": "今もずっと持ち歩いてる"
-    },
-    {
-      "sender": "other",
-      "text": "何時間持ち歩いてるんや"
+      "text": "名前まで書いてある"
     },
     {
       "sender": "self",
-      "text": "愛着湧きましたかね"
+      "text": "愛着わきましたね"
     },
     {
       "sender": "other",
-      "text": "湧いてるわ！"
+      "text": "「はなちゃん号」やぞ"
     },
     {
       "sender": "self",
-      "text": "仲良くなれてよかった"
+      "text": "いいネーミング"
     },
     {
       "sender": "other",
-      "text": "仲良くならせたんはお前やろ！"
+      "text": "褒めるな！"
     },
     {
       "type": "telop",
-      "text": "翌日・新人のデスクにジョウロ"
+      "text": "翌週・総務から辞令が届く"
     },
     {
       "sender": "other",
-      "text": "どうするんやこれ"
-    },
-    {
-      "sender": "self",
-      "text": "記念に飾っとけば"
-    },
-    {
-      "sender": "other",
-      "text": "総務から花壇担当の辞令来た"
+      "text": "新人が花壇担当に任命された"
     },
     {
       "sender": "self",
@@ -152,31 +144,35 @@
     },
     {
       "sender": "other",
-      "text": "こっちが倒れそうや"
-    },
-    {
-      "sender": "self",
-      "text": "才能が開花しましたね"
-    },
-    {
-      "sender": "other",
       "text": "誰のせいやと思てる"
     },
     {
+      "sender": "other",
+      "text": "毎朝水やりして歌うてる"
+    },
+    {
       "sender": "self",
-      "text": "花が咲いたら送ります"
+      "text": "才能が開花しました"
     },
     {
       "sender": "other",
-      "text": "もう連絡してくるな"
+      "text": "花より先に俺が枯れるわ"
+    },
+    {
+      "sender": "self",
+      "text": "水やりましょうか"
+    },
+    {
+      "sender": "other",
+      "text": "やかましい"
     },
     {
       "type": "telop",
-      "text": "翌週・花壇の写真が届いた"
+      "text": "花壇は今、社内一の見頃"
     }
   ],
-  "message_count": 42,
-  "char_count": 384,
+  "message_count": 41,
+  "char_count": 392,
   "video_status": "pending",
   "scores": {
     "total": 86,

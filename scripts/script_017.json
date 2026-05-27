@@ -1,6 +1,6 @@
 {
   "id": "script_017",
-  "created_at": "2026-05-26",
+  "created_at": "2026-05-28",
   "title": "【LINE】新人が怒られるたびに上司を褒め始めた理由 #職場あるある #笑える話 #Shorts",
   "genre": "笑い系",
   "category": "笑い_上司部下",
@@ -12,71 +12,67 @@
     },
     {
       "sender": "other",
-      "text": "お前新人に何言うたんや"
+      "text": "お前新人に何言うた"
     },
     {
       "sender": "self",
-      "text": "何かしましたか？"
+      "text": "何かしましたか"
     },
     {
       "sender": "other",
-      "text": "今朝遅刻で怒鳴ったやろ"
+      "text": "今朝遅刻で怒鳴った"
+    },
+    {
+      "sender": "other",
+      "text": "そしたら新人が急に変や"
+    },
+    {
+      "sender": "other",
+      "text": "何がしたいんかわからん"
+    },
+    {
+      "sender": "other",
+      "text": "お前何を教えた"
     },
     {
       "sender": "self",
-      "text": "はい"
-    },
-    {
-      "sender": "other",
-      "text": "急に「スーツ素敵ですね」って"
-    },
-    {
-      "sender": "other",
-      "text": "なんやあの子は"
+      "text": "上司は褒められると"
     },
     {
       "sender": "self",
-      "text": "褒めると怒り方を忘れると"
+      "text": "怒り方を忘れると教えました"
+    },
+    {
+      "sender": "other",
+      "text": "だから急に褒めだしたんか！"
+    },
+    {
+      "sender": "other",
+      "text": "「眉毛が芸術的ですね」やぞ"
     },
     {
       "sender": "self",
-      "text": "教えました"
+      "text": "観察力ありますね"
     },
     {
       "sender": "other",
-      "text": "だから褒めてきたんか！！"
+      "text": "眉毛て"
+    },
+    {
+      "sender": "other",
+      "text": "一瞬怒り方忘れたわ"
     },
     {
       "sender": "self",
-      "text": "怒られてて可哀想で"
+      "text": "効果抜群ですね"
     },
     {
       "sender": "other",
-      "text": "なんでそんな嘘ついた"
-    },
-    {
-      "sender": "self",
-      "text": "効きそうだったので"
+      "text": "効くのが腹立つ"
     },
     {
       "sender": "other",
-      "text": "効いたけどな！！"
-    },
-    {
-      "sender": "other",
-      "text": "ちょっと嬉しかった"
-    },
-    {
-      "sender": "self",
-      "text": "効果抜群じゃないですか"
-    },
-    {
-      "sender": "other",
-      "text": "笑い事ちゃうわ！"
-    },
-    {
-      "sender": "other",
-      "text": "それから毎回言うてくる"
+      "text": "それから毎回褒めてくる"
     },
     {
       "sender": "self",
@@ -88,7 +84,7 @@
     },
     {
       "type": "telop",
-      "text": "新人・何かあるたびに褒める"
+      "text": "新人・褒めの語彙が増殖中"
     },
     {
       "sender": "other",
@@ -96,59 +92,55 @@
     },
     {
       "sender": "other",
-      "text": "ネクタイ似合いますって来た"
+      "text": "「ネクタイが大空みたい」て"
     },
     {
       "sender": "self",
-      "text": "センスいい子ですね"
+      "text": "詩人ですね"
     },
     {
       "sender": "other",
-      "text": "せやかもしれんけど！"
+      "text": "空関係ないやろ"
     },
     {
       "sender": "other",
-      "text": "なんか許してしもた"
+      "text": "また許してしもた"
     },
     {
       "sender": "self",
-      "text": "効果抜群ですね笑"
+      "text": "効果抜群です"
     },
     {
       "sender": "other",
-      "text": "お前のせいやろ！"
+      "text": "お前のせいやろ"
     },
     {
       "sender": "other",
-      "text": "部長にも褒め攻撃した"
+      "text": "部長にも褒め攻撃しよった"
     },
     {
       "sender": "self",
-      "text": "本物の褒め上手ですね"
+      "text": "出世しますね"
     },
     {
       "sender": "other",
-      "text": "育てたんはお前やけどな"
+      "text": "「声が低音の宝石」やと"
     },
     {
       "sender": "self",
-      "text": "教育しましたね笑"
+      "text": "才能ですね"
     },
     {
       "sender": "other",
-      "text": "笑ってる場合か！！"
-    },
-    {
-      "sender": "self",
-      "text": "反省してます笑"
+      "text": "宝石て何やねん"
     },
     {
       "sender": "other",
-      "text": "してへんわ！"
+      "text": "部長デレデレやったわ"
     },
     {
       "type": "telop",
-      "text": "翌月・新人が接客賞を受賞した"
+      "text": "翌月・新人が接客賞を受賞"
     },
     {
       "sender": "other",
@@ -156,31 +148,47 @@
     },
     {
       "sender": "self",
-      "text": "おめでとうございます笑"
+      "text": "おめでとうございます"
     },
     {
       "sender": "other",
-      "text": "そこかよ！"
+      "text": "そこかよ"
+    },
+    {
+      "sender": "other",
+      "text": "審査員まで褒めとった"
     },
     {
       "sender": "self",
-      "text": "褒め上手は才能ですよ"
+      "text": "隙がないですね"
     },
     {
       "sender": "other",
-      "text": "もう連絡してくるな"
+      "text": "もう止まらんあいつ"
     },
     {
       "sender": "self",
-      "text": "笑いましたよね最初笑"
+      "text": "褒め上手は才能です"
     },
     {
       "sender": "other",
-      "text": "やかましい！"
+      "text": "育てたんお前やろ"
+    },
+    {
+      "sender": "self",
+      "text": "反省してます"
+    },
+    {
+      "sender": "other",
+      "text": "してへんやろ"
+    },
+    {
+      "type": "telop",
+      "text": "新人は今日も誰かを褒めている"
     }
   ],
-  "message_count": 43,
-  "char_count": 401,
+  "message_count": 45,
+  "char_count": 393,
   "video_status": "pending",
   "scores": {
     "total": 85,

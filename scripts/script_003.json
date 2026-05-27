@@ -1,6 +1,6 @@
 {
   "id": "script_003",
-  "created_at": "2026-05-26",
+  "created_at": "2026-05-28",
   "title": "【LINE】新人が上司の席にコーヒーを何杯も置き続けた理由 #職場あるある #LINEドラマ #Shorts",
   "genre": "笑い系",
   "category": "笑い_上司部下",
@@ -12,27 +12,27 @@
     },
     {
       "sender": "other",
-      "text": "お前新人に何言うたんや"
+      "text": "お前新人に何言うた"
     },
     {
       "sender": "self",
-      "text": "褒めてましたけど"
+      "text": "褒めてましたよ"
     },
     {
       "sender": "other",
-      "text": "今日の朝会の前に"
+      "text": "朝会の前の話や"
     },
     {
       "sender": "other",
-      "text": "俺の席にコーヒー2杯置かれた"
-    },
-    {
-      "sender": "other",
-      "text": "そのまま横に立ってた"
+      "text": "俺の席に何か置かれてる"
     },
     {
       "sender": "other",
       "text": "何がしたいんかわからん"
+    },
+    {
+      "sender": "other",
+      "text": "お前何を教えた"
     },
     {
       "sender": "self",
@@ -44,71 +44,111 @@
     },
     {
       "sender": "other",
-      "text": "だから2杯置いてたんか！！"
+      "text": "だから2杯置いてあったんか！"
     },
     {
       "sender": "other",
-      "text": "名前は最初から覚えてるわ！"
+      "text": "横で直立不動や"
+    },
+    {
+      "sender": "other",
+      "text": "執事みたいに控えとる"
     },
     {
       "sender": "self",
-      "text": "それ新人は知らないので"
+      "text": "気が利きますね"
     },
     {
       "sender": "other",
-      "text": "お前が言うたんやろ！"
+      "text": "名前は最初から覚えとるわ"
     },
     {
       "sender": "self",
-      "text": "確かに言いました"
+      "text": "新人は知らないので"
     },
     {
       "sender": "other",
-      "text": "今認めた！"
-    },
-    {
-      "sender": "other",
-      "text": "なんでそんな嘘ついた"
+      "text": "昼にもまた2杯来た"
     },
     {
       "sender": "self",
-      "text": "コーヒーお好きかなと"
+      "text": "まだ覚えてもらえてない"
     },
     {
       "sender": "other",
-      "text": "好みで嘘つくな！"
+      "text": "覚えとるわ！"
     },
     {
       "sender": "other",
-      "text": "昼にもコーヒー来た"
+      "text": "1日でカフェ1軒分や"
     },
     {
       "sender": "self",
-      "text": "まだ覚えてもらえてないんですね"
+      "text": "経済回してますね"
     },
     {
       "sender": "other",
-      "text": "覚えてるわ！"
+      "text": "俺の胃が回るわ"
+    },
+    {
+      "type": "telop",
+      "text": "翌日・新人がエプロン姿で出社"
     },
     {
       "sender": "other",
-      "text": "何杯で終わるんや"
+      "text": "なぜかエプロンしてる"
     },
     {
       "sender": "self",
-      "text": "本人に聞いてみては"
+      "text": "本格的ですね"
     },
     {
       "sender": "other",
-      "text": "聞いたら増えた"
+      "text": "「専属バリスタです」て名乗った"
     },
     {
       "sender": "self",
-      "text": "何杯になりましたか"
+      "text": "立派な志です"
     },
     {
       "sender": "other",
-      "text": "明日から5杯や"
+      "text": "志ちゃう！"
+    },
+    {
+      "sender": "other",
+      "text": "ラテアートで俺の顔描いてきた"
+    },
+    {
+      "sender": "self",
+      "text": "似てました？"
+    },
+    {
+      "sender": "other",
+      "text": "沼の妖怪みたいやった"
+    },
+    {
+      "sender": "self",
+      "text": "芸術的ですね"
+    },
+    {
+      "sender": "other",
+      "text": "飲む気失せるわ"
+    },
+    {
+      "type": "telop",
+      "text": "翌週・3万のエスプレッソマシン"
+    },
+    {
+      "sender": "other",
+      "text": "デスクに置かれてた"
+    },
+    {
+      "sender": "self",
+      "text": "高そう"
+    },
+    {
+      "sender": "other",
+      "text": "自腹で買うたらしい"
     },
     {
       "sender": "self",
@@ -120,7 +160,7 @@
     },
     {
       "sender": "other",
-      "text": "一回止めてもらえ"
+      "text": "もう止めさせてくれ"
     },
     {
       "sender": "self",
@@ -128,51 +168,23 @@
     },
     {
       "sender": "other",
-      "text": "空気で仕事するな！"
+      "text": "空気で仕事すな"
+    },
+    {
+      "sender": "self",
+      "text": "毎朝2杯持参します"
+    },
+    {
+      "sender": "other",
+      "text": "お前が飲むな"
     },
     {
       "type": "telop",
-      "text": "翌週・デスクに3万のコーヒーメーカー"
-    },
-    {
-      "sender": "other",
-      "text": "プレゼントされた"
-    },
-    {
-      "sender": "self",
-      "text": "高そう"
-    },
-    {
-      "sender": "other",
-      "text": "3万のやつやぞ"
-    },
-    {
-      "sender": "self",
-      "text": "出世しましたね"
-    },
-    {
-      "sender": "other",
-      "text": "また言うた！"
-    },
-    {
-      "sender": "other",
-      "text": "責任取れ"
-    },
-    {
-      "sender": "self",
-      "text": "毎朝コーヒー持ちます"
-    },
-    {
-      "sender": "other",
-      "text": "俺の分だけにしとけ"
-    },
-    {
-      "type": "telop",
-      "text": "今も毎朝コーヒーを持参している"
+      "text": "今も毎朝コーヒーが届く"
     }
   ],
-  "message_count": 41,
-  "char_count": 381,
+  "message_count": 44,
+  "char_count": 407,
   "video_status": "pending",
   "scores": {
     "total": 89,
