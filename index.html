@@ -296,11 +296,11 @@ function scoreColor(s){ return s>=80?'#06C755':s>=60?'#FFA000':s>=40?'#FF7043':'
 async function loadScripts() {
   document.getElementById('scripts-list').innerHTML = '<div class="loading"><div class="spinner"></div><br>読み込み中...</div>';
   try {
-    const res   = await fetch(`${API_BASE}?ref=${BRANCH}&t=${Date.now()}`);
+    const res   = await fetch(`${API_BASE}?ref=${BRANCH}&t=${Date.now()}`, {cache:'no-store'});
     const files = await res.json();
     const jsons = files.filter(f => f.name.startsWith('script_') && f.name.endsWith('.json'));
     scripts = await Promise.all(jsons.map(async f => {
-      const r = await fetch(f.download_url + '?t=' + Date.now());
+      const r = await fetch(f.download_url + '?t=' + Date.now(), {cache:'no-store'});
       return r.json();
     }));
     scripts.sort((a,b) => b.created_at.localeCompare(a.created_at));
