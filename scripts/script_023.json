@@ -1,6 +1,6 @@
 {
   "id": "script_023",
-  "created_at": "2026-05-27",
+  "created_at": "2026-05-28",
   "title": "【LINE】新人が上司に英語でしか話しかけなくなった理由 #職場あるある #LINEドラマ #Shorts",
   "genre": "笑い系",
   "category": "笑い_上司部下",
@@ -24,15 +24,15 @@
     },
     {
       "sender": "other",
-      "text": "俺に英語でしか話しかけん"
+      "text": "俺の前でだけ挙動が変なんや"
     },
     {
       "sender": "other",
-      "text": "グッモーニンて言われた"
+      "text": "何がなんやらわからん"
     },
     {
       "sender": "other",
-      "text": "意味がわからん"
+      "text": "お前何を教えた"
     },
     {
       "sender": "self",
@@ -44,11 +44,11 @@
     },
     {
       "sender": "other",
-      "text": "だから朝からハローか！！"
+      "text": "だから朝からハロー言うんか！！"
     },
     {
       "sender": "other",
-      "text": "日本語で十分やわ"
+      "text": "グッモーニンも言われたわ"
     },
     {
       "sender": "self",
@@ -87,6 +87,10 @@
       "text": "縮まってへんやろ"
     },
     {
+      "type": "telop",
+      "text": "連鎖はさらに広がる"
+    },
+    {
       "sender": "other",
       "text": "さっき名刺見せてきた"
     },
@@ -96,7 +100,7 @@
     },
     {
       "sender": "other",
-      "text": "名前がローマ字だけ"
+      "text": "名前がローマ字だけや"
     },
     {
       "sender": "self",
@@ -183,8 +187,8 @@
       "text": "新人は今も時々ハローと言う"
     }
   ],
-  "message_count": 44,
-  "char_count": 406,
+  "message_count": 45,
+  "char_count": 423,
   "video_status": "pending",
   "scores": {
     "total": 81,
