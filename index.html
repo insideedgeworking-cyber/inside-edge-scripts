@@ -176,7 +176,10 @@ label { font-size: 13px; color: #666; display: block; margin-bottom: 5px; }
   <div class="modal">
     <div class="modal-header">
       <h2 id="modal-title"></h2>
-      <button class="close-btn" id="close-modal">×</button>
+      <div style="display:flex;gap:8px;align-items:center;">
+        <button id="delete-modal" style="background:#e53935;color:#fff;border:none;border-radius:8px;padding:6px 12px;font-size:14px;font-weight:bold;cursor:pointer;">🗑 削除</button>
+        <button class="close-btn" id="close-modal">×</button>
+      </div>
     </div>
     <div class="modal-tabs">
       <div class="modal-tab active" data-mtab="preview">👁 プレビュー</div>
@@ -670,6 +673,36 @@ async function saveToGitHub() {
 // ── イベント ──
 document.querySelectorAll('.modal-tab').forEach(t => t.addEventListener('click', ()=>switchModalTab(t.dataset.mtab)));
 document.getElementById('close-modal').addEventListener('click', ()=>document.getElementById('modal-overlay').classList.remove('open'));
+
+// ── 台本の削除 ──
+async function deleteScript() {
+  if (!currentScript) return;
+  const token = getSettings().githubToken;
+  if (!token) { alert('⚠️ まず⚙️設定でGitHub Tokenを入れてください'); return; }
+  if (!confirm(`「${currentScript.title}」を削除しますか？\nGitHubから完全に削除されます（元に戻せません）`)) return;
+  const fileName = `${currentScript.id}.json`;
+  let sha = '';
+  try {
+    const r = await fetch(`${API_BASE}${fileName}?t=${Date.now()}`, {headers:{Authorization:`token ${token}`}, cache:'no-store'});
+    if (r.ok) { sha = (await r.json()).sha; }
+  } catch(e){}
+  if (!sha) { alert('❌ ファイルが見つかりませんでした'); return; }
+  const res = await fetch(`${API_BASE}${fileName}`, {
+    method:'DELETE',
+    headers:{Authorization:`token ${token}`,'Content-Type':'application/json'},
+    body: JSON.stringify({message:`delete: ${currentScript.title}`, sha, branch:BRANCH})
+  });
+  if (res.ok) {
+    scripts = scripts.filter(x => x.id !== currentScript.id);
+    document.getElementById('total-badge').textContent = `${scripts.length}本`;
+    renderList();
+    document.getElementById('modal-overlay').classList.remove('open');
+    alert('🗑 削除しました');
+  } else {
+    alert('❌ 削除に失敗しました（Tokenの権限を確認してください）');
+  }
+}
+document.getElementById('delete-modal').addEventListener('click', deleteScript);
 document.getElementById('modal-overlay').addEventListener('click', e=>{ if(e.target===document.getElementById('modal-overlay')) document.getElementById('modal-overlay').classList.remove('open'); });
 document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', ()=>{ document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active')); t.classList.add('active'); currentTab=t.dataset.tab; renderList(); }));
 document.querySelectorAll('.filter-btn').forEach(b => b.addEventListener('click', ()=>{ document.querySelectorAll('.filter-btn').forEach(x=>x.classList.remove('active')); b.classList.add('active'); currentGenre=b.dataset.genre; renderList(); }));
