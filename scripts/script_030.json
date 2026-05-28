@@ -1,0 +1,195 @@
+{
+  "id": "script_030",
+  "created_at": "2026-05-29",
+  "title": "【LINE】うちの新人がなぜか廊下の壁に謝ってる #笑い #職場 #Shorts",
+  "genre": "笑い系",
+  "category": "笑い_上司部下",
+  "setup": "新人に「壁に向かって謝ると誠意が伝わる」という礼儀を教えたら職場が大変なことになった",
+  "messages": [
+    {
+      "type": "telop",
+      "text": "新人に余計な礼儀を教えた話"
+    },
+    {
+      "sender": "other",
+      "text": "おい、鈴木がおるか"
+    },
+    {
+      "sender": "self",
+      "text": "鈴木がどうしましたか"
+    },
+    {
+      "sender": "other",
+      "text": "さっきから廊下で壁向いてる"
+    },
+    {
+      "sender": "self",
+      "text": "あー"
+    },
+    {
+      "sender": "other",
+      "text": "あー、じゃないぞ！"
+    },
+    {
+      "sender": "self",
+      "text": "壁に向かって謝ると"
+    },
+    {
+      "sender": "self",
+      "text": "誠意が伝わると教えました"
+    },
+    {
+      "sender": "other",
+      "text": "なんでそんな嘘をつく！"
+    },
+    {
+      "sender": "other",
+      "text": "だからか！！"
+    },
+    {
+      "sender": "other",
+      "text": "俺に謝ってへんやんか！"
+    },
+    {
+      "sender": "self",
+      "text": "壁が受け取ってます"
+    },
+    {
+      "sender": "other",
+      "text": "誰の設定や！"
+    },
+    {
+      "sender": "self",
+      "text": "礼の文化は奥深いです"
+    },
+    {
+      "sender": "other",
+      "text": "奥が深いとかじゃない！"
+    },
+    {
+      "type": "telop",
+      "text": "さらに被害が拡大してた"
+    },
+    {
+      "sender": "other",
+      "text": "壁に名前まで付けとるぞ"
+    },
+    {
+      "sender": "self",
+      "text": "名前をつけると効果アップです"
+    },
+    {
+      "sender": "other",
+      "text": "山田課長はご存命や！！"
+    },
+    {
+      "sender": "self",
+      "text": "ご存命でも壁で練習は大事です"
+    },
+    {
+      "sender": "other",
+      "text": "山田課長に申し訳ない！"
+    },
+    {
+      "sender": "self",
+      "text": "むしろ喜ぶかもしれません😊"
+    },
+    {
+      "sender": "other",
+      "text": "喜ばない！！"
+    },
+    {
+      "sender": "other",
+      "text": "廊下に行列できてるんや！"
+    },
+    {
+      "sender": "self",
+      "text": "壁が大人気ですね"
+    },
+    {
+      "sender": "other",
+      "text": "嬉しそうにするな！"
+    },
+    {
+      "sender": "self",
+      "text": "礼儀が広まってる証拠かと"
+    },
+    {
+      "sender": "other",
+      "text": "礼儀じゃない！嘘や！"
+    },
+    {
+      "sender": "other",
+      "text": "部長に全員呼ばれたぞ！"
+    },
+    {
+      "sender": "self",
+      "text": "えー…"
+    },
+    {
+      "sender": "other",
+      "text": "お前が言わんかったら！"
+    },
+    {
+      "sender": "self",
+      "text": "ご指導のたまものです"
+    },
+    {
+      "sender": "other",
+      "text": "指導してへん！"
+    },
+    {
+      "sender": "other",
+      "text": "早く謝れ！"
+    },
+    {
+      "sender": "self",
+      "text": "壁に向かってもいいですか"
+    },
+    {
+      "sender": "other",
+      "text": "ダメや！"
+    },
+    {
+      "sender": "self",
+      "text": "でも本番前に練習が"
+    },
+    {
+      "sender": "other",
+      "text": "本番の練習が本番や！！"
+    },
+    {
+      "sender": "self",
+      "text": "そうですね🙏"
+    },
+    {
+      "sender": "other",
+      "text": "…もうええわ"
+    },
+    {
+      "sender": "self",
+      "text": "山田課長にも伝えときます"
+    },
+    {
+      "sender": "other",
+      "text": "伝えんでええ！！"
+    },
+    {
+      "type": "telop",
+      "text": "翌日・壁の前の行列は増えていた"
+    }
+  ],
+  "message_count": 43,
+  "char_count": 0,
+  "video_status": "pending",
+  "scores": {
+    "total": 85,
+    "title": 16,
+    "opening": 13,
+    "info_density": 12,
+    "twist": 17,
+    "ending": 13,
+    "genre_bonus": 14
+  },
+  "notes": ""
+}
