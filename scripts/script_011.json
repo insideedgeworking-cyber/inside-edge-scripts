@@ -173,7 +173,7 @@
   ],
   "message_count": 42,
   "char_count": 448,
-  "video_status": "pending",
+  "video_status": "approved",
   "scores": {
     "total": 82,
     "title": 14,
@@ -183,5 +183,5 @@
     "ending": 12,
     "genre_bonus": 14
   },
-  "notes": "タイトルの引きが弱め(日常的すぎ)。中身は良いがサムネ/タイトルでスルーされる懸念。"
+  "notes": "全体的に弱い"
 }
