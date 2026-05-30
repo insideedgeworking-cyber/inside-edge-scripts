@@ -208,7 +208,11 @@ label { font-size: 13px; color: #666; display: block; margin-bottom: 5px; }
 
       <!-- 編集 -->
       <div class="tab-panel" id="panel-edit">
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+        <div class="section" style="margin-top:0;">
+          <label>📝 タイトル</label>
+          <textarea id="title-input-e" rows="2" placeholder="【LINE】..." oninput="syncTitle(this)" style="min-height:auto;"></textarea>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin:14px 0 8px;">
           <span style="font-size:12px;color:#888;">チェックして部分再生成 / 直接編集も可</span>
           <span id="selected-count" style="font-size:12px;color:#06C755;font-weight:bold;"></span>
         </div>
@@ -450,7 +454,13 @@ function renderPreview() {
 }
 
 // ── 編集 ──
+function syncTitle(el) {
+  currentScript.title = el.value;
+  document.getElementById('modal-title').textContent = el.value;
+}
 function renderEditList() {
+  const ti = document.getElementById('title-input-e');
+  if (ti) ti.value = currentScript.title || '';
   document.getElementById('edit-list').innerHTML = (currentScript.messages||[]).map((m,i) => {
     const sc = m.type==='telop'?'sender-telop':m.sender==='self'?'sender-self':'sender-other';
     const sl = m.type==='telop'?'telop':m.sender==='self'?'自分':'相手';
