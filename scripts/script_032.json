@@ -6,47 +6,170 @@
   "category": "感動_親子",
   "setup": "無口で照れ屋の父。一人暮らしを始める朝、絵文字を送ったことのない父からLINEが届く",
   "messages": [
-    { "type": "telop", "text": "無口な父・20年で絵文字を一度も使ったことがない" },
-    { "sender": "other", "text": "今日引っ越しか" },
-    { "sender": "self", "text": "うん、これから出るよ" },
-    { "sender": "other", "text": "忘れ物ないか" },
-    { "sender": "self", "text": "大丈夫、何回も確認した" },
-    { "sender": "other", "text": "そうか" },
-    { "sender": "self", "text": "お父さん、20年ありがとうね" },
-    { "sender": "other", "text": "ああ" },
-    { "sender": "self", "text": "ほんとに、それだけ？😅" },
-    { "sender": "other", "text": "..." },
-    { "sender": "other", "text": "困ったら帰ってこい" },
-    { "sender": "self", "text": "うん" },
-    { "sender": "other", "text": "金がなかったら言え" },
-    { "sender": "self", "text": "自分で頑張ってみる" },
-    { "sender": "other", "text": "そうか、偉いな" },
-    { "sender": "self", "text": "お父さんも体に気をつけて" },
-    { "sender": "other", "text": "お前が生まれた日のこと" },
-    { "sender": "other", "text": "今でもまだ覚えてる" },
-    { "sender": "self", "text": "急にどうしたの" },
-    { "sender": "other", "text": "小さくて、こわくて" },
-    { "sender": "other", "text": "抱くのに手が震えた" },
-    { "sender": "self", "text": "初めて聞いた" },
-    { "sender": "other", "text": "あの手で今日見送るとはな" },
-    { "sender": "self", "text": "泣かせないでよ😢" },
-    { "sender": "other", "text": "父さんも泣いてる" },
-    { "sender": "self", "text": "嘘、お父さんが？" },
-    { "sender": "other", "text": "内緒にしとけ" },
-    { "sender": "self", "text": "うん、二人だけの秘密ね" },
-    { "sender": "other", "text": "体だけは大事にしろ" },
-    { "sender": "self", "text": "お父さんもね、約束" },
-    { "sender": "other", "text": "ああ、約束だ" },
-    { "sender": "self", "text": "そろそろ電車来た、行くね" },
-    { "sender": "other", "text": "待て" },
-    { "sender": "self", "text": "ん？" },
-    { "sender": "other", "text": "一個だけ送り方教わった" },
-    { "sender": "self", "text": "送り方？" },
-    { "sender": "other", "text": "❤️" },
-    { "sender": "self", "text": "お父さん、それ…" },
-    { "sender": "other", "text": "母さんに聞いたんだ" },
-    { "sender": "self", "text": "一生大事にする📱" },
-    { "type": "telop", "text": "父の人生で初めての絵文字は、ハートだった" }
+    {
+      "type": "telop",
+      "text": "無口な父・20年で絵文字を一度も使ったことがない"
+    },
+    {
+      "sender": "other",
+      "text": "今日引っ越しか"
+    },
+    {
+      "sender": "self",
+      "text": "うん、これから出るよ"
+    },
+    {
+      "sender": "other",
+      "text": "忘れ物ないか"
+    },
+    {
+      "sender": "self",
+      "text": "大丈夫、何回も確認した"
+    },
+    {
+      "sender": "other",
+      "text": "そうか"
+    },
+    {
+      "sender": "self",
+      "text": "お父さん、20年ありがとうね"
+    },
+    {
+      "sender": "other",
+      "text": "ああ"
+    },
+    {
+      "sender": "self",
+      "text": "ほんとに、それだけ？😅"
+    },
+    {
+      "sender": "other",
+      "text": "..."
+    },
+    {
+      "sender": "other",
+      "text": "困ったら帰ってこい"
+    },
+    {
+      "sender": "self",
+      "text": "うん"
+    },
+    {
+      "sender": "other",
+      "text": "金がなかったら言え"
+    },
+    {
+      "sender": "self",
+      "text": "自分で頑張ってみる"
+    },
+    {
+      "sender": "other",
+      "text": "そうか、偉いな"
+    },
+    {
+      "sender": "self",
+      "text": "お父さんも体に気をつけて"
+    },
+    {
+      "sender": "other",
+      "text": "お前が生まれた日のこと"
+    },
+    {
+      "sender": "other",
+      "text": "今でもまだ覚えてる"
+    },
+    {
+      "sender": "self",
+      "text": "急にどうしたの"
+    },
+    {
+      "sender": "other",
+      "text": "小さくて、こわくて"
+    },
+    {
+      "sender": "other",
+      "text": "抱くのに手が震えた"
+    },
+    {
+      "sender": "self",
+      "text": "初めて聞いた"
+    },
+    {
+      "sender": "other",
+      "text": "あの手で今日見送るとはな"
+    },
+    {
+      "sender": "self",
+      "text": "泣かせないでよ😢"
+    },
+    {
+      "sender": "other",
+      "text": "父さんも泣いてる"
+    },
+    {
+      "sender": "self",
+      "text": "嘘、お父さんが？"
+    },
+    {
+      "sender": "other",
+      "text": "内緒にしとけ"
+    },
+    {
+      "sender": "self",
+      "text": "うん、二人だけの秘密ね"
+    },
+    {
+      "sender": "other",
+      "text": "体だけは大事にしろ"
+    },
+    {
+      "sender": "self",
+      "text": "お父さんもね、約束"
+    },
+    {
+      "sender": "other",
+      "text": "ああ、約束だ"
+    },
+    {
+      "sender": "self",
+      "text": "そろそろ電車来た、行くね"
+    },
+    {
+      "sender": "other",
+      "text": "待て"
+    },
+    {
+      "sender": "self",
+      "text": "ん？"
+    },
+    {
+      "sender": "other",
+      "text": "一個だけ送り方教わった"
+    },
+    {
+      "sender": "self",
+      "text": "送り方？"
+    },
+    {
+      "sender": "other",
+      "text": "❤️"
+    },
+    {
+      "sender": "self",
+      "text": "お父さん、それ…"
+    },
+    {
+      "sender": "other",
+      "text": "母さんに聞いたんだ"
+    },
+    {
+      "sender": "self",
+      "text": "一生大事にする📱"
+    },
+    {
+      "type": "telop",
+      "text": "父の人生で初めての絵文字は、ハートだった"
+    }
   ],
   "message_count": 41,
   "char_count": 0,
