@@ -98,6 +98,10 @@ header h1 { font-size: 17px; font-weight: bold; }
 .edit-msg-input:focus { outline: none; }
 .del-btn { background: none; border: none; color: #ccc; font-size: 18px; cursor: pointer; flex-shrink: 0; padding: 0 2px; }
 .del-btn:hover { color: #e53935; }
+.msg-move { display: flex; flex-direction: column; gap: 2px; flex-shrink: 0; }
+.msg-move-btn { background: #f0f0f0; border: none; border-radius: 5px; width: 26px; height: 20px; font-size: 11px; cursor: pointer; color: #555; line-height: 1; padding: 0; }
+.msg-move-btn:active { background: #06C755; color: white; }
+.msg-move-btn:disabled { opacity: .3; cursor: default; }
 
 .edit-actions { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
 .add-msg-btn { flex: 1; padding: 9px; border: 1px dashed #06C755; background: white; color: #06C755; border-radius: 8px; font-size: 13px; cursor: pointer; }
@@ -464,14 +468,35 @@ function renderEditList() {
   document.getElementById('edit-list').innerHTML = (currentScript.messages||[]).map((m,i) => {
     const sc = m.type==='telop'?'sender-telop':m.sender==='self'?'sender-self':'sender-other';
     const sl = m.type==='telop'?'telop':m.sender==='self'?'自分':'相手';
+    const last = (currentScript.messages||[]).length - 1;
     return `<div class="edit-msg-row" id="emr-${i}">
       <input type="checkbox" class="msg-select-cb" data-idx="${i}" onchange="updateSelCount()">
       <span class="msg-sender-tag ${sc}">${sl}</span>
       <textarea class="edit-msg-input" data-idx="${i}" rows="2" oninput="syncMsg(this)">${m.text}</textarea>
-      <button class="del-btn" onclick="delMsg(${i})">✕</button>
+      <div class="msg-move">
+        <button class="msg-move-btn" onclick="moveMsg(${i},-1)" ${i===0?'disabled':''} title="上へ">▲</button>
+        <button class="msg-move-btn" onclick="moveMsg(${i},1)" ${i===last?'disabled':''} title="下へ">▼</button>
+      </div>
+      <button class="del-btn" onclick="copyMsg(${i})" title="複製">⧉</button>
+      <button class="del-btn" onclick="delMsg(${i})" title="削除">✕</button>
     </div>`;
   }).join('');
   updateSelCount();
+}
+// セリフの並び替え
+function moveMsg(i, dir) {
+  const arr = currentScript.messages;
+  const j = i + dir;
+  if (j < 0 || j >= arr.length) return;
+  [arr[i], arr[j]] = [arr[j], arr[i]];
+  renderEditList();
+}
+// セリフの複製（直下に同じ内容を挿入）
+function copyMsg(i) {
+  const arr = currentScript.messages;
+  arr.splice(i + 1, 0, JSON.parse(JSON.stringify(arr[i])));
+  currentScript.message_count = arr.length;
+  renderEditList();
 }
 
 function syncMsg(el) {
