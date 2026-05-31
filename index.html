@@ -215,6 +215,7 @@ label { font-size: 13px; color: #666; display: block; margin-bottom: 5px; }
         <div class="section" style="margin-top:0;">
           <label>📝 タイトル</label>
           <textarea id="title-input-e" rows="2" placeholder="【LINE】..." oninput="syncTitle(this)" style="min-height:auto;"></textarea>
+          <button id="copy-all-btn" style="margin-top:8px;width:100%;padding:10px;border:1px solid #06C755;background:#f0fff5;color:#06C755;border-radius:8px;font-size:13px;font-weight:bold;cursor:pointer;">📋 台本を全文コピー</button>
         </div>
         <div style="display:flex;justify-content:space-between;align-items:center;margin:14px 0 8px;">
           <span style="font-size:12px;color:#888;">チェックして部分再生成 / 直接編集も可</span>
@@ -498,6 +499,26 @@ function copyMsg(i) {
   currentScript.message_count = arr.length;
   renderEditList();
 }
+// 台本を全文まとめてクリップボードにコピー
+function copyAllText() {
+  const lines = (currentScript.messages||[]).map(m => {
+    if (m.type==='telop') return `【テロップ】${m.text}`;
+    return (m.sender==='self'?'自分: ':'相手: ') + (m.text||'');
+  });
+  const text = `${currentScript.title||''}\n\n` + lines.join('\n');
+  const done = () => { const b=document.getElementById('copy-all-btn'); const o=b.textContent; b.textContent='✅ コピーしました'; setTimeout(()=>b.textContent=o,1500); };
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(done).catch(()=>fallbackCopy(text, done));
+  } else { fallbackCopy(text, done); }
+}
+function fallbackCopy(text, cb) {
+  const ta=document.createElement('textarea'); ta.value=text;
+  ta.style.position='fixed'; ta.style.opacity='0'; document.body.appendChild(ta);
+  ta.focus(); ta.select();
+  try { document.execCommand('copy'); cb(); } catch(e){ alert('コピーに失敗しました'); }
+  ta.remove();
+}
+document.getElementById('copy-all-btn').addEventListener('click', copyAllText);
 
 function syncMsg(el) {
   currentScript.messages[parseInt(el.dataset.idx)].text = el.value;
