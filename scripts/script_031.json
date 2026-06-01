@@ -6,48 +6,172 @@
   "category": "スカッと_マウント",
   "setup": "月収・旅行・車でマウントばかり取るママ友から突然「お金貸して」とLINEが来た",
   "messages": [
-    { "type": "telop", "text": "月収マウントが口癖のママ友・付き合い2年" },
-    { "sender": "other", "text": "ねぇ今年の旅行どこ行くの？" },
-    { "sender": "self", "text": "近場の温泉かな🍵" },
-    { "sender": "other", "text": "えー、うちはハワイ5泊だよ" },
-    { "sender": "self", "text": "いいね、楽しんできて" },
-    { "sender": "other", "text": "あなたも頑張って働きなよ〜" },
-    { "sender": "self", "text": "うん、ありがとう" },
-    { "sender": "other", "text": "車も買い替えたの" },
-    { "sender": "other", "text": "600万のSUV、新車でね" },
-    { "sender": "self", "text": "すごいね" },
-    { "sender": "other", "text": "あなたの軽、まだ乗ってるの？" },
-    { "sender": "self", "text": "気に入ってるから" },
-    { "sender": "other", "text": "軽とか恥ずかしくない？" },
-    { "sender": "self", "text": "燃費いいし十分だよ" },
-    { "sender": "other", "text": "見栄はらなくていいのよ？" },
-    { "sender": "self", "text": "見栄じゃないよ" },
-    { "sender": "other", "text": "ところでお願いがあって" },
-    { "sender": "self", "text": "なに？" },
-    { "sender": "other", "text": "来月10万貸してくれない？" },
-    { "sender": "self", "text": "10万？" },
-    { "sender": "other", "text": "旦那の給料が遅れてて…" },
-    { "sender": "self", "text": "ハワイは行くんだよね？" },
-    { "sender": "other", "text": "あれ実はキャンセルした" },
-    { "sender": "self", "text": "600万の車は？" },
-    { "sender": "other", "text": "ローン払えず返したの" },
-    { "sender": "self", "text": "そうだったんだ" },
-    { "sender": "other", "text": "友達でしょ、お願い🙏" },
-    { "sender": "self", "text": "正直に言ってくれてありがとう" },
-    { "sender": "other", "text": "じゃあ貸してくれる？" },
-    { "sender": "self", "text": "うちも軽でやりくり中なの" },
-    { "sender": "self", "text": "余裕なくてごめんね😌" },
-    { "sender": "other", "text": "そこをなんとか" },
-    { "sender": "self", "text": "友達だから言うね" },
-    { "sender": "self", "text": "見栄、はらなくていいのよ？" },
-    { "sender": "other", "text": "それ私のセリフ…" },
-    { "sender": "self", "text": "うん、お返し😊" },
-    { "sender": "other", "text": "もういい、他あたる" },
-    { "sender": "self", "text": "温泉のお土産いる？" },
-    { "sender": "other", "text": "いらない！" },
-    { "type": "telop", "text": "翌週から、マウントはピタッと止んだ" }
+    {
+      "type": "telop",
+      "text": "月収マウントが口癖のママ友・付き合い2年"
+    },
+    {
+      "sender": "other",
+      "text": "ねぇ今年の旅行どこ行くの？"
+    },
+    {
+      "sender": "self",
+      "text": "近場の温泉かな🍵"
+    },
+    {
+      "sender": "other",
+      "text": "えー、うちはハワイ5泊だよ"
+    },
+    {
+      "sender": "self",
+      "text": "いいね、楽しんできて"
+    },
+    {
+      "sender": "other",
+      "text": "あなたも頑張って働きなよ〜"
+    },
+    {
+      "sender": "self",
+      "text": "うん、ありがとう"
+    },
+    {
+      "sender": "other",
+      "text": "車も買い替えたの"
+    },
+    {
+      "sender": "other",
+      "text": "600万のSUV、新車でね"
+    },
+    {
+      "sender": "self",
+      "text": "すごいね"
+    },
+    {
+      "sender": "other",
+      "text": "あなたの軽、まだ乗ってるの？"
+    },
+    {
+      "sender": "self",
+      "text": "気に入ってるから"
+    },
+    {
+      "sender": "other",
+      "text": "軽とか恥ずかしくない？"
+    },
+    {
+      "sender": "self",
+      "text": "燃費いいし十分だよ"
+    },
+    {
+      "sender": "other",
+      "text": "見栄はらなくていいのよ？"
+    },
+    {
+      "sender": "self",
+      "text": "見栄じゃないよ"
+    },
+    {
+      "type": "telop",
+      "text": "それから数ヶ月後"
+    },
+    {
+      "sender": "other",
+      "text": "久しぶり、ちょっとお願いがあるんだけど"
+    },
+    {
+      "sender": "self",
+      "text": "なに？"
+    },
+    {
+      "sender": "other",
+      "text": "来月10万貸してくれない？"
+    },
+    {
+      "sender": "self",
+      "text": "10万？"
+    },
+    {
+      "sender": "other",
+      "text": "旦那の給料が遅れてて…"
+    },
+    {
+      "sender": "self",
+      "text": "ハワイは行くんだよね？"
+    },
+    {
+      "sender": "other",
+      "text": "あれ実はキャンセルした"
+    },
+    {
+      "sender": "self",
+      "text": "600万の車は？"
+    },
+    {
+      "sender": "other",
+      "text": "ローン払えず返したの"
+    },
+    {
+      "sender": "self",
+      "text": "そうだったんだ"
+    },
+    {
+      "sender": "other",
+      "text": "友達でしょ、お願い🙏"
+    },
+    {
+      "sender": "self",
+      "text": "正直に言ってくれてありがとう"
+    },
+    {
+      "sender": "other",
+      "text": "じゃあ貸してくれる？"
+    },
+    {
+      "sender": "self",
+      "text": "うちも軽でやりくり中なの"
+    },
+    {
+      "sender": "self",
+      "text": "余裕なくてごめんね😌"
+    },
+    {
+      "sender": "other",
+      "text": "そこをなんとか"
+    },
+    {
+      "sender": "self",
+      "text": "友達だから言うね"
+    },
+    {
+      "sender": "self",
+      "text": "見栄、はらなくていいのよ？"
+    },
+    {
+      "sender": "other",
+      "text": "それ私のセリフ…"
+    },
+    {
+      "sender": "self",
+      "text": "うん、お返し😊"
+    },
+    {
+      "sender": "other",
+      "text": "もういい、他あたる"
+    },
+    {
+      "sender": "self",
+      "text": "温泉のお土産いる？"
+    },
+    {
+      "sender": "other",
+      "text": "いらない！"
+    },
+    {
+      "type": "telop",
+      "text": "翌週から、マウントはピタッと止んだ"
+    }
   ],
-  "message_count": 40,
+  "message_count": 41,
   "char_count": 0,
   "video_status": "pending",
   "scores": {
