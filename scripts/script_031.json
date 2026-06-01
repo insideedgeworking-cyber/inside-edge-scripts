@@ -55,10 +55,6 @@
       "text": "気に入ってるから"
     },
     {
-      "sender": "other",
-      "text": "軽とか恥ずかしくない？"
-    },
-    {
       "sender": "self",
       "text": "燃費いいし十分だよ"
     },
@@ -171,7 +167,7 @@
       "text": "翌週から、マウントはピタッと止んだ"
     }
   ],
-  "message_count": 41,
+  "message_count": 40,
   "char_count": 0,
   "video_status": "approved",
   "scores": {
