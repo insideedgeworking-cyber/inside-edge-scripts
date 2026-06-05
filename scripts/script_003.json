@@ -1,7 +1,7 @@
 {
   "id": "script_003",
   "created_at": "2026-05-28",
-  "title": "【LINE】新人が上司の席にコーヒーを何杯も置き続けた理由 #職場あるある #LINEドラマ #Shorts",
+  "title": "【LINE】なんでも信じる新人の謎行動#職場あるある #LINEドラマ #Shorts",
   "genre": "笑い系",
   "category": "笑い_上司部下",
   "setup": "新人に「上司は毎朝コーヒー2杯飲まないと名前が覚えられない」という嘘を吹き込んだ",
@@ -20,19 +20,11 @@
     },
     {
       "sender": "other",
-      "text": "朝会の前の話や"
+      "text": "嘘言うな、なんか言うたやろ"
     },
     {
       "sender": "other",
-      "text": "俺の席に何か置かれてる"
-    },
-    {
-      "sender": "other",
-      "text": "何がしたいんかわからん"
-    },
-    {
-      "sender": "other",
-      "text": "お前何を教えた"
+      "text": "何を教えたか言うてみろ"
     },
     {
       "sender": "self",
@@ -44,27 +36,31 @@
     },
     {
       "sender": "other",
-      "text": "だから2杯置いてあったんか！"
+      "text": "何回言わせるんや、新人に変なこと教えるな言うてるやろ"
     },
     {
       "sender": "other",
-      "text": "横で直立不動や"
+      "text": "朝、出勤したらコーヒー2杯置いてあって直立不動でなんか立ってんねん"
     },
     {
       "sender": "other",
-      "text": "執事みたいに控えとる"
+      "text": "俺に気づいて、笑顔で挨拶してコーヒーと同じ目線まで下がってんねん"
+    },
+    {
+      "sender": "other",
+      "text": "なんでかわかるか？"
     },
     {
       "sender": "self",
-      "text": "気が利きますね"
+      "text": "いや、ちょっと…わからないです"
     },
     {
       "sender": "other",
-      "text": "名前は最初から覚えとるわ"
+      "text": "コーヒーとセットで覚えてもらおうとしとんのや"
     },
     {
       "sender": "self",
-      "text": "新人は知らないので"
+      "text": "真面目ですね"
     },
     {
       "sender": "other",
@@ -76,7 +72,7 @@
     },
     {
       "sender": "other",
-      "text": "覚えとるわ！"
+      "text": "最初から覚えとるわ！"
     },
     {
       "sender": "other",
@@ -88,15 +84,15 @@
     },
     {
       "sender": "other",
-      "text": "俺の胃が回るわ"
+      "text": "こんなに飲めるか！"
     },
     {
       "type": "telop",
-      "text": "翌日・新人がエプロン姿で出社"
+      "text": "翌日・新人がエプロン持参"
     },
     {
       "sender": "other",
-      "text": "なぜかエプロンしてる"
+      "text": "なぜか休憩なるとエプロンしてコーヒー2杯おいて会釈して去る"
     },
     {
       "sender": "self",
@@ -104,35 +100,23 @@
     },
     {
       "sender": "other",
-      "text": "「専属バリスタです」て名乗った"
+      "text": "おまけにラテアートで俺の顔描いてきた"
     },
     {
       "sender": "self",
-      "text": "立派な志です"
+      "text": "大変勉強熱心ですね"
     },
     {
       "sender": "other",
-      "text": "志ちゃう！"
-    },
-    {
-      "sender": "other",
-      "text": "ラテアートで俺の顔描いてきた"
+      "text": "どうでもいいねん、仕事全然覚えてないのにそれだけは覚えが早い"
     },
     {
       "sender": "self",
-      "text": "似てました？"
+      "text": "天職なんでしょうね"
     },
     {
       "sender": "other",
-      "text": "沼の妖怪みたいやった"
-    },
-    {
-      "sender": "self",
-      "text": "芸術的ですね"
-    },
-    {
-      "sender": "other",
-      "text": "飲む気失せるわ"
+      "text": "書類は一枚も片付かんのにキャラメルマキアートまで作っとったぞ"
     },
     {
       "type": "telop",
@@ -164,15 +148,7 @@
     },
     {
       "sender": "self",
-      "text": "断れる空気じゃないので"
-    },
-    {
-      "sender": "other",
-      "text": "空気で仕事すな"
-    },
-    {
-      "sender": "self",
-      "text": "毎朝2杯持参します"
+      "text": "毎朝2杯いただきます"
     },
     {
       "sender": "other",
@@ -183,7 +159,7 @@
       "text": "今も毎朝コーヒーが届く"
     }
   ],
-  "message_count": 44,
+  "message_count": 38,
   "char_count": 407,
   "video_status": "pending",
   "scores": {
