@@ -6,51 +6,174 @@
   "category": "スカッと_恋愛",
   "setup": "半年前「もっと可愛い子ができた」と振った元彼が、二股がバレてその子に振られSOS。主人公は既に新しい人と来月結婚する。因果応報で完全決着",
   "messages": [
-    { "type": "telop", "text": "半年前「可愛い子できた」と振られた" },
-    { "sender": "other", "text": "久しぶり、元気にしてた？" },
-    { "sender": "self", "text": "どうしたの急に" },
-    { "sender": "other", "text": "あの子と別れたんだ" },
-    { "sender": "self", "text": "そうなんだ" },
-    { "sender": "other", "text": "やっぱお前が一番だわ" },
-    { "sender": "self", "text": "へえ" },
-    { "sender": "other", "text": "復縁しよ？合ってたろ" },
-    { "sender": "self", "text": "別れ際、なんて言った？" },
-    { "sender": "other", "text": "勢いで言っただけだよ" },
-    { "sender": "self", "text": "「お前は妥協」って言った" },
-    { "sender": "other", "text": "そんな言い方したっけ" },
-    { "sender": "self", "text": "スクショ残ってるよ" },
-    { "sender": "other", "text": "...若気の至りだって" },
-    { "sender": "self", "text": "半年で若さ抜けたんだ" },
-    { "sender": "other", "text": "茶化すなよ、本気なんだ" },
-    { "sender": "self", "text": "あの子に振られたんでしょ" },
-    { "sender": "other", "text": "違う、俺から別れた" },
-    { "sender": "self", "text": "後輩から全部聞いてる" },
-    { "sender": "other", "text": "..." },
-    { "sender": "self", "text": "二股がバレたんだよね" },
-    { "sender": "other", "text": "それは誤解で" },
-    { "sender": "self", "text": "その子、私の後輩なの" },
-    { "sender": "other", "text": "...嘘だろ" },
-    { "sender": "self", "text": "最初から全部知ってた" },
-    { "sender": "other", "text": "待って、話せばわかる" },
-    { "sender": "self", "text": "もう一つ教えてあげる" },
-    { "sender": "other", "text": "なに" },
-    { "sender": "self", "text": "私、来月結婚するの" },
-    { "sender": "other", "text": "は？" },
-    { "sender": "self", "text": "振られた後に出会った人" },
-    { "sender": "other", "text": "そんな急に？" },
-    { "sender": "self", "text": "半年で十分幸せになれた" },
-    { "sender": "other", "text": "俺との方がいいだろ" },
-    { "sender": "self", "text": "2年より濃い半年だった" },
-    { "sender": "other", "text": "..." },
-    { "sender": "self", "text": "妥協じゃない人と結婚する" },
-    { "sender": "other", "text": "待てよ" },
-    { "sender": "self", "text": "さよなら、お幸せに" },
-    { "type": "telop", "text": "元彼は後輩にもブロックされた" },
-    { "type": "telop", "text": "蒔いた種は、自分で刈るらしい" }
+    {
+      "type": "telop",
+      "text": "半年前「可愛い子できた」と振られた"
+    },
+    {
+      "sender": "other",
+      "text": "久しぶり、元気にしてた？"
+    },
+    {
+      "sender": "self",
+      "text": "どうしたの急に"
+    },
+    {
+      "sender": "other",
+      "text": "あの子と別れたんだ"
+    },
+    {
+      "sender": "self",
+      "text": "そうなんだ"
+    },
+    {
+      "sender": "other",
+      "text": "やっぱお前が一番だわ"
+    },
+    {
+      "sender": "self",
+      "text": "へえ"
+    },
+    {
+      "sender": "other",
+      "text": "復縁しよ？合ってたろ"
+    },
+    {
+      "sender": "self",
+      "text": "別れ際、なんて言った？"
+    },
+    {
+      "sender": "other",
+      "text": "勢いで言っただけだよ"
+    },
+    {
+      "sender": "self",
+      "text": "「お前は妥協」って言った"
+    },
+    {
+      "sender": "other",
+      "text": "そんな言い方したっけ"
+    },
+    {
+      "sender": "self",
+      "text": "スクショ残ってるよ"
+    },
+    {
+      "sender": "other",
+      "text": "...若気の至りだって"
+    },
+    {
+      "sender": "self",
+      "text": "半年で若さ抜けたんだ"
+    },
+    {
+      "sender": "other",
+      "text": "茶化すなよ、本気なんだ"
+    },
+    {
+      "sender": "self",
+      "text": "あの子に振られたんでしょ"
+    },
+    {
+      "sender": "other",
+      "text": "違う、俺から別れた"
+    },
+    {
+      "sender": "self",
+      "text": "後輩から全部聞いてる"
+    },
+    {
+      "sender": "other",
+      "text": "..."
+    },
+    {
+      "sender": "self",
+      "text": "二股がバレたんだよね"
+    },
+    {
+      "sender": "other",
+      "text": "それは誤解で"
+    },
+    {
+      "sender": "self",
+      "text": "その子、私の後輩なの"
+    },
+    {
+      "sender": "other",
+      "text": "...嘘だろ"
+    },
+    {
+      "sender": "self",
+      "text": "最初から全部知ってた"
+    },
+    {
+      "sender": "other",
+      "text": "待って、話せばわかる"
+    },
+    {
+      "sender": "self",
+      "text": "もう一つ教えてあげる"
+    },
+    {
+      "sender": "other",
+      "text": "なに"
+    },
+    {
+      "sender": "self",
+      "text": "私、来月結婚するの"
+    },
+    {
+      "sender": "other",
+      "text": "は？"
+    },
+    {
+      "sender": "self",
+      "text": "振られた後に出会った人"
+    },
+    {
+      "sender": "other",
+      "text": "そんな急に？"
+    },
+    {
+      "sender": "self",
+      "text": "半年で十分幸せになれた"
+    },
+    {
+      "sender": "other",
+      "text": "俺との方がいいだろ"
+    },
+    {
+      "sender": "self",
+      "text": "2年より濃い半年だった"
+    },
+    {
+      "sender": "other",
+      "text": "..."
+    },
+    {
+      "sender": "self",
+      "text": "妥協じゃない人と結婚する"
+    },
+    {
+      "sender": "other",
+      "text": "待てよ"
+    },
+    {
+      "sender": "self",
+      "text": "さよなら、お幸せに"
+    },
+    {
+      "type": "telop",
+      "text": "元彼は後輩にもブロックされた"
+    },
+    {
+      "type": "telop",
+      "text": "蒔いた種は、自分で刈るらしい"
+    }
   ],
   "message_count": 41,
   "char_count": 0,
-  "video_status": "pending",
+  "video_status": "approved",
   "scores": {
     "total": 0,
     "title": 0,
