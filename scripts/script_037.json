@@ -6,52 +6,178 @@
   "category": "スカッと_恋愛",
   "setup": "交際2年・プロポーズの夜、彼が「専業主婦になって家事は完璧に」と要求。実は主人公は年商2億の会社経営者で、年収マウントを完全論破する",
   "messages": [
-    { "type": "telop", "text": "交際2年・プロポーズされた夜" },
-    { "sender": "other", "text": "結婚したら仕事辞めてな" },
-    { "sender": "self", "text": "えっ、なんで？" },
-    { "sender": "other", "text": "嫁は家を守るもんだろ" },
-    { "sender": "self", "text": "私、仕事好きなんだけど" },
-    { "sender": "other", "text": "俺の稼ぎで養えるから" },
-    { "sender": "self", "text": "年収いくらなの？" },
-    { "sender": "other", "text": "手取り月25万、立派だろ" },
-    { "sender": "self", "text": "...そっか" },
-    { "sender": "other", "text": "家事も完璧に頼むぞ" },
-    { "sender": "other", "text": "母さんは全部やってた" },
-    { "sender": "self", "text": "お義母さんすごいね" },
-    { "sender": "other", "text": "当然だ、女の役目だろ" },
-    { "sender": "self", "text": "一つ聞いていい？" },
-    { "sender": "other", "text": "なんだよ" },
-    { "sender": "self", "text": "私の年収、知ってる？" },
-    { "sender": "other", "text": "パートだろ、気にしてない" },
-    { "sender": "self", "text": "会社やってて年商2億" },
-    { "sender": "other", "text": "...は？" },
-    { "sender": "self", "text": "社員も30人いるよ" },
-    { "sender": "other", "text": "嘘つくなって" },
-    { "sender": "self", "text": "さっき名刺渡したよね" },
-    { "sender": "other", "text": "代表取締役…って" },
-    { "sender": "self", "text": "それ、私のこと" },
-    { "sender": "other", "text": "聞いてないぞ" },
-    { "sender": "self", "text": "一度も聞かれなかったね" },
-    { "sender": "other", "text": "養うのは男の役目で…" },
-    { "sender": "self", "text": "私はあなたの3日分を1日で稼ぐ" },
-    { "sender": "other", "text": "..." },
-    { "sender": "self", "text": "家庭に入るの、どっち？" },
-    { "sender": "other", "text": "言い方が悪かった" },
-    { "sender": "self", "text": "完璧な家事も期待してたよね" },
-    { "sender": "other", "text": "それは母さんの話で" },
-    { "sender": "self", "text": "お義母さんに失礼だよ" },
-    { "sender": "other", "text": "..." },
-    { "sender": "self", "text": "私を養うつもりだったの？" },
-    { "sender": "other", "text": "もうその話はやめよう" },
-    { "sender": "self", "text": "うん、結婚もなしだね" },
-    { "sender": "other", "text": "は？" },
-    { "sender": "self", "text": "指輪、お返しします" },
-    { "type": "telop", "text": "翌週「考え直さない?」と20件" },
-    { "type": "telop", "text": "既読にする価値も、なかった" }
+    {
+      "type": "telop",
+      "text": "交際2年・プロポーズされた夜"
+    },
+    {
+      "sender": "other",
+      "text": "結婚したら仕事辞めてな"
+    },
+    {
+      "sender": "self",
+      "text": "えっ、なんで？"
+    },
+    {
+      "sender": "other",
+      "text": "嫁は家を守るもんだろ"
+    },
+    {
+      "sender": "self",
+      "text": "私、仕事好きなんだけど"
+    },
+    {
+      "sender": "other",
+      "text": "俺の稼ぎで養えるから"
+    },
+    {
+      "sender": "self",
+      "text": "年収いくらなの？"
+    },
+    {
+      "sender": "other",
+      "text": "手取り月25万、立派だろ"
+    },
+    {
+      "sender": "self",
+      "text": "...そっか"
+    },
+    {
+      "sender": "other",
+      "text": "家事も完璧に頼むぞ"
+    },
+    {
+      "sender": "other",
+      "text": "母さんは全部やってた"
+    },
+    {
+      "sender": "self",
+      "text": "お義母さんすごいね"
+    },
+    {
+      "sender": "other",
+      "text": "当然だ、女の役目だろ"
+    },
+    {
+      "sender": "self",
+      "text": "一つ聞いていい？"
+    },
+    {
+      "sender": "other",
+      "text": "なんだよ"
+    },
+    {
+      "sender": "self",
+      "text": "私の年収、知ってる？"
+    },
+    {
+      "sender": "other",
+      "text": "パートだろ、気にしてない"
+    },
+    {
+      "sender": "self",
+      "text": "会社やってて年商2億"
+    },
+    {
+      "sender": "other",
+      "text": "...は？"
+    },
+    {
+      "sender": "self",
+      "text": "社員も30人いるよ"
+    },
+    {
+      "sender": "other",
+      "text": "嘘つくなって"
+    },
+    {
+      "sender": "self",
+      "text": "さっき名刺渡したよね"
+    },
+    {
+      "sender": "other",
+      "text": "代表取締役…って"
+    },
+    {
+      "sender": "self",
+      "text": "それ、私のこと"
+    },
+    {
+      "sender": "other",
+      "text": "聞いてないぞ"
+    },
+    {
+      "sender": "self",
+      "text": "一度も聞かれなかったね"
+    },
+    {
+      "sender": "other",
+      "text": "養うのは男の役目で…"
+    },
+    {
+      "sender": "self",
+      "text": "私はあなたの3日分を1日で稼ぐ"
+    },
+    {
+      "sender": "other",
+      "text": "..."
+    },
+    {
+      "sender": "self",
+      "text": "家庭に入るの、どっち？"
+    },
+    {
+      "sender": "other",
+      "text": "言い方が悪かった"
+    },
+    {
+      "sender": "self",
+      "text": "完璧な家事も期待してたよね"
+    },
+    {
+      "sender": "other",
+      "text": "それは母さんの話で"
+    },
+    {
+      "sender": "self",
+      "text": "お義母さんに失礼だよ"
+    },
+    {
+      "sender": "other",
+      "text": "..."
+    },
+    {
+      "sender": "self",
+      "text": "私を養うつもりだったの？"
+    },
+    {
+      "sender": "other",
+      "text": "もうその話はやめよう"
+    },
+    {
+      "sender": "self",
+      "text": "うん、結婚もなしだね"
+    },
+    {
+      "sender": "other",
+      "text": "は？"
+    },
+    {
+      "sender": "self",
+      "text": "指輪、お返しします"
+    },
+    {
+      "type": "telop",
+      "text": "翌週「考え直さない?」と20件"
+    },
+    {
+      "type": "telop",
+      "text": "既読にする価値も、なかった"
+    }
   ],
   "message_count": 42,
   "char_count": 0,
-  "video_status": "pending",
+  "video_status": "approved",
   "scores": {
     "total": 0,
     "title": 0,
