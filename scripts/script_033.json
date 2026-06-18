@@ -147,15 +147,11 @@
       "text": "組み込むな絶対！"
     },
     {
-      "sender": "other",
-      "text": "今すぐ全部回収してこい！"
-    },
-    {
       "type": "telop",
       "text": "翌日、なぜか社内で呪文が流行っていた"
     }
   ],
-  "message_count": 37,
+  "message_count": 36,
   "char_count": 0,
   "video_status": "pending",
   "scores": {
